@@ -592,6 +592,7 @@ footer {
 /* end of RWD */
 </style>
 <script>
+// 找套件修改輪播功能
 // @ is an alias to /src
 // Slideshow
 // var slideIndex = 1;
