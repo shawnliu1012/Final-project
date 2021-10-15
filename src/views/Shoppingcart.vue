@@ -22,7 +22,7 @@
     <div class="container">
       <div class="container-img">
         <!-- 圖片掛掉 -->
-        <img src="src\assets\img\shoppingcart\商品圖擷取.JPG" alt="" />
+        <img src="https://i.imgur.com/bA2bEix.jpg" alt="" />
       </div>
       <div class="container-span">
         <a class="c-s-title" href="">

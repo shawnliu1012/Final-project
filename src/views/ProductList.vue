@@ -22,7 +22,8 @@
     <div class="product">
         <div class="product-top-page">
             <div class="product-img">
-                <img src="src\assets\img\product\封面影片截圖.JPG" alt="">
+              <!-- 圖片掛掉 -->
+                <img src="https://i.imgur.com/bA2bEix.jpg" alt="">
             </div>
             <div class="product-introduce">
                 <div class="product-classification"><a href="" class="p-c-p">預購式專案</a> \ <a href="" class="p-c-c">科技</a>
@@ -82,9 +83,15 @@
         </div>
         <div class="product-container">
             <div class="container-img">
-                <img src="../assets/img/product/19yoqw.gif" alt="">
-                <img src="../assets/img/product/05Yzx3.gif" alt="">
-                <img src="../assets/img/product/3JzRLK.gif" alt="">
+                <img src="https://i.imgur.com/BA7hkCA.gif" alt="">
+                <img src="https://i.imgur.com/PLK1ANd.jpg" alt="">
+                <img src="https://i.imgur.com/PPMfOht.jpg" alt="">
+                <img src="https://i.imgur.com/zWDvc2h.jpg" alt="">
+                <img src="https://i.imgur.com/UTgga4v.jpg" alt="">
+                <img src="https://i.imgur.com/PbN2Wp9.gif" alt="">
+                <img src="https://i.imgur.com/pBVlEIm.gif" alt="">
+                <img src="https://i.imgur.com/Vclkyrm.gif" alt="">
+                <img src="https://i.imgur.com/UUlZ86b.jpg" alt="">
             </div>
             <div class="container-projects">
                 <a class="c-p-1" href=""></a>
