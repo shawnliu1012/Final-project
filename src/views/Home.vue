@@ -7,7 +7,7 @@
           <div class="logo">
             <div class="logo-item"></div>
           </div>
-          <img src="final project logo.JPG" alt="" />
+          <img src="https://i.imgur.com/MCdlcAI.jpg" alt="" />
         </a>
         <a href="" class="search-in-navbar">探索</a>
       </div>
@@ -20,7 +20,8 @@
     <!-- Slideshow -->
 
     <div class="slideshow">
-      <a href="">
+      <!-- 套元件 -->
+      <!-- <a href="">
         <img class="myslides" src="https://picsum.photos/id/1/960/300" alt="" />
       </a>
       <a href="">
@@ -51,7 +52,7 @@
         <span class="btn-floating" id="btn2" onclick="plusDivs(+1)"
           >&#10095;</span
         >
-      </div>
+      </div> -->
     </div>
 
     <!-- end of Slideshow -->
