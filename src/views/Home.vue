@@ -1,45 +1,63 @@
 <template>
   <!-- navbar -->
-
-  <!-- 商品方案分類 及按鈕 -->
-  <div class="row mb-4">
-    <div class="col">
-      <h4>群眾集資</h4>
+  <!-- classification -->
+  <div class="classification">
+    <div class="classification-word">探索專案類別</div>
+    <div class="classification-choose-part">
+      <a class="classification-choose" href="">空間</a>
+      <a class="classification-choose" href="">教育</a>
+      <a class="classification-choose" href="">科技</a>
+      <a class="classification-choose" href="">社會</a>
+      <a class="classification-choose" href="">設計</a>
+      <a class="classification-choose" href="">飲食</a>
+      <a class="classification-choose" href="">遊戲</a>
+      <a class="classification-choose" href="">攝影</a>
     </div>
-    <!-- 此處修改 -->
-    <div class="col">
-      <button type="button" class="btn btn-outline-primary">
-        更多
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          class="bi bi-caret-right-fill"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
-          />
-        </svg>
-      </button>
+  </div>
+  <!-- end of classification -->
+  <!-- 再回來修改 -->
+  <div class="container project-navbar">
+    <!-- 商品方案分類 及按鈕 -->
+    <div class="row mt-4 mb-4 justify-content-between">
+      <div class="col-4">
+        <h4>群眾集資</h4>
+      </div>
+      <div class="col-4">
+        <button type="button" class="btn btn-outline-primary">
+          更多
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-caret-right-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
   <div class="container home">
     <!-- 商品區 -->
-    <div class="row">
-      <div class="col">
+    <div class="row justify-content-center">
+      <div class="col-3">
         <div class="card text-start" style="width: 16rem">
-          <a href="">
-            <img
-              src="https://i.imgur.com/2P79MF2.png"
-              class="card-img-top"
-              alt=""
-            />
-            <h5 class="card-title">
-              防災教育品牌《 火柴貓大作戰 | 火災求生桌遊》
-            </h5>
-          </a>
+          <div class="card-top">
+            <a href="">
+              <img
+                src="https://i.imgur.com/2P79MF2.png"
+                class="card-img-top"
+                alt=""
+              />
+              <h5 class="card-title">
+                防災教育品牌《 火柴貓大作戰 | 火災求生桌遊》
+              </h5>
+            </a>
+          </div>
           <div class="card-body pb4">
             <span class=""
               >遊戲 By <a class="" href="">dosomething studio</a></span
@@ -52,25 +70,41 @@
           <div class="container-project-footer">
             <div class="cpf-line"></div>
             <div class="time-money-part">
-              <span class="time"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
-  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
-  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
-</svg>剩下4小時</span>
+              <!-- 時間如何靠左 再回來修改 -->
+              <span class="time"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-clock"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                  />
+                  <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                  /></svg
+                >剩下4小時</span
+              >
               <div class="money">NT$123,558</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-3">
         <div class="card text-start" style="width: 16rem">
-          <a href="">
-            <img
-              src="https://i.imgur.com/WV4ViWO.jpg"
-              class="card-img-top"
-              alt=""
-            />
-            <h5 class="card-title">流光百色 2022日曆</h5>
-          </a>
+          <div class="card-top">
+            <a href="">
+              <img
+                src="https://i.imgur.com/WV4ViWO.jpg"
+                class="card-img-top"
+                alt=""
+              />
+              <h5 class="card-title">流光百色 2022日曆</h5>
+            </a>
+          </div>
           <div class="card-body pb4">
             <span class="">設計 By <a class="" href="">不只是</a></span>
             <p class="card-text">讓心成為三稜鏡，日光穿透，虹彩斑斕閃爍</p>
@@ -78,27 +112,42 @@
           <div class="container-project-footer">
             <div class="cpf-line"></div>
             <div class="time-money-part">
-              <span class="time"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
-  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
-  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
-</svg>剩下4小時</span>
+              <span class="time"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-clock"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                  />
+                  <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                  /></svg
+                >剩下4小時</span
+              >
               <div class="money">NT$123,558</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-3">
         <div class="card text-start" style="width: 16rem">
-          <a href="">
-            <img
-              src="https://i.imgur.com/ELfBBRy.jpg"
-              class="card-img-top"
-              alt=""
-            />
-            <h5 class="card-title">
-              厭世好療癒桌曆｜35組紙娃娃穿搭療癒你的厭世日常
-            </h5>
-          </a>
+          <div class="card-top">
+            <a href="">
+              <img
+                src="https://i.imgur.com/ELfBBRy.jpg"
+                class="card-img-top"
+                alt=""
+              />
+              <h5 class="card-title">
+                厭世好療癒桌曆｜35組紙娃娃穿搭療癒你的厭世日常
+              </h5>
+            </a>
+          </div>
           <div class="card-body">
             <span class="card-body-span"
               >插畫漫畫 By <a class="" href="">厭世女子文創工作室</a></span
@@ -110,10 +159,23 @@
           <div class="container-project-footer">
             <div class="cpf-line"></div>
             <div class="time-money-part">
-              <span class="time"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
-  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
-  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
-</svg>剩下4小時</span>
+              <span class="time"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-clock"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                  />
+                  <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                  /></svg
+                >剩下4小時</span
+              >
               <div class="money">NT$123,558</div>
             </div>
           </div>
@@ -139,31 +201,69 @@
 </template>
 <style lang="scss">
 @import "~bootstrap/dist/css/bootstrap.css";
-.card {
-  height: 30rem;
-  a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    .card-img-top {
-      height: 10rem;
+:root {
+  --line-border-fill: #41aa5c;
+  --line-border-empty: #696969;
+}
+/* classification */
+
+.classification {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  .classification-word {
+    background-color: #fff;
+    font-weight: bolder;
+    padding: 0px 10px;
+    color: #696969;
+    position: absolute;
+    top: -10px;
+  }
+
+  .classification-choose-part {
+    width: 75%;
+    padding: 30px 10px 20px;
+    border-top: 1px solid #696969;
+    border-bottom: 1px solid #696969;
+    .classification-choose {
+      color: #00008b;
+      text-decoration: none;
+      padding: 0 10px;
     }
-    .card-body-span a {
-      color: #0d6efd;
-    }
-    .time-money-part {
-      justify-content: space-around;
+
+    .classification-choose:hover {
+      font-weight: bold;
+      color: #00008b;
+      text-decoration: none;
     }
   }
 }
 
+/* end of classifications */
+// project
+.container {
+  // 再注意寬度問題
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .card {
+    height: 30rem;
+    .card-top a {
+      text-decoration: none;
+      color: #000;
+      .card-img-top {
+        height: 10rem;
+      }
+    }
+  }
+}
 .pagination {
   margin-top: 2rem;
 }
-
-// .card img {
-//   width: 18rem;
-// }
 </style>
 <script>
 export default {
