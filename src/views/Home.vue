@@ -279,9 +279,10 @@
       </li>
     </ul>
   </nav>
+  <div class="line"></div>
   <!-- footer -->
-  <div class="container ">
-    <div class="row">
+  <div class="container footer mt-4">
+    <div class="row footer-part">
       <!-- 對齊問題 -->
       <div class="col-3 d-flex flex-column text-start">
         <div class="footer-title">社群</div>
@@ -431,6 +432,19 @@
 
 .pagination {
   margin-top: 2rem;
+}
+.line {
+  width:100%;
+  height:0.01rem;
+  background-color: #dcdcdc;
+}
+.footer {
+  height: 18rem;
+.footer-part a{
+  text-decoration: none;
+  color: #0252a1;
+  line-height: 2rem;
+}
 }
 </style>
 <script>
