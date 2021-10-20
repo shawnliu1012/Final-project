@@ -1,17 +1,32 @@
 <template>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fff;">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"
-        >
-        <!-- 參考網站 svg皆為28px 這裡做調整 -->
-        <img
-          src="https://i.imgur.com/MCdlcAI.jpg"
-          alt=""
-          width="38px"
-          height="38px"
-      /></a>
-      <!-- <button
+  <div class="container">
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #fff"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            fill="currentColor"
+            class="bi bi-arrow-up-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"
+            />
+          </svg>
+          <!-- 參考網站 svg皆為28px 這裡做調整 -->
+          <img
+            src="https://i.imgur.com/MCdlcAI.jpg"
+            alt=""
+            width="50px"
+            height="40px"
+        /></a>
+        <!-- <button
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
@@ -22,19 +37,50 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button> -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">探索</a>
-          </li>
-        </ul>
-        <div class="d-flex">
-          <button class="btn btn-light" type="submit">登入</button>
-          <button class="btn btn-light" type="submit">註冊</button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">探索</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <!-- 兩個按鈕之間的間隔 -->
+            <button class="btn btn-light" type="submit">登入</button>
+            <button class="btn btn-light" type="submit">註冊</button>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
+  <!-- img -->
+  <!-- 需新增遮罩效果 -->
+  <div class="container">
+    <a class="img-part" href="">
+      <img src="https://i.imgur.com/UcIpttt.jpg" class="img-fluid" alt="" />
+      <div class="absolut-fill"></div>
+      <div class="img-title">
+        <span class="">剩下10小時</span>
+        <h3 class="">
+          【黃色書刊】勇者系列盒玩公仔｜台灣原創漫畫、動畫、公仔原來都那麼高品質！
+        </h3>
+        <span class="button"
+          >查看計畫內容
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-caret-right-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+            />
+          </svg>
+        </span>
+      </div>
+    </a>
+  </div>
   <!-- classification -->
   <div class="classification">
     <div class="classification-word">探索專案類別</div>
@@ -78,8 +124,8 @@
   </div>
   <div class="container home">
     <!-- 商品區 -->
-    <div class="row justify-content-center">
-      <div class="col-3">
+    <div class="row">
+      <div class="col-4">
         <div class="card text-start" style="width: 16rem">
           <div class="card-top">
             <a href="">
@@ -128,7 +174,7 @@
           </div>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-4">
         <div class="card text-start" style="width: 16rem">
           <div class="card-top">
             <a href="">
@@ -169,7 +215,7 @@
           </div>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-4">
         <div class="card text-start" style="width: 16rem">
           <div class="card-top">
             <a href="">
@@ -240,6 +286,54 @@
   --line-border-fill: #41aa5c;
   --line-border-empty: #696969;
 }
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+// navbar
+// logo
+.navbar-brand svg:hover {
+  animation: change 2s;
+
+  @keyframes change {
+    0% {
+      color: #000;
+      transform: rotate(0deg);
+    }
+    20% {
+      color: #0f1bcc;
+    }
+    60% {
+      color: #d87e2a;
+    }
+    80% {
+      color: #177a30;
+    }
+    100% {
+      color: #000;
+      transform: rotate(720deg);
+    }
+  }
+}
+// hover無法辨識
+.nav-link {
+  border-left: 1px solid #dcdcdc;
+}
+// img
+.img-part {
+  position: relative;
+  .img-part img{
+    opacity: 0.5;
+  }
+  .img-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+}
 /* classification */
 
 .classification {
@@ -267,12 +361,11 @@
       color: #00008b;
       text-decoration: none;
       padding: 0 10px;
-    }
-
-    .classification-choose:hover {
-      font-weight: bold;
-      color: #00008b;
-      text-decoration: none;
+      &:hover {
+        font-weight: bold;
+        color: #00008b;
+        text-decoration: none;
+      }
     }
   }
 }
