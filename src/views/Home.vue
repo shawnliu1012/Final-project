@@ -1,5 +1,40 @@
 <template>
   <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #fff;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"
+        >
+        <!-- 參考網站 svg皆為28px 這裡做調整 -->
+        <img
+          src="https://i.imgur.com/MCdlcAI.jpg"
+          alt=""
+          width="38px"
+          height="38px"
+      /></a>
+      <!-- <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">探索</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <button class="btn btn-light" type="submit">登入</button>
+          <button class="btn btn-light" type="submit">註冊</button>
+        </div>
+      </div>
+    </div>
+  </nav>
   <!-- classification -->
   <div class="classification">
     <div class="classification-word">探索專案類別</div>
@@ -243,24 +278,26 @@
 }
 
 /* end of classifications */
-// project
-.container {
-  // 再注意寬度問題
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-
-  .card {
-    height: 30rem;
-    .card-top a {
-      text-decoration: none;
-      color: #000;
-      .card-img-top {
-        height: 10rem;
-      }
+// .project-navbar  {
+//   // 再注意寬度問題
+//   padding: 0 9rem;
+// }
+// // project
+// .home {
+//   // 再注意寬度問題
+//   padding: 0 9rem;
+// }
+.card {
+  height: 30rem;
+  .card-top a {
+    text-decoration: none;
+    color: #000;
+    .card-img-top {
+      height: 10rem;
     }
   }
 }
+
 .pagination {
   margin-top: 2rem;
 }
