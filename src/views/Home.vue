@@ -279,6 +279,44 @@
       </li>
     </ul>
   </nav>
+  <!-- footer -->
+  <div class="container ">
+    <div class="row">
+      <!-- 對齊問題 -->
+      <div class="col-3 d-flex flex-column text-start">
+        <div class="footer-title">社群</div>
+        <a href="">Facebook</a>
+        <a href="">Instagram</a>
+        <a href="">Twitter</a>
+      </div>
+      <div class="col-3 d-flex flex-column text-start">
+        <div class="footer-title">幫助</div>
+        <a href="">常見問答</a>
+        <a href="">使用條款</a>
+        <a href="">隱私權政策</a>
+      </div>
+      <div class="col-3 d-flex flex-column text-start">
+        <div class="footer-title">關於</div>
+        <a href="">關於我們</a>
+        <a href="">商標資源</a>
+        <div class="trademark">©募思</div>
+      </div>
+      <div class="col-3">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          fill="currentColor"
+          class="bi bi-arrow-up-circle-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
 </template>
 <style lang="scss">
 @import "~bootstrap/dist/css/bootstrap.css";
@@ -323,7 +361,7 @@
 // img
 .img-part {
   position: relative;
-  .img-part img{
+  .img-part img {
     opacity: 0.5;
   }
   .img-title {
