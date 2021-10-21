@@ -31,7 +31,7 @@
               <a class="nav-link" aria-current="page" href="#">探索</a>
             </li>
           </ul>
-          <div class="d-flex">
+          <div class="d-flex navbar-btn">
             <!-- 兩個按鈕之間的間隔 -->
             <button class="btn btn-light" type="submit">登入</button>
             <button class="btn btn-light" type="submit">註冊</button>
@@ -61,7 +61,7 @@
       </div>
       <h3>挺好店應援計畫</h3>
       <span class="covid-span">
-        疫情讓許多你我的愛店面臨經營困難，嘖嘖規劃近期啟動「挺好店應援計畫」，提供實體空間／店家經營者和需要實體空間做展演的團隊應變疫情的上架方案。<a
+        疫情讓許多你我的愛店面臨經營困難，嘖嘖規劃近期啟動「挺好店應援計畫」，提供<strong>實體空間／店家經營者</strong>和<strong>需要實體空間做展演的團隊</strong>應變疫情的上架方案。<a
           href=""
           >瞭解更多</a
         >
@@ -75,11 +75,12 @@
         <div class="card text-start">
           <div class="card-top">
             <a href="">
-              <img
+              <div class="card-top-img" style="background-image: url('https://i.imgur.com/2P79MF2.png');"></div>
+              <!-- <img
                 src="https://i.imgur.com/2P79MF2.png"
                 class="card-img-top"
                 alt=""
-              />
+              /> -->
               <h5 class="card-title">
                 防災教育品牌《 火柴貓大作戰 | 火災求生桌遊》
               </h5>
@@ -677,6 +678,7 @@
 }
 // navbar
 // logo
+
 .navbar-brand svg:hover {
   animation: change 2s;
 
@@ -700,6 +702,11 @@
     }
   }
 }
+.navbar-btn .btn {
+  font-weight: bold;
+  color: #3f3f3f;
+  margin: 0 0.2rem;
+}
 // hover無法辨識
 .nav-link {
   border-left: 1px solid #dcdcdc;
@@ -720,6 +727,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 26rem;
+    text-align: justify;
     // 設定svg水平置中
     display: flex;
     flex-direction: column;
@@ -736,6 +744,12 @@
         color: #0a6b0a;
       }
     }
+    h3 {
+      font-weight: bold;
+    }
+    a {
+      color: rgb(0, 80, 162);
+    }
   }
 }
 // 挺好店商品區
@@ -747,7 +761,12 @@
     border-radius: 2rem;
     box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
     z-index: 1;
-    padding: 4rem 0;
+    padding: 4rem 1rem;
+    .card-top-img {
+      padding-bottom: 56.25%;
+      background-size: cover;
+      background-position: center;
+    }
   }
   .btn {
     position: absolute;
