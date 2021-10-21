@@ -55,7 +55,7 @@
   <!-- 挺好店專區 -->
   <div class="covid">
     <div class="covid-img">
-      <img src="https://i.imgur.com/HnDfduT.png" class="img-fluid" alt="..." />
+      <!-- <img src="https://i.imgur.com/HnDfduT.png" class="img-fluid" alt="..." /> -->
     </div>
     <div class="covid-title">
       <div class="covid-svg">
@@ -574,10 +574,14 @@
 .covid {
   position: relative;
   .covid-img {
-    img {
-      width: 100%;
-      height: auto;
-    }
+    background-image: url("https://i.imgur.com/HnDfduT.png");
+    width: 100%;
+    height: 25rem;
+    background-size: cover;
+    // img {
+    //   width: 100%;
+    //   height: auto;
+    // }
   }
   .covid-title {
     position: absolute;
@@ -586,7 +590,7 @@
     transform: translate(-50%, -50%);
     max-width: 26rem;
     .covid-svg {
-      // 有問題 這個要RWD 必須找到置中方式 
+      // 有問題 這個要RWD 必須找到置中方式
       margin-left: 11rem;
       position: relative;
       width: 4rem;
