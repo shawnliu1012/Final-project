@@ -19,7 +19,6 @@
               d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"
             />
           </svg>
-          <!-- 參考網站 svg皆為28px 這裡做調整 -->
           <img
             src="https://i.imgur.com/MCdlcAI.jpg"
             alt=""
@@ -73,7 +72,7 @@
   <div class="container helpshop">
     <div class="row">
       <div class="col-4">
-        <div class="card text-start" style="width: 16rem">
+        <div class="card text-start">
           <div class="card-top">
             <a href="">
               <img
@@ -121,7 +120,7 @@
         </div>
       </div>
       <div class="col-4">
-        <div class="card text-start" style="width: 16rem">
+        <div class="card text-start">
           <div class="card-top">
             <a href="">
               <img
@@ -162,7 +161,7 @@
         </div>
       </div>
       <div class="col-4">
-        <div class="card text-start" style="width: 16rem">
+        <div class="card text-start">
           <div class="card-top">
             <a href="">
               <img
@@ -259,13 +258,13 @@
   </div>
   <!-- end of classification -->
   <!-- 再回來修改 -->
-  <div class="container project-navbar">
+  <div class="container">
     <!-- 商品方案分類 及按鈕 -->
-    <div class="row mt-4 mb-4 justify-content-between">
-      <div class="col-4">
+    <div class="row mt-4 mb-4">
+      <div class="col-6 flex-start">
         <h4>群眾集資</h4>
       </div>
-      <div class="col-4">
+      <div class="col-6 flex-end">
         <button type="button" class="btn btn-outline-primary">
           更多
           <svg
@@ -283,8 +282,8 @@
         </button>
       </div>
     </div>
-  </div>
-  <div class="container home">
+
+    <!-- <div class="container home"> -->
     <!-- 商品區 -->
     <div class="row">
       <div class="col-4">
@@ -424,22 +423,23 @@
         </div>
       </div>
     </div>
+    <!-- </div> -->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
+            >上一頁</a
+          >
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">下一頁</a>
+        </li>
+      </ul>
+    </nav>
   </div>
-  <nav aria-label="Page navigation example">
-    <ul class="pagination justify-content-center">
-      <li class="page-item disabled">
-        <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
-          >上一頁</a
-        >
-      </li>
-      <li class="page-item"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item">
-        <a class="page-link" href="#">下一頁</a>
-      </li>
-    </ul>
-  </nav>
   <div class="line"></div>
   <div class="container project-navbar">
     <!-- 商品方案分類 及按鈕 -->
@@ -627,25 +627,27 @@
   <div class="container footer mt-4">
     <div class="row footer-part">
       <!-- 對齊問題 -->
-      <div class="col-3 d-flex flex-column text-start">
+      <div class="col-4 d-flex flex-column text-start">
         <div class="footer-title">社群</div>
         <a href="">Facebook</a>
         <a href="">Instagram</a>
         <a href="">Twitter</a>
       </div>
-      <div class="col-3 d-flex flex-column text-start">
+      <div class="col-4 d-flex flex-column text-start">
         <div class="footer-title">幫助</div>
         <a href="">常見問答</a>
         <a href="">使用條款</a>
         <a href="">隱私權政策</a>
       </div>
-      <div class="col-3 d-flex flex-column text-start">
+      <div class="col-4 d-flex flex-column text-start">
         <div class="footer-title">關於</div>
         <a href="">關於我們</a>
         <a href="">商標資源</a>
         <div class="trademark">©募思</div>
       </div>
-      <div class="col-3">
+    </div>
+    <div class="footer-img-part">
+      <a href="footer-svg" class="">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="28"
@@ -658,7 +660,7 @@
             d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"
           />
         </svg>
-      </div>
+      </a>
     </div>
   </div>
 </template>
@@ -743,15 +745,18 @@
   .row {
     background-color: #fff;
     border-radius: 2rem;
-    box-shadow: 0 0 30px 2px rgba(0,0,0,0.1);
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
     z-index: 1;
     padding: 4rem 0;
   }
   .btn {
     position: absolute;
-    bottom: 5%;
+    bottom: 1%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
   }
 }
 // img
@@ -863,10 +868,19 @@
 }
 .footer {
   height: 18rem;
+  position: relative;
   .footer-part a {
     text-decoration: none;
-    color: #0252a1;
+    color: rgb(0, 80, 162);
     line-height: 2rem;
+  }
+  .footer-img-part {
+    position: absolute;
+    bottom: 90%;
+    left: 90%;
+    a {
+      color: #000;
+    }
   }
 }
 </style>
