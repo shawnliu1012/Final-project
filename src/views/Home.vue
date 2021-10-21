@@ -26,17 +26,6 @@
             width="50px"
             height="40px"
         /></a>
-        <!-- <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button> -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -80,6 +69,150 @@
       </span>
     </div>
   </div>
+  <!-- 挺好店商品區 -->
+  <div class="container helpshop">
+    <div class="row">
+      <div class="col-4">
+        <div class="card text-start" style="width: 16rem">
+          <div class="card-top">
+            <a href="">
+              <img
+                src="https://i.imgur.com/2P79MF2.png"
+                class="card-img-top"
+                alt=""
+              />
+              <h5 class="card-title">
+                防災教育品牌《 火柴貓大作戰 | 火災求生桌遊》
+              </h5>
+            </a>
+          </div>
+          <div class="card-body pb4">
+            <span class=""
+              >遊戲 By <a class="" href="">dosomething studio</a></span
+            >
+            <p class="card-text">
+              火柴貓大作戰是由曾經獲得許多國際設計獎項的團隊dosomething
+              studio，研發設計的火災求生桌遊，希望...
+            </p>
+          </div>
+          <div class="container-project-footer">
+            <div class="cpf-line"></div>
+            <div class="time-money-part">
+              <span class="time"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-clock"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                  />
+                  <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                  /></svg
+                >剩下4小時</span
+              >
+              <div class="money">NT$123,558</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card text-start" style="width: 16rem">
+          <div class="card-top">
+            <a href="">
+              <img
+                src="https://i.imgur.com/WV4ViWO.jpg"
+                class="card-img-top"
+                alt=""
+              />
+              <h5 class="card-title">流光百色 2022日曆</h5>
+            </a>
+          </div>
+          <div class="card-body pb4">
+            <span class="">設計 By <a class="" href="">不只是</a></span>
+            <p class="card-text">讓心成為三稜鏡，日光穿透，虹彩斑斕閃爍</p>
+          </div>
+          <div class="container-project-footer">
+            <div class="cpf-line"></div>
+            <div class="time-money-part">
+              <span class="time"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-clock"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                  />
+                  <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                  /></svg
+                >剩下4小時</span
+              >
+              <div class="money">NT$123,558</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card text-start" style="width: 16rem">
+          <div class="card-top">
+            <a href="">
+              <img
+                src="https://i.imgur.com/ELfBBRy.jpg"
+                class="card-img-top"
+                alt=""
+              />
+              <h5 class="card-title">
+                厭世好療癒桌曆｜35組紙娃娃穿搭療癒你的厭世日常
+              </h5>
+            </a>
+          </div>
+          <div class="card-body">
+            <span class="card-body-span"
+              >插畫漫畫 By <a class="" href="">厭世女子文創工作室</a></span
+            >
+            <p class="card-text">
+              現代社會讓人生活壓力大，厭世成為大家的共通點，《厭世女子》希望透過插畫圖文道出你心中的厭世，【厭世好療癒套組】因此...
+            </p>
+          </div>
+          <div class="container-project-footer">
+            <div class="cpf-line"></div>
+            <div class="time-money-part">
+              <span class="time"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-clock"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                  />
+                  <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                  /></svg
+                >剩下4小時</span
+              >
+              <div class="money">NT$123,558</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-light helpshop-btn">
+      更多挺好店計畫
+    </button>
+  </div>
   <!-- img -->
   <!-- 需新增遮罩效果 -->
   <div class="container">
@@ -109,6 +242,7 @@
       </div>
     </a>
   </div>
+
   <!-- classification -->
   <div class="classification">
     <div class="classification-word">探索專案類別</div>
@@ -570,6 +704,7 @@
 }
 // 挺好店
 .covid {
+  z-index: -1;
   position: relative;
   .covid-img {
     background-image: url("https://i.imgur.com/HnDfduT.png");
@@ -599,6 +734,24 @@
         color: #0a6b0a;
       }
     }
+  }
+}
+// 挺好店商品區
+.helpshop {
+  margin-top: -2rem;
+  position: relative;
+  .row {
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 0 30px 2px rgba(0,0,0,0.1);
+    z-index: 1;
+    padding: 4rem 0;
+  }
+  .btn {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 // img
