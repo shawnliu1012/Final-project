@@ -76,11 +76,7 @@
           <div class="card-top">
             <a href="">
               <div class="card-top-img" style="background-image: url('https://i.imgur.com/2P79MF2.png');"></div>
-              <!-- <img
-                src="https://i.imgur.com/2P79MF2.png"
-                class="card-img-top"
-                alt=""
-              /> -->
+              <!-- 10.22 0207 修改內文間距及文字顏色底線 修好後其餘全仿照此 -->
               <h5 class="card-title">
                 防災教育品牌《 火柴貓大作戰 | 火災求生桌遊》
               </h5>
@@ -670,6 +666,7 @@
 :root {
   --line-border-fill: #41aa5c;
   --line-border-empty: #696969;
+  --font-color:rgb(0, 80, 162);
 }
 .container {
   max-width: 1000px;
@@ -748,7 +745,7 @@
       font-weight: bold;
     }
     a {
-      color: rgb(0, 80, 162);
+      color: var(--font-color);
     }
   }
 }
@@ -816,12 +813,12 @@
     border-top: 1px solid #696969;
     border-bottom: 1px solid #696969;
     .classification-choose {
-      color: #00008b;
+      color: var(--font-color);
       text-decoration: none;
       padding: 0 10px;
       &:hover {
         font-weight: bold;
-        color: #00008b;
+        color: var(--font-color);
         text-decoration: none;
       }
     }
@@ -890,7 +887,7 @@
   position: relative;
   .footer-part a {
     text-decoration: none;
-    color: rgb(0, 80, 162);
+    color: var(--font-color);
     line-height: 2rem;
   }
   .footer-img-part {
