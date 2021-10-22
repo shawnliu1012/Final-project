@@ -75,14 +75,16 @@
         <div class="card text-start">
           <div class="card-top">
             <a href="">
-              <div class="card-top-img" style="background-image: url('https://i.imgur.com/2P79MF2.png');"></div>
-              <!-- 10.22 0207 修改內文間距及文字顏色底線 修好後其餘全仿照此 -->
+              <div
+                class="card-top-img"
+                style="background-image: url('https://i.imgur.com/2P79MF2.png')"
+              ></div>
               <h5 class="card-title">
                 防災教育品牌《 火柴貓大作戰 | 火災求生桌遊》
               </h5>
             </a>
           </div>
-          <div class="card-body pb4">
+          <div class="card-middle">
             <span class=""
               >遊戲 By <a class="" href="">dosomething studio</a></span
             >
@@ -91,7 +93,7 @@
               studio，研發設計的火災求生桌遊，希望...
             </p>
           </div>
-          <div class="container-project-footer">
+          <div class="card-bootom">
             <div class="cpf-line"></div>
             <div class="time-money-part">
               <span class="time"
@@ -120,19 +122,18 @@
         <div class="card text-start">
           <div class="card-top">
             <a href="">
-              <img
-                src="https://i.imgur.com/WV4ViWO.jpg"
-                class="card-img-top"
-                alt=""
-              />
+              <div
+                class="card-top-img"
+                style="background-image: url('https://i.imgur.com/WV4ViWO.jpg')"
+              ></div>
               <h5 class="card-title">流光百色 2022日曆</h5>
             </a>
           </div>
-          <div class="card-body pb4">
+          <div class="card-middle">
             <span class="">設計 By <a class="" href="">不只是</a></span>
             <p class="card-text">讓心成為三稜鏡，日光穿透，虹彩斑斕閃爍</p>
           </div>
-          <div class="container-project-footer">
+          <div class="card-bootom">
             <div class="cpf-line"></div>
             <div class="time-money-part">
               <span class="time"
@@ -161,25 +162,24 @@
         <div class="card text-start">
           <div class="card-top">
             <a href="">
-              <img
-                src="https://i.imgur.com/ELfBBRy.jpg"
-                class="card-img-top"
-                alt=""
-              />
+              <div
+                class="card-top-img"
+                style="background-image: url('https://i.imgur.com/ELfBBRy.jpg')"
+              ></div>
               <h5 class="card-title">
                 厭世好療癒桌曆｜35組紙娃娃穿搭療癒你的厭世日常
               </h5>
             </a>
           </div>
-          <div class="card-body">
-            <span class="card-body-span"
+          <div class="card-middle">
+            <span class=""
               >插畫漫畫 By <a class="" href="">厭世女子文創工作室</a></span
             >
             <p class="card-text">
               現代社會讓人生活壓力大，厭世成為大家的共通點，《厭世女子》希望透過插畫圖文道出你心中的厭世，【厭世好療癒套組】因此...
             </p>
           </div>
-          <div class="container-project-footer">
+          <div class="card-bootom">
             <div class="cpf-line"></div>
             <div class="time-money-part">
               <span class="time"
@@ -666,7 +666,7 @@
 :root {
   --line-border-fill: #41aa5c;
   --line-border-empty: #696969;
-  --font-color:rgb(0, 80, 162);
+  --font-color: rgb(0, 80, 162);
 }
 .container {
   max-width: 1000px;
@@ -743,6 +743,7 @@
     }
     h3 {
       font-weight: bold;
+      padding-top: 1rem;
     }
     a {
       color: var(--font-color);
@@ -759,10 +760,41 @@
     box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
     z-index: 1;
     padding: 4rem 1rem;
-    .card-top-img {
-      padding-bottom: 56.25%;
-      background-size: cover;
-      background-position: center;
+    .col-4 {
+      position: relative;
+      .card {
+        a {
+          text-decoration: none;
+          color: #000;
+          .card-top-img {
+            padding-bottom: 56.25%;
+            background-size: cover;
+            background-position: center;
+          }
+          h5 {
+            font-weight: bold;
+            margin-top: 2rem;
+          }
+        }
+        .card-middle {
+          span {
+            color: #767676;
+            font-size: 0.75rem;
+            a {
+              text-decoration: none;
+              color: var(--font-color);
+            }
+          }
+          .card-text {
+            padding: 1rem;
+            margin-bottom: 4rem;
+          }
+        }
+        .card-bottom {
+          position: absolute;
+          bottom: 10%;
+        }
+      }
     }
   }
   .btn {
@@ -837,13 +869,6 @@
 // }
 .card {
   height: 30rem;
-  .card-top a {
-    text-decoration: none;
-    color: #000;
-    .card-img-top {
-      height: 10rem;
-    }
-  }
 }
 // empty line
 // .cpf-line {
