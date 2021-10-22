@@ -93,7 +93,7 @@
               studio，研發設計的火災求生桌遊，希望...
             </p>
           </div>
-          <div class="card-bootom">
+          <div class="card-footer">
             <div class="cpf-line"></div>
             <div class="time-money-part">
               <span class="time"
@@ -133,7 +133,7 @@
             <span class="">設計 By <a class="" href="">不只是</a></span>
             <p class="card-text">讓心成為三稜鏡，日光穿透，虹彩斑斕閃爍</p>
           </div>
-          <div class="card-bootom">
+          <div class="card-footer">
             <div class="cpf-line"></div>
             <div class="time-money-part">
               <span class="time"
@@ -179,7 +179,7 @@
               現代社會讓人生活壓力大，厭世成為大家的共通點，《厭世女子》希望透過插畫圖文道出你心中的厭世，【厭世好療癒套組】因此...
             </p>
           </div>
-          <div class="card-bootom">
+          <div class="card-footer">
             <div class="cpf-line"></div>
             <div class="time-money-part">
               <span class="time"
@@ -205,6 +205,7 @@
         </div>
       </div>
     </div>
+
     <button type="button" class="btn btn-light helpshop-btn">
       更多挺好店計畫
     </button>
@@ -760,51 +761,57 @@
     box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
     z-index: 1;
     padding: 4rem 1rem;
-    .col-4 {
+    .card {
+      border-style: none;
       position: relative;
-      .card {
-        a {
-          text-decoration: none;
-          color: #000;
-          .card-top-img {
-            padding-bottom: 56.25%;
-            background-size: cover;
-            background-position: center;
-          }
-          h5 {
-            font-weight: bold;
-            margin-top: 2rem;
+      a {
+        text-decoration: none;
+        color: #000;
+        .card-top-img {
+          padding-bottom: 56.25%;
+          background-size: cover;
+          background-position: center;
+        }
+        h5 {
+          font-weight: bold;
+          margin-top: 2rem;
+        }
+      }
+      .card-middle {
+        span {
+          color: #767676;
+          font-size: 0.75rem;
+          a {
+            text-decoration: none;
+            color: var(--font-color);
           }
         }
-        .card-middle {
-          span {
-            color: #767676;
-            font-size: 0.75rem;
-            a {
-              text-decoration: none;
-              color: var(--font-color);
-            }
-          }
-          .card-text {
-            padding: 1rem;
-            margin-bottom: 4rem;
-          }
+        .card-text {
+          padding: 1rem;
+          margin-bottom: 4rem;
         }
-        .card-bottom {
-          position: absolute;
-          bottom: 10%;
-        }
+      }
+      .card-footer {
+        background-color: #fff;
+        border-style: none;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
       }
     }
   }
+
   .btn {
     position: absolute;
-    bottom: 1%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 7%;
+    left: 43%;
     padding: 1rem;
     background-color: #fff;
     box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 0.25s ease-out;
+    }
   }
 }
 // img
