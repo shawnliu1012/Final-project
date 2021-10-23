@@ -32,7 +32,6 @@
             </li>
           </ul>
           <div class="d-flex navbar-btn">
-            <!-- 兩個按鈕之間的間隔 -->
             <button class="btn btn-light" type="submit">登入</button>
             <button class="btn btn-light" type="submit">註冊</button>
           </div>
