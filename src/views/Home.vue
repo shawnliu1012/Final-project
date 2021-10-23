@@ -211,31 +211,19 @@
     </button>
   </div>
   <!-- img -->
-  <!-- 需新增遮罩效果 -->
   <div class="container">
-    <a class="img-part" href="">
-      <img src="https://i.imgur.com/UcIpttt.jpg" class="img-fluid" alt="" />
-      <div class="absolut-fill"></div>
+    <a
+      class="img-part"
+      href=""
+      style="background-image: url('https://i.imgur.com/UcIpttt.jpg')"
+    >
+      <div class="img-cover"></div>
       <div class="img-title">
-        <span class="">剩下10小時</span>
+        <span class="img-title-time">剩下10小時</span>
         <h3 class="">
-          【黃色書刊】勇者系列盒玩公仔｜台灣原創漫畫、動畫、公仔原來都那麼高品質！
+          【黃色書刊】勇者系列盒玩公仔｜台灣原創漫畫動畫、公仔原來那麼高品質！
         </h3>
-        <span class="button"
-          >查看計畫內容
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-caret-right-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
-            />
-          </svg>
-        </span>
+        <span class="button">查看計畫內容▸ </span>
       </div>
     </a>
   </div>
@@ -255,50 +243,35 @@
     </div>
   </div>
   <!-- end of classification -->
-  <!-- 再回來修改 -->
-  <div class="container">
-    <!-- 商品方案分類 及按鈕 -->
+
+  <!-- 商品方案分類 及按鈕 -->
+
+  <div class="container homeproject">
     <div class="row mt-4 mb-4">
-      <div class="col-6 flex-start">
+      <div class="col-lg-4 text-start">
         <h4>群眾集資</h4>
       </div>
-      <div class="col-6 flex-end">
-        <button type="button" class="btn btn-outline-primary">
-          更多
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-caret-right-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
-            />
-          </svg>
-        </button>
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4 text-end">
+        <button type="button" class="btn btn-outline-primary">更多▸</button>
       </div>
     </div>
-
-    <!-- <div class="container home"> -->
     <!-- 商品區 -->
     <div class="row">
       <div class="col-4">
-        <div class="card text-start" style="width: 16rem">
+        <div class="card text-start">
           <div class="card-top">
             <a href="">
-              <img
-                src="https://i.imgur.com/2P79MF2.png"
-                class="card-img-top"
-                alt=""
-              />
+              <div
+                class="card-top-img"
+                style="background-image: url('https://i.imgur.com/2P79MF2.png')"
+              ></div>
               <h5 class="card-title">
                 防災教育品牌《 火柴貓大作戰 | 火災求生桌遊》
               </h5>
             </a>
           </div>
-          <div class="card-body pb4">
+          <div class="card-middle">
             <span class=""
               >遊戲 By <a class="" href="">dosomething studio</a></span
             >
@@ -307,7 +280,7 @@
               studio，研發設計的火災求生桌遊，希望...
             </p>
           </div>
-          <div class="container-project-footer">
+          <div class="card-footer">
             <div class="cpf-line"></div>
             <div class="time-money-part">
               <span class="time"
@@ -333,22 +306,21 @@
         </div>
       </div>
       <div class="col-4">
-        <div class="card text-start" style="width: 16rem">
+        <div class="card text-start">
           <div class="card-top">
             <a href="">
-              <img
-                src="https://i.imgur.com/WV4ViWO.jpg"
-                class="card-img-top"
-                alt=""
-              />
+              <div
+                class="card-top-img"
+                style="background-image: url('https://i.imgur.com/WV4ViWO.jpg')"
+              ></div>
               <h5 class="card-title">流光百色 2022日曆</h5>
             </a>
           </div>
-          <div class="card-body pb4">
+          <div class="card-middle">
             <span class="">設計 By <a class="" href="">不只是</a></span>
             <p class="card-text">讓心成為三稜鏡，日光穿透，虹彩斑斕閃爍</p>
           </div>
-          <div class="container-project-footer">
+          <div class="card-footer">
             <div class="cpf-line"></div>
             <div class="time-money-part">
               <span class="time"
@@ -374,28 +346,27 @@
         </div>
       </div>
       <div class="col-4">
-        <div class="card text-start" style="width: 16rem">
+        <div class="card text-start">
           <div class="card-top">
             <a href="">
-              <img
-                src="https://i.imgur.com/ELfBBRy.jpg"
-                class="card-img-top"
-                alt=""
-              />
+              <div
+                class="card-top-img"
+                style="background-image: url('https://i.imgur.com/ELfBBRy.jpg')"
+              ></div>
               <h5 class="card-title">
                 厭世好療癒桌曆｜35組紙娃娃穿搭療癒你的厭世日常
               </h5>
             </a>
           </div>
-          <div class="card-body">
-            <span class="card-body-span"
+          <div class="card-middle">
+            <span class=""
               >插畫漫畫 By <a class="" href="">厭世女子文創工作室</a></span
             >
             <p class="card-text">
               現代社會讓人生活壓力大，厭世成為大家的共通點，《厭世女子》希望透過插畫圖文道出你心中的厭世，【厭世好療癒套組】因此...
             </p>
           </div>
-          <div class="container-project-footer">
+          <div class="card-footer">
             <div class="cpf-line"></div>
             <div class="time-money-part">
               <span class="time"
@@ -421,7 +392,7 @@
         </div>
       </div>
     </div>
-    <!-- </div> -->
+
     <nav aria-label="Page navigation example">
       <ul class="pagination justify-content-center">
         <li class="page-item disabled">
@@ -439,49 +410,32 @@
     </nav>
   </div>
   <div class="line"></div>
-  <div class="container project-navbar">
-    <!-- 商品方案分類 及按鈕 -->
-    <div class="row mt-4 mb-4 justify-content-between">
-      <div class="col-4">
+  <div class="container homeproject">
+    <div class="row mt-4 mb-4">
+      <div class="col-lg-4 text-start">
         <h4>預購式專案</h4>
       </div>
-      <div class="col-4">
-        <button type="button" class="btn btn-outline-primary">
-          更多
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-caret-right-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
-            />
-          </svg>
-        </button>
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4 text-end">
+        <button type="button" class="btn btn-outline-primary">更多▸</button>
       </div>
     </div>
-  </div>
-  <div class="container home">
     <!-- 商品區 -->
     <div class="row">
       <div class="col-4">
-        <div class="card text-start" style="width: 16rem">
+        <div class="card text-start">
           <div class="card-top">
             <a href="">
-              <img
-                src="https://i.imgur.com/2P79MF2.png"
-                class="card-img-top"
-                alt=""
-              />
+              <div
+                class="card-top-img"
+                style="background-image: url('https://i.imgur.com/2P79MF2.png')"
+              ></div>
               <h5 class="card-title">
                 防災教育品牌《 火柴貓大作戰 | 火災求生桌遊》
               </h5>
             </a>
           </div>
-          <div class="card-body pb4">
+          <div class="card-middle">
             <span class=""
               >遊戲 By <a class="" href="">dosomething studio</a></span
             >
@@ -490,7 +444,7 @@
               studio，研發設計的火災求生桌遊，希望...
             </p>
           </div>
-          <div class="container-project-footer">
+          <div class="card-footer">
             <div class="cpf-line"></div>
             <div class="time-money-part">
               <span class="time"
@@ -516,22 +470,21 @@
         </div>
       </div>
       <div class="col-4">
-        <div class="card text-start" style="width: 16rem">
+        <div class="card text-start">
           <div class="card-top">
             <a href="">
-              <img
-                src="https://i.imgur.com/WV4ViWO.jpg"
-                class="card-img-top"
-                alt=""
-              />
+              <div
+                class="card-top-img"
+                style="background-image: url('https://i.imgur.com/WV4ViWO.jpg')"
+              ></div>
               <h5 class="card-title">流光百色 2022日曆</h5>
             </a>
           </div>
-          <div class="card-body pb4">
+          <div class="card-middle">
             <span class="">設計 By <a class="" href="">不只是</a></span>
             <p class="card-text">讓心成為三稜鏡，日光穿透，虹彩斑斕閃爍</p>
           </div>
-          <div class="container-project-footer">
+          <div class="card-footer">
             <div class="cpf-line"></div>
             <div class="time-money-part">
               <span class="time"
@@ -557,28 +510,27 @@
         </div>
       </div>
       <div class="col-4">
-        <div class="card text-start" style="width: 16rem">
+        <div class="card text-start">
           <div class="card-top">
             <a href="">
-              <img
-                src="https://i.imgur.com/ELfBBRy.jpg"
-                class="card-img-top"
-                alt=""
-              />
+              <div
+                class="card-top-img"
+                style="background-image: url('https://i.imgur.com/ELfBBRy.jpg')"
+              ></div>
               <h5 class="card-title">
                 厭世好療癒桌曆｜35組紙娃娃穿搭療癒你的厭世日常
               </h5>
             </a>
           </div>
-          <div class="card-body">
-            <span class="card-body-span"
+          <div class="card-middle">
+            <span class=""
               >插畫漫畫 By <a class="" href="">厭世女子文創工作室</a></span
             >
             <p class="card-text">
               現代社會讓人生活壓力大，厭世成為大家的共通點，《厭世女子》希望透過插畫圖文道出你心中的厭世，【厭世好療癒套組】因此...
             </p>
           </div>
-          <div class="container-project-footer">
+          <div class="card-footer">
             <div class="cpf-line"></div>
             <div class="time-money-part">
               <span class="time"
@@ -604,22 +556,23 @@
         </div>
       </div>
     </div>
+
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
+            >上一頁</a
+          >
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">下一頁</a>
+        </li>
+      </ul>
+    </nav>
   </div>
-  <nav aria-label="Page navigation example">
-    <ul class="pagination justify-content-center">
-      <li class="page-item disabled">
-        <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
-          >上一頁</a
-        >
-      </li>
-      <li class="page-item"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item">
-        <a class="page-link" href="#">下一頁</a>
-      </li>
-    </ul>
-  </nav>
   <div class="line"></div>
   <!-- footer -->
   <div class="container footer mt-4">
@@ -764,6 +717,7 @@
     .card {
       border-style: none;
       position: relative;
+      height: 30rem;
       a {
         text-decoration: none;
         color: #000;
@@ -797,6 +751,28 @@
         position: absolute;
         bottom: 0;
         width: 100%;
+        /* 注意下fill設定 */
+        .cpf-line {
+          width: 100%;
+          height: 0.15rem;
+          background-color: var(--line-border-fill);
+          border-radius: 0.2rem;
+        }
+        .time-money-part {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .time {
+            line-height: 1.8rem;
+            font-size: 1rem;
+            svg {
+              margin-bottom: 0.2rem;
+            }
+          }
+          .money {
+            font-weight: bold;
+          }
+        }
       }
     }
   }
@@ -815,17 +791,45 @@
   }
 }
 // img
-.img-part {
-  position: relative;
-  .img-part img {
-    opacity: 0.5;
-  }
-  .img-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
+.container {
+  padding: 2rem 0;
+  .img-part {
+    display: block;
+    text-decoration: none;
+    padding-bottom: 35rem;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 0.2rem;
+    .img-cover {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(16, 16, 16, 0.2);
+      border-radius: 0.2rem;
+    }
+    .img-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      .img-title-time {
+        font-size: 1rem;
+        text-decoration: underline;
+      }
+      h3 {
+        padding: 1rem 0;
+      }
+      .button {
+        padding: 0.75rem 1.5rem;
+        border: 1px solid #fff;
+        border-radius: 0.2rem;
+        font-weight: bold;
+      }
+    }
   }
 }
 /* classification */
@@ -874,9 +878,86 @@
 //   // 再注意寬度問題
 //   padding: 0 9rem;
 // }
-.card {
-  height: 30rem;
+.homeproject {
+  .row {
+    .btn {
+      color: var(--font-color);
+      &:hover {
+        background-color: #fff;
+        color: #000;
+        border-color: #000;
+      }
+    }
+    .card {
+      border-style: none;
+      position: relative;
+      height: 30rem;
+      a {
+        text-decoration: none;
+        color: #000;
+        .card-top-img {
+          padding-bottom: 56.25%;
+          background-size: cover;
+          background-position: center;
+        }
+        h5 {
+          font-weight: bold;
+          margin-top: 2rem;
+        }
+      }
+      .card-middle {
+        span {
+          color: #767676;
+          font-size: 0.75rem;
+          a {
+            text-decoration: none;
+            color: var(--font-color);
+          }
+        }
+        .card-text {
+          padding: 1rem;
+          margin-bottom: 4rem;
+        }
+      }
+      .card-footer {
+        background-color: #fff;
+        border-style: none;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        /* 注意下fill設定 */
+        .cpf-line {
+          width: 100%;
+          height: 0.15rem;
+          background-color: var(--line-border-fill);
+          border-radius: 0.2rem;
+        }
+        .time-money-part {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .time {
+            line-height: 1.8rem;
+            font-size: 1rem;
+            svg {
+              margin-bottom: 0.2rem;
+            }
+          }
+          .money {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  .pagination {
+    margin-top: 2rem;
+    .page-item a {
+      color: var(--font-color);
+    }
+  }
 }
+
 // empty line
 // .cpf-line {
 //   width: 100%;
@@ -885,35 +966,13 @@
 //   border-radius: 0.2rem;
 //   margin-top: 0.7rem;
 // }
-/* 注意下fill設定 */
-.cpf-line {
-  width: 100%;
-  height: 0.15rem;
-  background-color: var(--line-border-fill);
-  border-radius: 0.2rem;
-}
 
-.time-money-part {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  .time {
-    line-height: 1.8rem;
-    font-size: 1rem;
-    svg {
-      margin-bottom: 0.2rem;
-    }
-  }
-}
-
-.pagination {
-  margin-top: 2rem;
-}
 .line {
   width: 100%;
   height: 0.01rem;
   background-color: #dcdcdc;
 }
+// footer
 .footer {
   height: 18rem;
   position: relative;
