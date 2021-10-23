@@ -1031,15 +1031,7 @@
 }
 
 /* end of classifications */
-// .project-navbar  {
-//   // 再注意寬度問題
-//   padding: 0 9rem;
-// }
-// // project
-// .home {
-//   // 再注意寬度問題
-//   padding: 0 9rem;
-// }
+
 .homeproject {
   .row {
     .btn {

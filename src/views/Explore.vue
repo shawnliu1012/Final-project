@@ -93,12 +93,223 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 d-flex align-items-center justify-content-end">
         <input type="search" name="" placeholder="搜尋計畫" />
+        <div class="dropdown">
+          <button
+            class="btn btn-light dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            排序
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">所有計畫</a></li>
+            <li><a class="dropdown-item" href="#">專案金額</a></li>
+            <li><a class="dropdown-item" href="#">最後衝刺</a></li>
+            <li><a class="dropdown-item" href="#">最新啟動-2.453c1</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
   <!-- project -->
+  <div class="container explore-project">
+    <div class="row">
+      <div class="col-3">
+        <div class="card text-start">
+          <div class="card-top">
+            <a href="">
+              <div
+                class="card-top-img"
+                style="background-image: url('https://i.imgur.com/2P79MF2.png')"
+              ></div>
+              <h5 class="card-title">
+                防災教育品牌《 火柴貓大作戰 | 火災求生桌遊》
+              </h5>
+            </a>
+          </div>
+          <div class="card-middle">
+            <span class=""
+              >遊戲 By <a class="" href="">dosomething studio</a></span
+            >
+            <p class="card-text">
+              火柴貓大作戰是由曾經獲得許多國際設計獎項的團隊dosomething
+              studio，研發設計的火災求生桌遊，希望...
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="cpf-line"></div>
+            <div class="time-money-part">
+              <span class="time"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-clock"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                  />
+                  <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                  /></svg
+                >剩下4小時</span
+              >
+              <div class="money">NT$123,558</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card text-start">
+          <div class="card-top">
+            <a href="">
+              <div
+                class="card-top-img"
+                style="background-image: url('https://i.imgur.com/WV4ViWO.jpg')"
+              ></div>
+              <h5 class="card-title">流光百色 2022日曆</h5>
+            </a>
+          </div>
+          <div class="card-middle">
+            <span class="">設計 By <a class="" href="">不只是</a></span>
+            <p class="card-text">讓心成為三稜鏡，日光穿透，虹彩斑斕閃爍</p>
+          </div>
+          <div class="card-footer">
+            <div class="cpf-line"></div>
+            <div class="time-money-part">
+              <span class="time"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-clock"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                  />
+                  <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                  /></svg
+                >剩下4小時</span
+              >
+              <div class="money">NT$123,558</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card text-start">
+          <div class="card-top">
+            <a href="">
+              <div
+                class="card-top-img"
+                style="background-image: url('https://i.imgur.com/ELfBBRy.jpg')"
+              ></div>
+              <h5 class="card-title">
+                厭世好療癒桌曆｜35組紙娃娃穿搭療癒你的厭世日常
+              </h5>
+            </a>
+          </div>
+          <div class="card-middle">
+            <span class=""
+              >插畫漫畫 By <a class="" href="">厭世女子文創工作室</a></span
+            >
+            <p class="card-text">
+              現代社會讓人生活壓力大，厭世成為大家的共通點，《厭世女子》希望透過插畫圖文道出你心中的厭世，【厭世好療癒套組】因此...
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="cpf-line"></div>
+            <div class="time-money-part">
+              <span class="time"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-clock"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                  />
+                  <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                  /></svg
+                >剩下4小時</span
+              >
+              <div class="money">NT$123,558</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card text-start">
+          <div class="card-top">
+            <a href="">
+              <div
+                class="card-top-img"
+                style="background-image: url('https://i.imgur.com/WV4ViWO.jpg')"
+              ></div>
+              <h5 class="card-title">流光百色 2022日曆</h5>
+            </a>
+          </div>
+          <div class="card-middle">
+            <span class="">設計 By <a class="" href="">不只是</a></span>
+            <p class="card-text">讓心成為三稜鏡，日光穿透，虹彩斑斕閃爍</p>
+          </div>
+          <div class="card-footer">
+            <div class="cpf-line"></div>
+            <div class="time-money-part">
+              <span class="time"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-clock"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                  />
+                  <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                  /></svg
+                >剩下4小時</span
+              >
+              <div class="money">NT$123,558</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
+            >上一頁</a
+          >
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">下一頁</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
   <!-- footer -->
   <div class="container footer mt-4">
     <div class="row footer-part">
@@ -141,4 +352,78 @@
 </template>
 <style lang="scss">
 @import "~bootstrap/dist/css/bootstrap.css";
+// explore-project
+.explore-project {
+  .card {
+    border-style: none;
+    position: relative;
+    height: 30rem;
+    a {
+      text-decoration: none;
+      color: #000;
+      .card-top-img {
+        padding-bottom: 56.25%;
+        background-size: cover;
+        background-position: center;
+        border-radius: 0.2rem;
+      }
+      h5 {
+        font-weight: bold;
+        margin-top: 2rem;
+      }
+    }
+    .card-middle {
+      span {
+        color: #767676;
+        font-size: 0.75rem;
+        a {
+          text-decoration: none;
+          color: var(--font-color);
+        }
+      }
+      .card-text {
+        padding: 1rem;
+        margin-bottom: 4rem;
+      }
+    }
+    .card-footer {
+      background-color: #fff;
+      border-style: none;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      /* 注意下fill設定 */
+      .cpf-line {
+        width: 100%;
+        height: 0.15rem;
+        background-color: var(--line-border-fill);
+        border-radius: 0.2rem;
+      }
+      .time-money-part {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .time {
+          line-height: 1.8rem;
+          font-size: 1rem;
+          svg {
+            margin-bottom: 0.2rem;
+          }
+        }
+        .money {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .pagination {
+    margin-top: 2rem;
+    .page-item a {
+      color: var(--font-color);
+    }
+  }
+}
 </style>
+<script>
+// import 'bootstrap/js/dist/dropdown';
+</script>
