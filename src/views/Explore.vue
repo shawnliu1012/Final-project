@@ -47,14 +47,13 @@
           <button
             class="btn btn-light dropdown-toggle"
             type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             專案性質
           </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
             <li><a class="dropdown-item" href="#">全部</a></li>
             <li><a class="dropdown-item" href="#">群眾集資</a></li>
             <li><a class="dropdown-item" href="#">訂閱式專案</a></li>
@@ -66,32 +65,29 @@
           <button
             class="btn btn-light dropdown-toggle"
             type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             主題分類
           </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">全部</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">音樂</a>
-            <a class="dropdown-item" href="#">攝影</a>
-            <a class="dropdown-item" href="#">出版</a>
-            <a class="dropdown-item" href="#">時尚</a>
-            <a class="dropdown-item" href="#">設計</a>
-            <a class="dropdown-item" href="#">表演</a>
-            <a class="dropdown-item" href="#">藝術</a>
-            <a class="dropdown-item" href="#">科技</a>
-            <a class="dropdown-item" href="#">教育</a>
-            <a class="dropdown-item" href="#">遊戲</a>
-            <a class="dropdown-item" href="#">飲食</a>
-            <a class="dropdown-item" href="#">空間</a>
-            <a class="dropdown-item" href="#">社會</a>
-            <a class="dropdown-item" href="#">地方創生</a>
-          </div>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">音樂</a></li>
+            <li><a class="dropdown-item" href="#">攝影</a></li>
+            <li><a class="dropdown-item" href="#">出版</a></li>
+            <li><a class="dropdown-item" href="#">時尚</a></li>
+            <li><a class="dropdown-item" href="#">設計</a></li>
+            <li><a class="dropdown-item" href="#">表演</a></li>
+            <li><a class="dropdown-item" href="#">藝術</a></li>
+            <li><a class="dropdown-item" href="#">教育</a></li>
+            <li><a class="dropdown-item" href="#">遊戲</a></li>
+            <li><a class="dropdown-item" href="#">飲食</a></li>
+            <li><a class="dropdown-item" href="#">空間</a></li>
+            <li><a class="dropdown-item" href="#">社會</a></li>
+            <li><a class="dropdown-item" href="#">地方創生</a></li>
+          </ul>
         </div>
+        
       </div>
       <div class="col-lg-6 d-flex align-items-center justify-content-end">
         <input type="search" name="" placeholder="搜尋計畫" />
@@ -99,18 +95,17 @@
           <button
             class="btn btn-light dropdown-toggle"
             type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             排序
           </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
             <li><a class="dropdown-item" href="#">所有計畫</a></li>
             <li><a class="dropdown-item" href="#">專案金額</a></li>
             <li><a class="dropdown-item" href="#">最後衝刺</a></li>
-            <li><a class="dropdown-item" href="#">最新啟動-2.453c1</a></li>
+            <li><a class="dropdown-item" href="#">最新啟動</a></li>
           </ul>
         </div>
       </div>
