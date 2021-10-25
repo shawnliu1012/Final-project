@@ -400,7 +400,8 @@
         align-items: center;
         .time {
           line-height: 1.8rem;
-          font-size: 1rem;
+          font-size: 0.8rem;
+          
           svg {
             margin-bottom: 0.2rem;
           }

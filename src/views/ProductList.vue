@@ -54,7 +54,8 @@
               BLUETTI EB55 野獸級戶外行動電源站｜用「電」解放你的 outdoor 魂！
             </h4>
           </a>
-          <span class="proposer"> 提案人 <a href="" class="">蔚藍星球</a>
+          <span class="proposer">
+            提案人 <a href="" class="">蔚藍星球</a>
             <!-- <a href=""> <i class="fab fa-facebook"></i></a>
             <a href=""> <i class="fas fa-compass"></i></a>
             <a href=""> <i class="fab fa-instagram"></i></a> -->
@@ -78,6 +79,79 @@
               </p>
             </div>
           </div>
+        </div>
+        <div class="product-middle">
+          <div class="product-follow"></div>
+          <div class="time">
+            <div class="t-people">
+              贊助人數 <span class="t-p-amount">247</span>
+            </div>
+            <div class="t-time">
+              剩餘時間 <span class="t-t-amount">45</span>天
+            </div>
+            <div class="t-course">
+              時程 <span class="t-c-amount">2021/09/30 12:00</span>~<span
+                class="t-c-amount"
+                >2021/11/16 02:00</span
+              >
+            </div>
+            <div class="time-a">
+              <a class="t-a-1" href=""
+                ><i class="fas fa-comment-alt"></i> 聯絡提案人</a
+              >
+              <a class="t-a-2" href=""><i class="fas fa-share-alt"></i> 臉書</a>
+              <a class="t-a-3" href=""><i class="fas fa-share-alt"></i> 推特</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 單一商品詳細介紹及方案區 -->
+  <!-- navbar -->
+  <div class="product-bottom">
+    <div class="content-choose">
+      <a href=""><div>專案內容</div></a>
+      <a href=""
+        ><div>專案更新</div>
+        <span>1</span></a
+      >
+      <a href=""
+        ><div>留言</div>
+        <span>6</span></a
+      >
+      <a href=""
+        ><div>常見問答</div>
+        <span>10</span></a
+      >
+    </div>
+    <div class="sponsor">
+      <a href="">贊助專案</a>
+    </div>
+  </div>
+  <!-- 圖片及方案內容 -->
+  <div class="container program">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="program-img">
+          <img src="https://i.imgur.com/BA7hkCA.gif" alt="" />
+          <img src="https://i.imgur.com/PLK1ANd.jpg" alt="" />
+          <img src="https://i.imgur.com/PPMfOht.jpg" alt="" />
+          <img src="https://i.imgur.com/zWDvc2h.jpg" alt="" />
+          <img src="https://i.imgur.com/UTgga4v.jpg" alt="" />
+          <img src="https://i.imgur.com/PbN2Wp9.gif" alt="" />
+          <img src="https://i.imgur.com/pBVlEIm.gif" alt="" />
+          <img src="https://i.imgur.com/Vclkyrm.gif" alt="" />
+          <img src="https://i.imgur.com/UUlZ86b.jpg" alt="" />
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="program-container">
+          <a class="c-p-1" href="">
+            <img src="https://i.imgur.com/Mwlp2ZX.jpg" />
+          </a>
+          <a class="c-p-1" href=""></a>
+          <a class="c-p-1" href=""></a>
         </div>
       </div>
     </div>
@@ -123,166 +197,216 @@
   </div>
 </template>
 <style lang="scss">
-
-
-.product-classification {
-  margin-bottom: 1rem;
-  font-size: 0.8rem;
-}
-
-.product-classification a {
-  color: #696969;
-  font-weight: bold;
-}
-
-.product-classification a:hover {
-  text-decoration: none;
-}
-.pc-title {
-  text-decoration: none;
-  color: #3f3f3f;
-}
-
-.pc-title h3 {
-  color: #000;
-  line-height: 2em;
-}
-
-.pc-title:hover {
-  text-decoration: none;
-}
-
-.proposer {
-  display: inline-block;
-  
-}
-
-.proposer a {
-  text-decoration: none;
-  padding: 0 0.2rem;
-  color: var(--font-color);
-  font-weight: bold;
-}
-
-.proposer a:not(:first-child) {
-  color: #696969;
-}
-
-.proposer a:hover {
-  text-decoration: none;
-  color: #000;
-}
-
-
-
-.introduce {
-  margin: 2rem 0;
-}
-
-/* 金額區 */
-
-.product-introduce-money {
-  display: flex;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #dcdcdc;
-}
-
-.circle-out {
-  width: 4rem;
-  height: 4rem;
-  background-color: #dcdcdc;
-  border-radius: 50%;
-  position: relative;
-}
-
-/* 需再加一個進度條 讓其可以轉動 */
-
-.circle-out:hover {
-  animation: percentage 1s;
-}
-
-@keyframes percentage {
-  0% {
-    background: #dcdcdc;
+.product-introduce {
+  .product-classification {
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    a {
+      color: #696969;
+      font-weight: bold;
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
-  20% {
-    background: #0f1bcc;
-  }
-  60% {
-    background: #d87e2a;
-  }
-  80% {
-    background: #177a30;
-  }
-  100% {
-    background: #e50030;
-  }
-}
 
-.circle-in {
-  width: 3.5rem;
-  height: 3.5rem;
-  background-color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  top: 0.25rem;
-  right: 0.25rem;
-}
+  .pc-title {
+    display: inline-block;
+    text-decoration: none;
+    color: #3f3f3f;
+    h3 {
+      color: #000;
+      line-height: 2em;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
 
-.percentage {
-  position: absolute;
-  top: 0.85rem;
-  right: 0.85rem;
-}
+  .proposer {
+    display: inline-block;
+    font-size: 0.9rem;
+    a {
+      text-decoration: none;
+      padding: 0 0.2rem;
+      color: var(--font-color);
+      font-weight: bold;
+      &:hover {
+        text-decoration: none;
+        color: #000;
+      }
+      &:not(:first-child) {
+        color: #696969;
+      }
+    }
+  }
 
-.p-i-amount {
-  margin-left: 1rem;
-}
+  .introduce {
+    margin: 1.2rem 0;
+    color: #767676;
+  }
 
-.order-amount {
-  font-size: 1.5rem;
-  font-weight: bold;
+  /* 金額區 */
+
+  .product-introduce-money {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dcdcdc;
+    .circle-out {
+      width: 4.5rem;
+      height: 4.5rem;
+      background-color: #dcdcdc;
+      border-radius: 50%;
+      position: relative;
+      &:hover {
+        animation: percentage 1s;
+        @keyframes percentage {
+          0% {
+            background: #dcdcdc;
+          }
+          20% {
+            background: #0f1bcc;
+          }
+          60% {
+            background: #d87e2a;
+          }
+          80% {
+            background: #177a30;
+          }
+          100% {
+            background: #e50030;
+          }
+        }
+      }
+      .circle-in {
+        width: 4rem;
+        height: 4rem;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+    .p-i-amount {
+      // 預購金額處置中
+      padding-top: 1em;
+      margin-left: 1rem;
+      line-height: 0.6rem;
+      .pre-order {
+        font-size: 0.5rem;
+        font-weight: bold;
+      }
+      .order-amount {
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+      .target {
+        font-size: 0.5rem;
+      }
+    }
+  }
 }
-/* product-middle */
 .product-middle {
   margin-top: 1rem;
-  padding: 0 9rem;
   display: flex;
-}
-.product-follow {
-  /* 暫時設定 */
-  /* background-color:#00008B; */
-  width: 660px;
+  .time {
+    line-height: 2rem;
+    font-size: 0.5rem;
+    font-weight: bold;
+    color: #3f3f3f;
+    .t-a-1 {
+      border: 1px solid #696969;
+      border-radius: 0.2rem;
+      padding: 0.2rem 0.6rem;
+      color: #696969;
+      text-decoration: none;
+      margin-right: 0.2rem;
+    }
+    .t-a-2 {
+      border: 1px solid #00008b;
+      border-radius: 0.2rem;
+      padding: 0.2rem 0.6rem;
+      color: #00008b;
+      text-decoration: none;
+      margin-right: 0.2rem;
+    }
+    .t-a-3 {
+      border: 1px solid #1e90ff;
+      border-radius: 0.2rem;
+      padding: 0.2rem 0.6rem;
+      color: #1e90ff;
+      text-decoration: none;
+    }
+  }
 }
 
-.time {
-  margin-left: 2rem;
-  line-height: 2rem;
-  font-size: 0.5rem;
-  font-weight: bold;
+.product-bottom {
+  background-color: #fdfdfd;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 1rem 9rem;
+  margin: 0.5rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  .content-choose {
+    a {
+      text-decoration: none;
+      margin-right: 1.5rem;
+      color: #696969;
+      div {
+        display: inline-block;
+        margin-right: 0.8rem;
+      }
+    }
+  }
+  .sponsor {
+    border: 1px solid #229f2a;
+    border-radius: 0.2rem;
+    padding: 0.5rem 7rem;
+    transition: transform 1s ease;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #ccc;
+    a {
+      color: #229f2a;
+      text-decoration: none;
+    }
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }
 }
-
-.t-a-1 {
-  border: 1px solid #696969;
-  border-radius: 0.2rem;
-  padding: 0.2rem 0.6rem;
-  color: #696969;
-  text-decoration: none;
-  margin-right: 0.2rem;
-}
-.t-a-2 {
-  border: 1px solid #00008b;
-  border-radius: 0.2rem;
-  padding: 0.2rem 0.6rem;
-  color: #00008b;
-  text-decoration: none;
-  margin-right: 0.2rem;
-}
-.t-a-3 {
-  border: 1px solid #1e90ff;
-  border-radius: 0.2rem;
-  padding: 0.2rem 0.6rem;
-  color: #1e90ff;
-  text-decoration: none;
+// 圖片及方案內容
+.program {
+  .program-img {
+    margin-right: 2rem;
+    width: auto;
+    overflow: hidden;
+  }
+  .c-p-1 {
+    display: inline-block;
+    width: 18rem;
+    height: 28rem;
+    border: 1px solid #e0e0e0;
+    margin: 1rem 0;
+    padding: 1rem;
+    img {
+      width: 100%;
+    }
+  }
 }
 </style>
