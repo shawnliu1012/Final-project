@@ -42,8 +42,7 @@
   <!-- product container -->
   <div class="container-line"></div>
   <div class="container shoppingcart">
-    <div class="container-img">
-    </div>
+    <div class="container-img"></div>
     <div class="container-span">
       <a class="c-s-title" href="">
         <h4>
@@ -105,12 +104,35 @@
 </template>
 <style lang="scss">
 .shoppingcart {
+  display: flex;
   .container-img {
     width: 16rem;
     height: 10rem;
     background-image: url("https://i.imgur.com/q8fS0nq.png");
     background-size: cover;
     background-position: center;
+  }
+  .container-span {
+    padding-left: 1rem;
+    a {text-decoration: none;
+    h4 {
+      color: #000;
+      line-height: 2em;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    }
+    .c-s-s {
+      font-size: 0.8rem;
+      .proposer-name {
+        color: #0f1bcc;
+        font-weight: bold;
+      }
+      .c-s-s-m {
+        margin-top: 5rem;
+        font-size: 1rem;
+      }
+    }
   }
 }
 </style>
