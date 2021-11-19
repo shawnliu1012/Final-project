@@ -127,9 +127,303 @@
       </div>
     </div>
   </div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs product-bottom" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link active"
+        id="home-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#home"
+        type="button"
+        role="tab"
+        aria-controls="home"
+        aria-selected="true"
+      >
+        專案內容
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link"
+        id="profile-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#profile"
+        type="button"
+        role="tab"
+        aria-controls="profile"
+        aria-selected="false"
+      >
+        專案更新<span>1</span>
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link"
+        id="messages-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#messages"
+        type="button"
+        role="tab"
+        aria-controls="messages"
+        aria-selected="false"
+      >
+        留言<span>6</span>
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link"
+        id="settings-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#settings"
+        type="button"
+        role="tab"
+        aria-controls="settings"
+        aria-selected="false"
+      >
+        常見問答<span>6</span>
+      </button>
+    </li>
+    <div class="sponsor">
+      <a href="">贊助專案</a>
+    </div>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div
+      class="tab-pane active"
+      id="home"
+      role="tabpanel"
+      aria-labelledby="home-tab"
+    >
+      <div class="container program">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="program-img">
+              <img src="https://i.imgur.com/BA7hkCA.gif" alt="" />
+              <img src="https://i.imgur.com/PLK1ANd.jpg" alt="" />
+              <img src="https://i.imgur.com/PPMfOht.jpg" alt="" />
+              <img src="https://i.imgur.com/zWDvc2h.jpg" alt="" />
+              <img src="https://i.imgur.com/UTgga4v.jpg" alt="" />
+              <img src="https://i.imgur.com/PbN2Wp9.gif" alt="" />
+              <img src="https://i.imgur.com/pBVlEIm.gif" alt="" />
+              <img src="https://i.imgur.com/Vclkyrm.gif" alt="" />
+              <img src="https://i.imgur.com/UUlZ86b.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="program-container">
+              <a class="c-p-1 text-start" href="">
+                <img src="https://i.imgur.com/Mwlp2ZX.jpg" />
+                <div class="program-money">NT$15,900</div>
+                <div class="program-already">
+                  <span class="program-already-1">剩餘91份</span>
+                  <span class="program-already-2"
+                    >已被贊助
+                    <span class="p-time">9</span>
+                    /100次
+                  </span>
+                </div>
+                <div class="program-word">
+                  <p>
+                    【限量 | 64折晚鳥價】 <br />原價$24,900 | 現省$9,000
+                    <br />
+                    #現在買不算晚的晚鳥價
+                  </p>
+                  <p>
+                    方案內容：
+                    <br />
+                    ◆ BLUETTI EB55 行動電源站 x1
+                    <br />
+                    ◆ AC電源變壓器 x1
+                    <br />
+                    ◆ 車載點菸充電線(Car to XT60-F) x1
+                    <br />
+                    ◆ 太陽能板充電線(MC4 to XT60-F) x1
+                    <br />
+                    ◆ 線材收納束帶 x1
+                    <br />
+                    ◆ 說明書 x1
+                    <br />
+                    ◆ 產品保固卡 x1
+                  </p>
+                  <p>
+                    -
+                    <br />
+                    ✓ 嘖嘖平台購買，享「免運」優惠
+                    <br />
+                    ✓ 本機保固時間 18 個月
+                    <br />
+                    ✓ 將依下單順序陸續出貨
+                    <br />
+                    ✓ 一律採用電子發票
+                    <br />
+                    ✓ 若需開立統編/載具請填寫於備註欄
+                    <br />
+                    ✓ 蔚藍星球台灣總代理專人客服
+                  </p>
+                </div>
+                <div class="choose-program">
+                  <div class="c-p-word">可選擇加購商品</div>
+                </div>
+                <div class="program-finish-time">預計於 2022 年三月實現</div>
+              </a>
+
+              <a class="c-p-1 text-start" href="">
+                <img src="https://i.imgur.com/Mwlp2ZX.jpg" />
+                <div class="program-money">NT$15,900</div>
+                <div class="program-already">
+                  <span class="program-already-1">剩餘91份</span>
+                  <span class="program-already-2"
+                    >已被贊助
+                    <span class="p-time">9</span>
+                    /100次
+                  </span>
+                </div>
+                <div class="program-word">
+                  <p>
+                    【限量 | 64折晚鳥價】 <br />原價$24,900 | 現省$9,000
+                    <br />
+                    #現在買不算晚的晚鳥價
+                  </p>
+                  <p>
+                    方案內容：
+                    <br />
+                    ◆ BLUETTI EB55 行動電源站 x1
+                    <br />
+                    ◆ AC電源變壓器 x1
+                    <br />
+                    ◆ 車載點菸充電線(Car to XT60-F) x1
+                    <br />
+                    ◆ 太陽能板充電線(MC4 to XT60-F) x1
+                    <br />
+                    ◆ 線材收納束帶 x1
+                    <br />
+                    ◆ 說明書 x1
+                    <br />
+                    ◆ 產品保固卡 x1
+                  </p>
+                  <p>
+                    -
+                    <br />
+                    ✓ 嘖嘖平台購買，享「免運」優惠
+                    <br />
+                    ✓ 本機保固時間 18 個月
+                    <br />
+                    ✓ 將依下單順序陸續出貨
+                    <br />
+                    ✓ 一律採用電子發票
+                    <br />
+                    ✓ 若需開立統編/載具請填寫於備註欄
+                    <br />
+                    ✓ 蔚藍星球台灣總代理專人客服
+                  </p>
+                </div>
+                <div class="choose-program">
+                  <div class="c-p-word">可選擇加購商品</div>
+                </div>
+                <div class="program-finish-time">預計於 2022 年三月實現</div>
+              </a>
+              <a class="c-p-1 text-start" href="">
+                <img src="https://i.imgur.com/Mwlp2ZX.jpg" />
+                <div class="program-money">NT$15,900</div>
+                <div class="program-already">
+                  <span class="program-already-1">剩餘91份</span>
+                  <span class="program-already-2"
+                    >已被贊助
+                    <span class="p-time">9</span>
+                    /100次
+                  </span>
+                </div>
+                <div class="program-word">
+                  <p>
+                    【限量 | 64折晚鳥價】 <br />原價$24,900 | 現省$9,000
+                    <br />
+                    #現在買不算晚的晚鳥價
+                  </p>
+                  <p>
+                    方案內容：
+                    <br />
+                    ◆ BLUETTI EB55 行動電源站 x1
+                    <br />
+                    ◆ AC電源變壓器 x1
+                    <br />
+                    ◆ 車載點菸充電線(Car to XT60-F) x1
+                    <br />
+                    ◆ 太陽能板充電線(MC4 to XT60-F) x1
+                    <br />
+                    ◆ 線材收納束帶 x1
+                    <br />
+                    ◆ 說明書 x1
+                    <br />
+                    ◆ 產品保固卡 x1
+                  </p>
+                  <p>
+                    -
+                    <br />
+                    ✓ 嘖嘖平台購買，享「免運」優惠
+                    <br />
+                    ✓ 本機保固時間 18 個月
+                    <br />
+                    ✓ 將依下單順序陸續出貨
+                    <br />
+                    ✓ 一律採用電子發票
+                    <br />
+                    ✓ 若需開立統編/載具請填寫於備註欄
+                    <br />
+                    ✓ 蔚藍星球台灣總代理專人客服
+                  </p>
+                </div>
+                <div class="choose-program">
+                  <div class="c-p-word">可選擇加購商品</div>
+                </div>
+                <div class="program-finish-time">預計於 2022 年三月實現</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="tab-pane"
+      id="profile"
+      role="tabpanel"
+      aria-labelledby="profile-tab"
+    >
+      <div class="col-lg-8">
+        <h4>
+          計畫更新 #1｜開賣 10 分鐘達標
+          感謝贊助者的大力支持，別忘了贊助者限定活動分享即贈禮
+        </h4>
+        <img src="https://i.imgur.com/RY5gbly.png" alt="" />
+        <p>感謝各位熱烈支持 ٩(ˊᗜˋ )و</p>
+        <button type="button" class="btn btn-outline-primary">繼續閱讀</button>
+      </div>
+      <div class="col-lg-4"></div>
+    </div>
+    <div
+      class="tab-pane"
+      id="messages"
+      role="tabpanel"
+      aria-labelledby="messages-tab"
+    >
+      ...
+    </div>
+    <div
+      class="tab-pane"
+      id="settings"
+      role="tabpanel"
+      aria-labelledby="settings-tab"
+    >
+      ...
+    </div>
+  </div>
   <!-- 單一商品詳細介紹及方案區 -->
   <!-- navbar -->
-  <div class="product-bottom">
+
+  <!-- <div class="product-bottom">
     <div class="content-choose">
       <a href=""><div>專案內容</div></a>
       <a href=""
@@ -148,195 +442,9 @@
     <div class="sponsor">
       <a href="">贊助專案</a>
     </div>
-  </div>
+  </div> -->
   <!-- 圖片及方案內容 -->
-  <div class="container program">
-    <div class="row">
-      <div class="col-lg-8">
-        <div class="program-img">
-          <img src="https://i.imgur.com/BA7hkCA.gif" alt="" />
-          <img src="https://i.imgur.com/PLK1ANd.jpg" alt="" />
-          <img src="https://i.imgur.com/PPMfOht.jpg" alt="" />
-          <img src="https://i.imgur.com/zWDvc2h.jpg" alt="" />
-          <img src="https://i.imgur.com/UTgga4v.jpg" alt="" />
-          <img src="https://i.imgur.com/PbN2Wp9.gif" alt="" />
-          <img src="https://i.imgur.com/pBVlEIm.gif" alt="" />
-          <img src="https://i.imgur.com/Vclkyrm.gif" alt="" />
-          <img src="https://i.imgur.com/UUlZ86b.jpg" alt="" />
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="program-container">
-          <a class="c-p-1 text-start" href="">
-            <img src="https://i.imgur.com/Mwlp2ZX.jpg" />
-            <div class="program-money">NT$15,900</div>
-            <div class="program-already">
-              <span class="program-already-1">剩餘91份</span>
-              <span class="program-already-2"
-                >已被贊助
-                <span class="p-time">9</span>
-                /100次
-              </span>
-            </div>
-            <div class="program-word">
-              <p>
-                【限量 | 64折晚鳥價】 <br />原價$24,900 | 現省$9,000
-                <br />
-                #現在買不算晚的晚鳥價
-              </p>
-              <p>
-                方案內容：
-                <br />
-                ◆ BLUETTI EB55 行動電源站 x1
-                <br />
-                ◆ AC電源變壓器 x1
-                <br />
-                ◆ 車載點菸充電線(Car to XT60-F) x1
-                <br />
-                ◆ 太陽能板充電線(MC4 to XT60-F) x1
-                <br />
-                ◆ 線材收納束帶 x1
-                <br />
-                ◆ 說明書 x1
-                <br />
-                ◆ 產品保固卡 x1
-              </p>
-              <p>
-                -
-                <br />
-                ✓ 嘖嘖平台購買，享「免運」優惠
-                <br />
-                ✓ 本機保固時間 18 個月
-                <br />
-                ✓ 將依下單順序陸續出貨
-                <br />
-                ✓ 一律採用電子發票
-                <br />
-                ✓ 若需開立統編/載具請填寫於備註欄
-                <br />
-                ✓ 蔚藍星球台灣總代理專人客服
-              </p>
-            </div>
-            <div class="choose-program">
-              <div class="c-p-word">可選擇加購商品</div>
-            </div>
-            <div class="program-finish-time">預計於 2022 年三月實現</div>
-          </a>
 
-          <a class="c-p-1 text-start" href="">
-            <img src="https://i.imgur.com/Mwlp2ZX.jpg" />
-            <div class="program-money">NT$15,900</div>
-            <div class="program-already">
-              <span class="program-already-1">剩餘91份</span>
-              <span class="program-already-2"
-                >已被贊助
-                <span class="p-time">9</span>
-                /100次
-              </span>
-            </div>
-            <div class="program-word">
-              <p>
-                【限量 | 64折晚鳥價】 <br />原價$24,900 | 現省$9,000
-                <br />
-                #現在買不算晚的晚鳥價
-              </p>
-              <p>
-                方案內容：
-                <br />
-                ◆ BLUETTI EB55 行動電源站 x1
-                <br />
-                ◆ AC電源變壓器 x1
-                <br />
-                ◆ 車載點菸充電線(Car to XT60-F) x1
-                <br />
-                ◆ 太陽能板充電線(MC4 to XT60-F) x1
-                <br />
-                ◆ 線材收納束帶 x1
-                <br />
-                ◆ 說明書 x1
-                <br />
-                ◆ 產品保固卡 x1
-              </p>
-              <p>
-                -
-                <br />
-                ✓ 嘖嘖平台購買，享「免運」優惠
-                <br />
-                ✓ 本機保固時間 18 個月
-                <br />
-                ✓ 將依下單順序陸續出貨
-                <br />
-                ✓ 一律採用電子發票
-                <br />
-                ✓ 若需開立統編/載具請填寫於備註欄
-                <br />
-                ✓ 蔚藍星球台灣總代理專人客服
-              </p>
-            </div>
-            <div class="choose-program">
-              <div class="c-p-word">可選擇加購商品</div>
-            </div>
-            <div class="program-finish-time">預計於 2022 年三月實現</div>
-          </a>
-          <a class="c-p-1 text-start" href="">
-            <img src="https://i.imgur.com/Mwlp2ZX.jpg" />
-            <div class="program-money">NT$15,900</div>
-            <div class="program-already">
-              <span class="program-already-1">剩餘91份</span>
-              <span class="program-already-2"
-                >已被贊助
-                <span class="p-time">9</span>
-                /100次
-              </span>
-            </div>
-            <div class="program-word">
-              <p>
-                【限量 | 64折晚鳥價】 <br />原價$24,900 | 現省$9,000
-                <br />
-                #現在買不算晚的晚鳥價
-              </p>
-              <p>
-                方案內容：
-                <br />
-                ◆ BLUETTI EB55 行動電源站 x1
-                <br />
-                ◆ AC電源變壓器 x1
-                <br />
-                ◆ 車載點菸充電線(Car to XT60-F) x1
-                <br />
-                ◆ 太陽能板充電線(MC4 to XT60-F) x1
-                <br />
-                ◆ 線材收納束帶 x1
-                <br />
-                ◆ 說明書 x1
-                <br />
-                ◆ 產品保固卡 x1
-              </p>
-              <p>
-                -
-                <br />
-                ✓ 嘖嘖平台購買，享「免運」優惠
-                <br />
-                ✓ 本機保固時間 18 個月
-                <br />
-                ✓ 將依下單順序陸續出貨
-                <br />
-                ✓ 一律採用電子發票
-                <br />
-                ✓ 若需開立統編/載具請填寫於備註欄
-                <br />
-                ✓ 蔚藍星球台灣總代理專人客服
-              </p>
-            </div>
-            <div class="choose-program">
-              <div class="c-p-word">可選擇加購商品</div>
-            </div>
-            <div class="program-finish-time">預計於 2022 年三月實現</div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
   <!-- footer -->
   <div class="container footer mt-4">
     <div class="row footer-part">
@@ -572,24 +680,26 @@
   background-color: #fdfdfd;
   border-top: 1px solid #dcdcdc;
   border-bottom: 1px solid #dcdcdc;
-  padding: 1rem 9rem;
+  padding: 0rem 9rem;
   margin: 0.5rem 0rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
-  .content-choose {
-    a {
-      text-decoration: none;
-      margin-right: 1.5rem;
-      color: #696969;
-      div {
-        display: inline-block;
-        margin-right: 0.8rem;
-      }
-    }
-  }
+  // 圖片及方案內容
+
+  // .content-choose {
+  //   a {
+  //     text-decoration: none;
+  //     margin-right: 1.5rem;
+  //     color: #696969;
+  //     div {
+  //       display: inline-block;
+  //       margin-right: 0.8rem;
+  //     }
+  //   }
+  // }
   .sponsor {
     border: 1px solid #229f2a;
     border-radius: 0.2rem;
@@ -607,7 +717,6 @@
     }
   }
 }
-// 圖片及方案內容
 .program {
   .program-img {
     margin-right: 2rem;
@@ -679,6 +788,20 @@
       border-width: 1px;
     }
   }
+}
+// 專案更新
+#profile {
+  padding: 0rem 9rem;
+  h4 {
+    text-align: left;
+  }
+  img {
+    width: 90%;
+  }
+  p {
+    text-align: left;
+  }
+
 }
 // 商品邊線變色效果
 </style>
