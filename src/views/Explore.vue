@@ -20,7 +20,7 @@
             />
           </svg>
           <img
-            src="https://i.imgur.com/MCdlcAI.jpg"
+            src="https://i.imgur.com/Cqngd9w.png"
             alt=""
             width="50px"
             height="40px"
@@ -347,6 +347,9 @@
 </template>
 <style lang="scss">
 @import "~bootstrap/dist/css/bootstrap.css";
+.project-navbar {
+  padding: 2rem 0;
+}
 // explore-project
 .explore-project {
   .card {

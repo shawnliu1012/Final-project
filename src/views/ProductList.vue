@@ -20,7 +20,7 @@
             />
           </svg>
           <img
-            src="https://i.imgur.com/MCdlcAI.jpg"
+            src="https://i.imgur.com/Cqngd9w.png"
             alt=""
             width="50px"
             height="40px"
