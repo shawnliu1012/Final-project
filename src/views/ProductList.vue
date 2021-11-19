@@ -129,6 +129,7 @@
   </div>
   <!-- Nav tabs -->
   <ul class="nav nav-tabs product-bottom" id="myTab" role="tablist">
+    
     <li class="nav-item" role="presentation">
       <button
         class="nav-link active"
@@ -185,6 +186,7 @@
         常見問答<span>6</span>
       </button>
     </li>
+    
     <div class="sponsor">
       <a href="">贊助專案</a>
     </div>
@@ -680,13 +682,19 @@
   background-color: #fdfdfd;
   border-top: 1px solid #dcdcdc;
   border-bottom: 1px solid #dcdcdc;
-  padding: 0rem 9rem;
+  padding: 1rem 9rem;
   margin: 0.5rem 0rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
+  
+  .nav-link{
+    color: #696969;
+    margin: 0 0.5rem;
+  
+  }
   // 圖片及方案內容
 
   // .content-choose {
