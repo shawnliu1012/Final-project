@@ -129,7 +129,6 @@
   </div>
   <!-- Nav tabs -->
   <ul class="nav nav-tabs product-bottom" id="myTab" role="tablist">
-    
     <li class="nav-item" role="presentation">
       <button
         class="nav-link active"
@@ -186,7 +185,7 @@
         常見問答<span>6</span>
       </button>
     </li>
-    
+
     <div class="sponsor">
       <a href="">贊助專案</a>
     </div>
@@ -411,7 +410,12 @@
       role="tabpanel"
       aria-labelledby="messages-tab"
     >
-      ...
+      <div class="messager-part">
+        贊助人才能留言，如有專案相關提問，請聯絡提案人。
+      </div>
+      <div class="message-part">
+        <div class="img-time"></div>
+      </div>
     </div>
     <div
       class="tab-pane"
@@ -689,11 +693,10 @@
   align-items: center;
   position: sticky;
   top: 0;
-  
-  .nav-link{
+
+  .nav-link {
     color: #696969;
     margin: 0 0.5rem;
-  
   }
   // 圖片及方案內容
 
@@ -809,7 +812,19 @@
   p {
     text-align: left;
   }
-
 }
 // 商品邊線變色效果
+// 留言
+.tab-pane {
+  padding: 0rem 9rem;
+  .messager-part {
+    color: #3f3f3f;
+    line-height: 1.6em;
+    font-size: 0.75rem;
+    background-color: #f4f4f4;
+    padding: 0.5rem;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+}
 </style>
