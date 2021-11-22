@@ -414,7 +414,70 @@
         贊助人才能留言，如有專案相關提問，請聯絡提案人。
       </div>
       <div class="message-part">
-        <div class="img-time"></div>
+        <div class="sponsor-img-time">
+          <div class="sponsor-question-part">
+            <div class="sponsor-img">
+              <img src="https://i.imgur.com/fSXMXMb.png" alt="" />
+              <div class="sponsor">
+                <span class="sponsor-name">shang</span>
+                <span class="sponsor-label">贊助人</span>
+              </div>
+            </div>
+            <div class="time">
+              <span>大約19小時</span>
+            </div>
+          </div>
+          <div class="problem">
+            <p>請問太陽能板接頭是哪一種呢？</p>
+          </div>
+        </div>
+        <div class="proposal-answer-part">
+          <div class="answer-part">
+            <div class="answer-inf">
+              <span class="proposal">蔚藍星球</span>
+              <span class="proposal-label">提案人</span>
+            </div>
+            <div class="time">
+              <span>大約17小時</span>
+            </div>
+          </div>
+          <div class="answer">
+            <p>你好，這款原廠太陽能板是使用MC4接頭喔</p>
+          </div>
+        </div>
+      </div>
+      <div class="message-part">
+        <div class="sponsor-img-time">
+          <div class="sponsor-question-part">
+            <div class="sponsor-img">
+              <img src="https://i.imgur.com/fSXMXMb.png" alt="" />
+              <div class="sponsor">
+                <span class="sponsor-name">shang</span>
+                <span class="sponsor-label">贊助人</span>
+              </div>
+            </div>
+            <div class="time">
+              <span>大約19小時</span>
+            </div>
+          </div>
+          <div class="problem">
+            <p>請問太陽能板接頭是哪一種呢？</p>
+          </div>
+        </div>
+        <div class="proposal-answer-part">
+          <div class="answer-part">
+            <div class="answer-inf">
+              <span class="proposal">蔚藍星球</span>
+              <span class="proposal-label">提案人</span>
+            </div>
+            <div class="time">
+              <span>大約17小時</span>
+            </div>
+          </div>
+          <div class="answer">
+            <p>你好，這款原廠太陽能板是使用MC4接頭喔</p>
+          </div>
+        </div>
       </div>
     </div>
     <div
@@ -825,6 +888,86 @@
     padding: 0.5rem;
     text-align: left;
     margin-bottom: 2rem;
+  }
+  .message-part {
+    padding: 1rem 0rem;
+    border-top: 1px solid #e0e0e0;
+    .sponsor-img-time {
+      .sponsor-question-part {
+        display: flex;
+        justify-content: space-between;
+        .sponsor-img {
+          display: flex;
+          img {
+            border-radius: 40%;
+          }
+          .sponsor {
+            .sponsor-name {
+              color: #0050a2;
+              font-weight: 700;
+              margin-right: 0.5rem;
+              margin-left: 1rem;
+            }
+            .sponsor-label {
+              font-weight: 700;
+              padding: 0.25rem;
+              border-style: solid;
+              border-width: 1px;
+              border-radius: 0.125rem;
+              color: #3366a9;
+            }
+          }
+        }
+        .time {
+          font-size: 0.75rem;
+          color: #767676;
+          &:hover {
+            color: #0050a2;
+          }
+        }
+      }
+      .problem {
+        text-align: left;
+        padding-left: 4.5rem;
+        margin-top: -1rem;
+      }
+    }
+    .proposal-answer-part {
+      .answer-part {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 4.5rem;
+        .answer-inf {
+          .proposal {
+            color: #0050a2;
+            font-weight: 700;
+            margin-right: 0.5rem;
+          }
+          .proposal-label {
+            font-weight: 700;
+            padding: 0.25rem;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 0.125rem;
+            border-color: #229f2a;
+            background-color: #229f2a;
+            color: #fdfdfd;
+          }
+        }
+        .time {
+          font-size: 0.75rem;
+          color: #767676;
+          &:hover {
+            color: #0050a2;
+          }
+        }
+      }
+      .answer {
+        text-align: left;
+        padding-left: 4.5rem;
+        margin-top: 1rem;
+      }
+    }
   }
 }
 </style>
