@@ -128,6 +128,7 @@
     </div>
   </div>
   <!-- Nav tabs -->
+
   <ul class="nav nav-tabs product-bottom" id="myTab" role="tablist">
     <li class="nav-item" role="presentation">
       <button
@@ -400,7 +401,6 @@
         </h4>
         <img src="https://i.imgur.com/RY5gbly.png" alt="" />
         <p>感謝各位熱烈支持 ٩(ˊᗜˋ )و</p>
-        <button type="button" class="btn btn-outline-primary">繼續閱讀</button>
       </div>
       <div class="col-lg-4"></div>
     </div>
@@ -486,7 +486,20 @@
       role="tabpanel"
       aria-labelledby="settings-tab"
     >
-      ...
+      <div class="QA-part">
+        <div class="qustion">
+          <span>Q1.</span> 【關於訂購】我要如何查詢我的贊助紀錄？
+        </div>
+        <div class="q-time">最後更新於 2021 / 10 / 26 15 : 26</div>
+        <div class="answer">
+          <p>
+            以下提供方式確認<br />
+            ❶ 至您的電子信箱收信（使用註冊嘖嘖使用的電子信箱）<br />
+            ❷ 確認是否收到一封主旨為「嘖嘖｜支持成功確認信件」<br />
+            如果有收到此封信件，即表示贊助成功<br />
+          </p>
+        </div>
+      </div>
     </div>
   </div>
   <!-- 單一商品詳細介紹及方案區 -->
@@ -791,6 +804,7 @@
     }
   }
 }
+
 .program {
   .program-img {
     margin-right: 2rem;
@@ -871,6 +885,7 @@
   }
   img {
     width: 90%;
+    padding: 0.5rem;
   }
   p {
     text-align: left;
@@ -968,6 +983,28 @@
         margin-top: 1rem;
       }
     }
+  }
+}
+// 常見問答
+.QA-part {
+  .qustion {
+    text-align: left;
+    font-weight: 700;
+    color: #0050a2;
+  }
+  .q-time {
+    font-weight: 700;
+    text-align: left;
+    font-size: 0.75rem;
+    color: #3f3f3f;
+    line-height: 1.6em;
+  }
+  .answer {
+    text-align: left;
+    background-color: #f4f4f4;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    border-radius: 0.25rem;
   }
 }
 </style>
