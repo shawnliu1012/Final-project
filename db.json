@@ -1,0 +1,25 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "img": "https://i.imgur.com/2P79MF2.png",
+            "title": "客庄裡的法式甜點 | Bonbons 山城鐵盒餅乾",
+            "type": "群眾集資",
+            "category": "挺好店",
+            "author": "Bonbons Studio",
+            "description": "經典法式餅乾融合九種客庄在地的特色食材，紅棗、擂茶、桂花釀等，以品嚐的角度帶你認識不一樣的山城與法式甜點。",
+            "endAt": "2021-10-13",
+            "price": 235306 
+        }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "body": "some comment",
+            "postId": 1
+        }
+    ],
+    "profile": {
+        "name": "typicode"
+    }
+}
