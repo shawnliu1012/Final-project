@@ -128,69 +128,73 @@
     </div>
   </div>
   <!-- Nav tabs -->
-
-  <ul class="nav nav-tabs product-bottom" id="myTab" role="tablist">
-    <li class="nav-item" role="presentation">
-      <button
-        class="nav-link active"
-        id="home-tab"
-        data-bs-toggle="tab"
-        data-bs-target="#home"
-        type="button"
-        role="tab"
-        aria-controls="home"
-        aria-selected="true"
-      >
-        專案內容
-      </button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button
-        class="nav-link"
-        id="profile-tab"
-        data-bs-toggle="tab"
-        data-bs-target="#profile"
-        type="button"
-        role="tab"
-        aria-controls="profile"
-        aria-selected="false"
-      >
-        專案更新<span>1</span>
-      </button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button
-        class="nav-link"
-        id="messages-tab"
-        data-bs-toggle="tab"
-        data-bs-target="#messages"
-        type="button"
-        role="tab"
-        aria-controls="messages"
-        aria-selected="false"
-      >
-        留言<span>6</span>
-      </button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button
-        class="nav-link"
-        id="settings-tab"
-        data-bs-toggle="tab"
-        data-bs-target="#settings"
-        type="button"
-        role="tab"
-        aria-controls="settings"
-        aria-selected="false"
-      >
-        常見問答<span>6</span>
-      </button>
-    </li>
-
+  <div class="tabs-part">
+    <ul
+      class="nav nav-tabs nav-justified product-bottom"
+      id="myTab"
+      role="tablist"
+    >
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="home-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#home"
+          type="button"
+          role="tab"
+          aria-controls="home"
+          aria-selected="true"
+        >
+          專案內容
+        </button>
+      </li>
+      <!-- <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="profile-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#profile"
+          type="button"
+          role="tab"
+          aria-controls="profile"
+          aria-selected="false"
+        >
+          專案更新<span>1</span>
+        </button>
+      </li> -->
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="messages-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#messages"
+          type="button"
+          role="tab"
+          aria-controls="messages"
+          aria-selected="false"
+        >
+          留言<span>6</span>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="settings-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#settings"
+          type="button"
+          role="tab"
+          aria-controls="settings"
+          aria-selected="false"
+        >
+          常見問答<span>6</span>
+        </button>
+      </li>
+    </ul>
     <div class="sponsor">
       <a href="">贊助專案</a>
     </div>
-  </ul>
+  </div>
 
   <!-- Tab panes -->
   <div class="tab-content">
@@ -388,7 +392,7 @@
         </div>
       </div>
     </div>
-    <div
+    <!-- <div
       class="tab-pane"
       id="profile"
       role="tabpanel"
@@ -403,7 +407,7 @@
         <p>感謝各位熱烈支持 ٩(ˊᗜˋ )و</p>
       </div>
       <div class="col-lg-4"></div>
-    </div>
+    </div> -->
     <div
       class="tab-pane"
       id="messages"
@@ -758,41 +762,34 @@
   }
 }
 
-.product-bottom {
+.tabs-part {
+  display: flex;
+  justify-content: space-between;
   background-color: #fdfdfd;
   border-top: 1px solid #dcdcdc;
   border-bottom: 1px solid #dcdcdc;
-  padding: 1rem 9rem;
-  margin: 0.5rem 0rem;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
+  margin: 2rem 0rem;
+  padding: 0 9rem;
+  .product-bottom {
+    padding: 1rem 0rem;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
 
-  .nav-link {
-    color: #696969;
-    margin: 0 0.5rem;
+    .nav-link {
+      color: #696969;
+      margin: 0 0.5rem;
+    }
   }
-  // 圖片及方案內容
-
-  // .content-choose {
-  //   a {
-  //     text-decoration: none;
-  //     margin-right: 1.5rem;
-  //     color: #696969;
-  //     div {
-  //       display: inline-block;
-  //       margin-right: 0.8rem;
-  //     }
-  //   }
-  // }
   .sponsor {
     border: 1px solid #229f2a;
     border-radius: 0.2rem;
     padding: 0.5rem 7rem;
     transition: transform 1s ease;
     box-shadow: 0 0 0 2px #fff, 0 0 0 3px #ccc;
+
     a {
       color: #229f2a;
       text-decoration: none;
