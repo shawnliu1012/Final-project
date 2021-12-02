@@ -176,9 +176,14 @@
               </label>
             </div>
           </div>
-          <label for="exampleDataList" class="form-label">國家/區域</label>
+          <div class="amount-part">
+            <div class="amount-word">加碼贊助(選擇)</div>
+            <div class="amount-tag">$</div>
+            <input type="number" id="amount" placeholder="0" value="1" />
+          </div>
+          <label for="exampleDataList" class="form-label">收件地點</label>
           <select class="form-select" aria-label="Default select example">
-            <option selected>選擇運送國家</option>
+            <option selected>選擇收件地點</option>
             <option value="1">台灣(本島) Taiwan</option>
           </select>
           <div class="address">
@@ -434,7 +439,6 @@
       svg {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
-        // 還要細修一下
         padding-bottom: 0.2rem;
       }
     }
@@ -451,7 +455,24 @@
     border-radius: 0.25rem;
     border-color: gold;
   }
+  // amount-part
+  // 外框顏色設計
+  .amount-part {
+    position: relative;
+    .amount-word {
+      padding: 0.5rem 0;
+    }
+    .amount-tag {
+      font-size: 1rem;
+      position: absolute;
+      top: 2.7rem;
+      left: 0.5rem;
+    }
+    input {
+      margin-left: 1.5rem;
 
+    }
+  }
   // address
   .address {
     display: flex;
