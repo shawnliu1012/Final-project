@@ -175,11 +175,20 @@
                 ATM 機器轉帳或銀行臨櫃繳款
               </label>
             </div>
+            <div class="mb-3 text-part">
+              虛擬帳號轉帳因要等待銀行於工作天回傳，<strong>限量的選項可能會在入帳前售罄並造成贊助失敗</strong>。遇到例假日將會延後更新。若未來有遇到退款的情況，<strong>退款金額會扣除轉帳交易所產生的手續費用</strong>。臨櫃繳款的截止期限，必須在週一至週五（不含例假日）的下午三點半前完成，<strong>週六的郵局轉帳將會造成交易失敗</strong>。
+            </div>
           </div>
           <div class="amount-part">
             <div class="amount-word">加碼贊助(選擇)</div>
             <div class="amount-tag">$</div>
-            <input type="number" id="amount" placeholder="0"  min="1" value="1" />
+            <input
+              type="number"
+              id="amount"
+              placeholder="0"
+              min="1"
+              value="1"
+            />
           </div>
           <label for="exampleDataList" class="form-label">收件地點</label>
           <select class="form-select" aria-label="Default select example">
@@ -223,7 +232,24 @@
           <label for="exampleFormControlInput1" class="form-label"
             >超商取貨(選填)</label
           ><br />
-          <label class="btn btn-light" for="btn-check-outlined"> 選擇 > </label>
+          <label class="btn btn-outline-secondary" for="btn-check-outlined">
+            選擇 >
+          </label>
+          <div
+            class="btn-group"
+            role="group"
+            aria-label="Basic outlined example"
+          >
+            <button type="button" class="btn btn-outline-secondary">
+              7-11
+            </button>
+            <button type="button" class="btn btn-outline-secondary">
+              全家
+            </button>
+            <button type="button" class="btn btn-outline-secondary">
+              萊爾富
+            </button>
+          </div>
           <div class="mb-3 text-part">
             提案人將優先為你安排超商取貨，但若出貨時，選擇的超商因故不支援店取，提案人將把回饋品寄至收件地址。提案人保有寄送方式的最終決定權。
           </div>
@@ -470,7 +496,6 @@
     }
     input {
       margin-left: 1.5rem;
-
     }
   }
   // address
@@ -478,6 +503,11 @@
     display: flex;
     justify-content: space-between;
   }
+  // 超商取貨
+  .btn-group {
+    margin-left: 3rem;
+  }
+  // 提案人贊助提醒
   .word-part {
     line-height: 0.25;
     font-size: 0.75rem;
