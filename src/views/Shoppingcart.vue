@@ -181,14 +181,16 @@
           </div>
           <div class="amount-part">
             <div class="amount-word">加碼贊助(選擇)</div>
-            <div class="amount-tag">$</div>
-            <input
-              type="number"
-              id="amount"
-              placeholder="0"
-              min="1"
-              value="1"
-            />
+            <div class="amount-input">
+              <div class="amount-tag">$</div>
+              <input
+                type="number"
+                id="amount"
+                placeholder="0"
+                min="1"
+                value="1"
+              />
+            </div>
           </div>
           <label for="exampleDataList" class="form-label">收件地點</label>
           <select class="form-select" aria-label="Default select example">
@@ -462,6 +464,7 @@
       text-align: start;
       margin-bottom: 0.5rem;
       justify-content: center;
+
       svg {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
@@ -482,20 +485,27 @@
     border-color: gold;
   }
   // amount-part
-  // 外框顏色設計
+  
   .amount-part {
     position: relative;
     .amount-word {
       padding: 0.5rem 0;
     }
-    .amount-tag {
-      font-size: 1rem;
-      position: absolute;
-      top: 2.7rem;
-      left: 0.5rem;
-    }
-    input {
-      margin-left: 1.5rem;
+    .amount-input {
+      display: inline-block;
+      border: 1px solid #bebebe;
+      border-radius: 3px;
+      .amount-tag {
+        font-size: 1.1rem;
+        position: absolute;
+        top: 2.65rem;
+        left: 0.5rem;
+      }
+      #amount {
+        margin-left: 1.5rem;
+        outline: none;
+        border: 1px solid #fff;
+      }
     }
   }
   // address
