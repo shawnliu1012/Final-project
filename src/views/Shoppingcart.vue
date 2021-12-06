@@ -179,7 +179,7 @@
           <div class="amount-part">
             <div class="amount-word">加碼贊助(選擇)</div>
             <div class="amount-tag">$</div>
-            <input type="number" id="amount" placeholder="0" value="1" />
+            <input type="number" id="amount" placeholder="0"  min="1" value="1" />
           </div>
           <label for="exampleDataList" class="form-label">收件地點</label>
           <select class="form-select" aria-label="Default select example">
