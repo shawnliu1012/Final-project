@@ -464,7 +464,6 @@
       text-align: start;
       margin-bottom: 0.5rem;
       justify-content: center;
-
       svg {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
@@ -485,7 +484,7 @@
     border-color: gold;
   }
   // amount-part
-  
+
   .amount-part {
     position: relative;
     .amount-word {
