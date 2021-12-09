@@ -1,5 +1,6 @@
 <template>
   <!-- navbar -->
+  <!-- 桌機板 -->
   <div class="container">
     <nav
       class="navbar navbar-expand-lg navbar-light"
@@ -39,6 +40,8 @@
       </div>
     </nav>
   </div>
+  <!-- 手機版navbar -->
+  
   <!-- 挺好店專區 -->
   <div class="covid">
     <div class="covid-img"></div>
