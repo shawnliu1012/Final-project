@@ -42,7 +42,7 @@
   <!-- </div> -->
   <!-- 手機版navbar -->
   <!-- 探索按鈕移至下行 -->
-  <nav class="navbar navbar-expand navbar-light" style="background-color: #fff">
+  <nav class="navbar navbar-expand navbar-light phone-nav-top-part" style="background-color: #fff">
     <div class="container-fluid d-md-none">
       <a class="navbar-brand" href="#"
         ><svg
@@ -72,7 +72,7 @@
     </div>
   </nav>
   <nav
-    class="navbar navbar-expand navbar-light d-md-none phone-nav-part"
+    class="navbar navbar-expand navbar-light d-md-none phone-nav-bottom-part"
     style="background-color: #fff"
   >
     <ul class="navbar-nav mx-auto">
@@ -830,6 +830,7 @@
 // navbar
 // logo
 .desktop-nav-part {
+  margin: 0 6rem;
   .navbar-brand svg:hover {
     animation: change 2s;
 
@@ -865,8 +866,12 @@
   }
 }
 // navbar RWD
-.phone-nav-part {
-  border-top:bold solid #3f3f3f;
+.phone-nav-top-part {
+  margin: 0 1rem;
+}
+
+.phone-nav-bottom-part {
+  border-top: 1px solid #dcdcdc;
   .navbar-brand svg:hover {
     animation: change 2s;
 
