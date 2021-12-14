@@ -317,11 +317,11 @@
 
   <div class="container homeproject">
     <div class="row mt-4 mb-4">
-      <div class="col-lg-4 col-md-6 col-sm-12 text-start">
+      <div class="col-lg-4  text-start">
         <h4>群眾集資</h4>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12"></div>
-      <div class="col-lg-4 col-md-6 col-sm-12 text-end">
+      <div class="col-lg-4 "></div>
+      <div class="col-lg-4  text-end">
         <button type="button" class="btn btn-outline-primary">更多▸</button>
       </div>
     </div>
@@ -481,11 +481,11 @@
   <div class="line"></div>
   <div class="container homeproject">
     <div class="row mt-4 mb-4">
-      <div class="col-lg-4 col-md-6 col-sm-12 text-start">
+      <div class="col-lg-4  text-start">
         <h4>預購式專案</h4>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12"></div>
-      <div class="col-lg-4 col-md-6 col-sm-12 text-end">
+      <div class="col-lg-4 "></div>
+      <div class="col-lg-4  text-end">
         <button type="button" class="btn btn-outline-primary">更多▸</button>
       </div>
     </div>
@@ -645,17 +645,17 @@
   <div class="line"></div>
   <div class="container homeproject">
     <div class="row mt-4 mb-4">
-      <div class="col-lg-4 text-start">
+      <div class="col-lg-4  text-start">
         <h4>訂閱式專案</h4>
       </div>
-      <div class="col-lg-4"></div>
-      <div class="col-lg-4 text-end">
+      <div class="col-lg-4 "></div>
+      <div class="col-lg-4  text-end">
         <button type="button" class="btn btn-outline-primary">更多▸</button>
       </div>
     </div>
     <!-- 商品區 -->
     <div class="row">
-      <div class="col-lg-4">
+      <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card text-start">
           <div class="card-top">
             <a href="">
@@ -702,7 +702,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card text-start">
           <div class="card-top">
             <a href="">
@@ -742,7 +742,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card text-start">
           <div class="card-top">
             <a href="">
