@@ -140,7 +140,7 @@
   <!-- 挺好店商品區 -->
   <div class="container helpshop">
     <div class="row">
-      <div class="col-4">
+      <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card text-start">
           <div class="card-top">
             <a href="">
@@ -187,7 +187,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card text-start">
           <div class="card-top">
             <a href="">
@@ -227,7 +227,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card text-start">
           <div class="card-top">
             <a href="">
@@ -317,17 +317,17 @@
 
   <div class="container homeproject">
     <div class="row mt-4 mb-4">
-      <div class="col-lg-4 text-start">
+      <div class="col-lg-4 col-md-6 col-sm-12 text-start">
         <h4>群眾集資</h4>
       </div>
-      <div class="col-lg-4"></div>
-      <div class="col-lg-4 text-end">
+      <div class="col-lg-4 col-md-6 col-sm-12"></div>
+      <div class="col-lg-4 col-md-6 col-sm-12 text-end">
         <button type="button" class="btn btn-outline-primary">更多▸</button>
       </div>
     </div>
     <!-- 商品區 -->
     <div class="row">
-      <div class="col-4">
+      <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card text-start">
           <div class="card-top">
             <a href="">
@@ -374,7 +374,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card text-start">
           <div class="card-top">
             <a href="">
@@ -414,7 +414,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card text-start">
           <div class="card-top">
             <a href="">
@@ -481,17 +481,17 @@
   <div class="line"></div>
   <div class="container homeproject">
     <div class="row mt-4 mb-4">
-      <div class="col-lg-4 text-start">
+      <div class="col-lg-4 col-md-6 col-sm-12 text-start">
         <h4>預購式專案</h4>
       </div>
-      <div class="col-lg-4"></div>
-      <div class="col-lg-4 text-end">
+      <div class="col-lg-4 col-md-6 col-sm-12"></div>
+      <div class="col-lg-4 col-md-6 col-sm-12 text-end">
         <button type="button" class="btn btn-outline-primary">更多▸</button>
       </div>
     </div>
     <!-- 商品區 -->
     <div class="row">
-      <div class="col-4">
+      <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card text-start">
           <div class="card-top">
             <a href="">
@@ -538,7 +538,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card text-start">
           <div class="card-top">
             <a href="">
@@ -578,7 +578,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card text-start">
           <div class="card-top">
             <a href="">
@@ -655,7 +655,7 @@
     </div>
     <!-- 商品區 -->
     <div class="row">
-      <div class="col-4">
+      <div class="col-lg-4">
         <div class="card text-start">
           <div class="card-top">
             <a href="">
@@ -702,7 +702,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-lg-4">
         <div class="card text-start">
           <div class="card-top">
             <a href="">
@@ -742,7 +742,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-lg-4">
         <div class="card text-start">
           <div class="card-top">
             <a href="">
@@ -810,19 +810,19 @@
   <!-- footer -->
   <div class="container footer mt-4">
     <div class="row footer-part">
-      <div class="col-4 d-flex flex-column text-start">
+      <div class="col-lg-4 d-flex flex-column text-start">
         <div class="footer-title">社群</div>
         <a href="">Facebook</a>
         <a href="">Instagram</a>
         <a href="">Twitter</a>
       </div>
-      <div class="col-4 d-flex flex-column text-start">
+      <div class="col-lg-4 d-flex flex-column text-start">
         <div class="footer-title">幫助</div>
         <a href="">常見問答</a>
         <a href="">使用條款</a>
         <a href="">隱私權政策</a>
       </div>
-      <div class="col-4 d-flex flex-column text-start">
+      <div class="col-lg-4 d-flex flex-column text-start">
         <div class="footer-title">關於</div>
         <a href="">關於我們</a>
         <a href="">商標資源</a>
