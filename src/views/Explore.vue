@@ -84,8 +84,8 @@
   </nav>
   <!-- dropdown &search -->
   <div class="container project-navbar">
-    <div class="row">
-      <div class="col-lg-6 d-flex align-items-center">
+    <div class="row gy-1">
+      <div class="col-md-6 col-sm-12 d-flex align-items-center">
         <div class="dropdown">
           <button
             class="btn btn-light dropdown-toggle"
@@ -130,9 +130,10 @@
             <li><a class="dropdown-item" href="#">地方創生</a></li>
           </ul>
         </div>
-        
       </div>
-      <div class="col-lg-6 d-flex align-items-center justify-content-end">
+      <div
+        class="col-md-6 col-sm-12 d-flex align-items-center justify-content-end"
+      >
         <input type="search" name="" placeholder="搜尋計畫" />
         <div class="dropdown">
           <button
@@ -391,7 +392,16 @@
 <style lang="scss">
 @import "~bootstrap/dist/css/bootstrap.css";
 .project-navbar {
-  padding: 2rem 0;
+  padding: 01rem 0;
+}
+// search RWD
+@media screen and (max-width: 576px) {
+  .project-navbar {
+    padding: 1rem 1rem;
+    input {
+      flex: auto;
+    }
+  }
 }
 // explore-project
 .explore-project {
@@ -447,7 +457,7 @@
         .time {
           line-height: 1.8rem;
           font-size: 0.8rem;
-          
+
           svg {
             margin-bottom: 0.2rem;
           }
@@ -467,5 +477,4 @@
 }
 </style>
 <script>
-
 </script>
