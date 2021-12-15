@@ -805,8 +805,8 @@
   </div>
   <div class="line"></div>
   <!-- footer -->
-  <div class="container footer mt-4">
-    <div class="row footer-part">
+  <div class="container footer">
+    <div class="row footer-part gy-4">
       <div class="col-lg-4 d-flex flex-column text-start">
         <div class="footer-title">社群</div>
         <a href="">Facebook</a>
@@ -1316,6 +1316,7 @@
 // footer
 .footer {
   height: 18rem;
+  margin-top: 1.5rem;
   position: relative;
   .footer-part a {
     text-decoration: none;
