@@ -320,12 +320,9 @@
   <!-- 商品方案分類 及按鈕 -->
 
   <div class="container homeproject">
-    <div class="row mt-4 mb-4">
-      <div class="col-lg-4 text-start">
-        <h4>群眾集資</h4>
-      </div>
-      <div class="col-lg-4"></div>
-      <div class="col-lg-4 text-end">
+    <div class="row">
+      <div class="col-12  d-flex justify-content-between">
+        <h4 class="align-self-end">群眾集資</h4>
         <button type="button" class="btn btn-outline-primary">更多▸</button>
       </div>
     </div>
@@ -483,13 +480,11 @@
     </nav>
   </div>
   <div class="line"></div>
+  
   <div class="container homeproject">
-    <div class="row mt-4 mb-4">
-      <div class="col-lg-4 text-start">
-        <h4>預購式專案</h4>
-      </div>
-      <div class="col-lg-4"></div>
-      <div class="col-lg-4 text-end">
+    <div class="row">
+      <div class="col-12  d-flex justify-content-between">
+        <h4 class="align-self-end">預購式專案</h4>
         <button type="button" class="btn btn-outline-primary">更多▸</button>
       </div>
     </div>
@@ -647,13 +642,11 @@
     </nav>
   </div>
   <div class="line"></div>
+  
   <div class="container homeproject">
-    <div class="row mt-4 mb-4">
-      <div class="col-lg-4 text-start">
-        <h4>訂閱式專案</h4>
-      </div>
-      <div class="col-lg-4"></div>
-      <div class="col-lg-4 text-end">
+    <div class="row">
+      <div class="col-12  d-flex justify-content-between">
+        <h4 class="align-self-end">訂閱式專案</h4>
         <button type="button" class="btn btn-outline-primary">更多▸</button>
       </div>
     </div>
@@ -1227,6 +1220,7 @@
 
 .homeproject {
   .row {
+    margin: 1.5rem 0;
     .btn {
       color: var(--font-color);
       &:hover {
