@@ -38,9 +38,12 @@
       </div>
     </div>
   </nav>
-  
+
   <!-- 手機版navbar -->
-  <nav class="navbar navbar-expand navbar-light phone-nav-top-part" style="background-color: #fff">
+  <nav
+    class="navbar navbar-expand navbar-light phone-nav-top-part"
+    style="background-color: #fff"
+  >
     <div class="container-fluid d-md-none">
       <a class="navbar-brand" href="#"
         ><svg
@@ -110,7 +113,7 @@
     </div>
   </div>
   <!-- 手機板 -->
-    <div class="covid-phone d-md-none">
+  <div class="covid-phone d-md-none">
     <div class="covid-img"></div>
     <div class="covid-title">
       <div class="covid-svg">
@@ -274,11 +277,12 @@
         </div>
       </div>
     </div>
-
+    <!-- 桌機版 按鈕 -->
     <button type="button" class="btn btn-light helpshop-btn">
       更多挺好店計畫
     </button>
   </div>
+  <!-- img RWD part -->
   <!-- img -->
   <div class="container main-img">
     <a
@@ -317,11 +321,11 @@
 
   <div class="container homeproject">
     <div class="row mt-4 mb-4">
-      <div class="col-lg-4  text-start">
+      <div class="col-lg-4 text-start">
         <h4>群眾集資</h4>
       </div>
-      <div class="col-lg-4 "></div>
-      <div class="col-lg-4  text-end">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4 text-end">
         <button type="button" class="btn btn-outline-primary">更多▸</button>
       </div>
     </div>
@@ -481,11 +485,11 @@
   <div class="line"></div>
   <div class="container homeproject">
     <div class="row mt-4 mb-4">
-      <div class="col-lg-4  text-start">
+      <div class="col-lg-4 text-start">
         <h4>預購式專案</h4>
       </div>
-      <div class="col-lg-4 "></div>
-      <div class="col-lg-4  text-end">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4 text-end">
         <button type="button" class="btn btn-outline-primary">更多▸</button>
       </div>
     </div>
@@ -645,11 +649,11 @@
   <div class="line"></div>
   <div class="container homeproject">
     <div class="row mt-4 mb-4">
-      <div class="col-lg-4  text-start">
+      <div class="col-lg-4 text-start">
         <h4>訂閱式專案</h4>
       </div>
-      <div class="col-lg-4 "></div>
-      <div class="col-lg-4  text-end">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4 text-end">
         <button type="button" class="btn btn-outline-primary">更多▸</button>
       </div>
     </div>
@@ -973,12 +977,12 @@
   }
 }
 // 手機版
-// 手機版本出現右側空白
+
 .covid-phone {
   z-index: -1;
   position: relative;
   .covid-img {
-    background:url("https://i.imgur.com/HnDfduT.png") center center no-repeat;
+    background: url("https://i.imgur.com/HnDfduT.png") center center no-repeat;
     width: 100%;
     height: 25rem;
     background-size: cover;
@@ -1102,6 +1106,24 @@
     }
   }
 }
+// 挺好店 btn 手機版
+@media screen and (max-width: 576px) {
+  .helpshop {
+    .btn {
+      position: absolute;
+      bottom: 3%;
+      left: 30%;
+      padding: 1rem;
+      background-color: #fff;
+      box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+      &:hover {
+        transform: scale(1.1);
+        transition: transform 0.25s ease-out;
+      }
+    }
+  }
+}
+
 // img
 .main-img {
   padding: 2rem 0;
@@ -1147,7 +1169,6 @@
 /* classification */
 
 .classification {
-  margin: auto;
   text-align: center;
   position: relative;
   display: flex;
@@ -1165,8 +1186,8 @@
   .classification-choose-part {
     width: 75%;
     padding: 30px 10px 20px;
-    border-top: 1px solid #696969;
-    border-bottom: 1px solid #696969;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
     .classification-choose {
       color: var(--font-color);
       text-decoration: none;
@@ -1179,7 +1200,29 @@
     }
   }
 }
-
+// classification RWD 手機
+@media screen and (max-width: 576px) {
+  .classification {
+    .classification-choose-part {
+      width: 100%;
+      padding: 30px 10px 20px;
+      border-top: 1px solid #e0e0e0;
+      border-bottom: 1px solid #e0e0e0;
+      white-space: nowrap;
+      overflow: auto;
+      .classification-choose {
+        color: var(--font-color);
+        text-decoration: none;
+        padding: 0 10px;
+        &:hover {
+          font-weight: bold;
+          color: var(--font-color);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
 /* end of classifications */
 
 .homeproject {
