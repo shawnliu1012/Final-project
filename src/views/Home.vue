@@ -321,7 +321,7 @@
 
   <div class="container homeproject">
     <div class="row">
-      <div class="col-12  d-flex justify-content-between">
+      <div class="col-12 d-flex justify-content-between">
         <h4 class="align-self-end">群眾集資</h4>
         <button type="button" class="btn btn-outline-primary">更多▸</button>
       </div>
@@ -480,10 +480,10 @@
     </nav>
   </div>
   <div class="line"></div>
-  
+
   <div class="container homeproject">
     <div class="row">
-      <div class="col-12  d-flex justify-content-between">
+      <div class="col-12 d-flex justify-content-between">
         <h4 class="align-self-end">預購式專案</h4>
         <button type="button" class="btn btn-outline-primary">更多▸</button>
       </div>
@@ -642,10 +642,10 @@
     </nav>
   </div>
   <div class="line"></div>
-  
+
   <div class="container homeproject">
     <div class="row">
-      <div class="col-12  d-flex justify-content-between">
+      <div class="col-12 d-flex justify-content-between">
         <h4 class="align-self-end">訂閱式專案</h4>
         <button type="button" class="btn btn-outline-primary">更多▸</button>
       </div>
@@ -1156,6 +1156,21 @@
         border-radius: 0.2rem;
         font-weight: bold;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main-img {
+    .img-part {
+      display: block;
+      text-decoration: none;
+      padding-bottom: 35rem;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      border-radius: 0.2rem;
     }
   }
 }
