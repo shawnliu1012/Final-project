@@ -284,9 +284,9 @@
   </div>
   <!-- img RWD part -->
   <!-- img -->
-  <div class="container main-img">
+  <div class="container-fluid main-img">
     <a
-      class="img-part"
+      class="img-part "
       href=""
       style="background-image: url('https://i.imgur.com/UcIpttt.jpg')"
     >
@@ -1159,18 +1159,39 @@
     }
   }
 }
-
+// img RWD
 @media screen and (max-width: 576px) {
   .main-img {
     .img-part {
       display: block;
       text-decoration: none;
-      padding-bottom: 35rem;
+      padding: 100px;
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
       position: relative;
       border-radius: 0.2rem;
+      .img-title {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      .img-title-time {
+        font-size: 1rem;
+        text-decoration: underline;
+      }
+      h3 {
+        padding: 1rem 0;
+      }
+      .button {
+        padding: 0.75rem 1.5rem;
+        border: 1px solid #fff;
+        border-radius: 0.2rem;
+        font-weight: bold;
+      }
+    }
     }
   }
 }
