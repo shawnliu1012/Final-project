@@ -88,7 +88,7 @@
       <div class="col-lg-8">
         <div class="product-film">
           <div class="product">
-            <!-- 會跳轉成影片 修改這部分 -->
+            <!-- 直接使用圖片 -->
             <button class="play-radio">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -119,9 +119,6 @@
           </a>
           <span class="proposer">
             提案人 <a href="" class="">蔚藍星球</a>
-            <!-- <a href=""> <i class="fab fa-facebook"></i></a>
-            <a href=""> <i class="fas fa-compass"></i></a>
-            <a href=""> <i class="fab fa-instagram"></i></a> -->
           </span>
           <p class="introduce">
             海外儲能電源領導品牌 BLUETTI ，全台首發推出【 EB55
@@ -191,20 +188,7 @@
           專案內容
         </button>
       </li>
-      <!-- <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          id="profile-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#profile"
-          type="button"
-          role="tab"
-          aria-controls="profile"
-          aria-selected="false"
-        >
-          專案更新<span>1</span>
-        </button>
-      </li> -->
+
       <li class="nav-item" role="presentation">
         <button
           class="nav-link"
