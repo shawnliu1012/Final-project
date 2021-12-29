@@ -26,15 +26,15 @@
         },
         {
             "id": 3,
-            "img": "https://i.imgur.com/2P79MF2.png",
-            "title": "客庄裡的法式甜點 | Bonbons 山城鐵盒餅乾",
-            "author": "Bonbons Studio",
-            "description": "經典法式餅乾融合九種客庄在地的特色食材，紅棗、擂茶、桂花釀等，以品嚐的角度帶你認識不一樣的山城與法式甜點。",
-            "price": 235306,
-            "Target": 10000,
-            "percent": "2436%",
-            "sponsor": 154,
-            "time":  "2021/08/19 12:00 – 2021/11/30 23:59"
+            "img": "https://i.imgur.com/YIyU6aM.jpg",
+            "title": "BLUETTI EB55 野獸級戶外行動電源站｜用「電」解放你的 outdoor 魂！",
+            "author": "蔚藍星球",
+            "description": "海外儲能電源領導品牌 BLUETTI ，全台首發【EB55 野獸級戶外行動電源站】一機搞定所有戶外用電需求，537Wh/700W 具備 AC 插座及 DC 快充接孔，從城市到荒野，顛覆你的電力生活。",
+            "price": 15327721,
+            "Target": 500000,
+            "percent": "3065%",
+            "sponsor":  889,
+            "time":  "2021/09/30 12:00 – 2021/12/31 02:00"
         },
         {
             "id": 4,
