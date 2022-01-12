@@ -15,10 +15,23 @@
             "percent": "2436%",
             "sponsor": 154,
             "time": "2021/08/19 12:00 – 2021/11/30 23:59",
-            "introduction": {},
+            "introduction": {
+                "title":"計畫更新 #「Bonbons山城鐵盒餅乾」好評延長，「漫遊山城禮盒」新款上線！",
+                "img":"",
+                "description":""
+            },
             "comment": {
-                "comment1": "這真是棒極了！",
-                "comment2": "真的是一棵像大樹一樣美妙的小盆景。"
+                "comment1": {
+                    "buyer":{
+                        "photo":"",
+                        "name":"Teng-Yen Wu",
+                        "question": "您好，請問還能加購嗎？"
+                    },
+                    "seller":{
+                        "name": "Bonbons Studio ",
+                        "answer": "您好，已經有於郵件回覆您囉~感謝您的詢問"
+                    }
+                }
             },
             "QA": {},
             "planA": {
