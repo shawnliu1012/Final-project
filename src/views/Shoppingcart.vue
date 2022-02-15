@@ -187,8 +187,8 @@
                 type="number"
                 id="amount"
                 placeholder="0"
-                min="1"
-                value="1"
+                min="0"
+                value="0"
               />
             </div>
           </div>
@@ -528,3 +528,6 @@
   }
 }
 </style>
+<script>
+
+</script>
