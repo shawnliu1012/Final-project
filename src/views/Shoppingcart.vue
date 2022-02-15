@@ -535,18 +535,18 @@
 }
 </style>
 // <script>
-// const chooseLabel = {
-//   data() {
-//     return {
-//       isFull: true,
-//     };
-//   },
-//   methods: {
-//     change: function (key) {
-//       this[key] = !this[key];
-//     },
-//   },
-// };
+export default {
+  data() {
+    return {
+      isFull: true,
+    };
+  },
+  methods: {
+    change: function (key) {
+      this[key] = !this[key];
+    },
+  },
+};
 
 // Vue.createApp(chooseLabel).mount(".chooseLabel");
-// </script>
+</script>
