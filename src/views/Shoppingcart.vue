@@ -234,13 +234,19 @@
           <label for="exampleFormControlInput1" class="form-label"
             >超商取貨(選填)</label
           ><br />
-          <label class="btn btn-outline-secondary" for="btn-check-outlined">
+          <button
+            class="btn btn-outline-secondary chooseLabel"
+            for="btn-check-outlined"
+            type="button"
+            v-on:click="change ('isFull')"
+          >
             選擇 >
-          </label>
+          </button>
           <div
             class="btn-group"
             role="group"
             aria-label="Basic outlined example"
+            v-show="isFull"
           >
             <button type="button" class="btn btn-outline-secondary">
               7-11
@@ -528,6 +534,19 @@
   }
 }
 </style>
-<script>
+// <script>
+// const chooseLabel = {
+//   data() {
+//     return {
+//       isFull: true,
+//     };
+//   },
+//   methods: {
+//     change: function (key) {
+//       this[key] = !this[key];
+//     },
+//   },
+// };
 
-</script>
+// Vue.createApp(chooseLabel).mount(".chooseLabel");
+// </script>
