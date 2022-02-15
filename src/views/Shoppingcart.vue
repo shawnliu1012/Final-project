@@ -135,7 +135,6 @@
                   type="radio"
                   name="flexRadioDefault"
                   id="flexRadioDefault2"
-                  v-on:click="change ('isFull')"
                 />
 
                 <svg
@@ -160,6 +159,7 @@
                   type="radio"
                   name="flexRadioDefault"
                   id="flexRadioDefault2"
+                  v-on:click="change ('isFull')"
                 />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -539,7 +539,7 @@
 export default {
   data() {
     return {
-      isFull: true,
+      isFull: false,
     };
   },
   methods: {
