@@ -159,7 +159,6 @@
                   type="radio"
                   name="flexRadioDefault"
                   id="flexRadioDefault2"
-                  v-on:click="change ('isFull')"
                 />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -176,7 +175,7 @@
                 ATM 機器轉帳或銀行臨櫃繳款
               </label>
             </div>
-            <div class="mb-3 text-part" v-show="isFull">
+            <div class="mb-3 text-part" >
               虛擬帳號轉帳因要等待銀行於工作天回傳，<strong>限量的選項可能會在入帳前售罄並造成贊助失敗</strong>。遇到例假日將會延後更新。若未來有遇到退款的情況，<strong>退款金額會扣除轉帳交易所產生的手續費用</strong>。臨櫃繳款的截止期限，必須在週一至週五（不含例假日）的下午三點半前完成，<strong>週六的郵局轉帳將會造成交易失敗</strong>。
             </div>
           </div>
@@ -535,7 +534,7 @@
   }
 }
 </style>
-// <script>
+<script>
 export default {
   data() {
     return {
@@ -550,5 +549,4 @@ export default {
   },
 };
 
-// Vue.createApp(chooseLabel).mount(".chooseLabel");
 </script>
