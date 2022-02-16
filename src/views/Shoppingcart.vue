@@ -540,7 +540,7 @@
 export default {
   data() {
     return {
-      Full: true,
+      Full: false,
       convenienceStore: false,
     };
   },
