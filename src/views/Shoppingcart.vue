@@ -239,7 +239,7 @@
             class="btn btn-outline-secondary chooseLabel"
             for="btn-check-outlined"
             type="button"
-            v-on:click="change ('isFull')"
+            v-on:click="change ('convenienceStore')"
           >
             選擇 >
           </button>
@@ -247,7 +247,7 @@
             class="btn-group"
             role="group"
             aria-label="Basic outlined example"
-            v-show="isFull"
+            v-show="convenienceStore"
           >
             <button type="button" class="btn btn-outline-secondary">
               7-11
@@ -540,6 +540,7 @@ export default {
   data() {
     return {
       isFull: false,
+      convenienceStore: false,
     };
   },
   methods: {
