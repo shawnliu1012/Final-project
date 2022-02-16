@@ -32,20 +32,4 @@
   }
 }
 </style>
-// <script>
-// import { defineComponent } from '@vue/composition-api'
 
-// import Vue from 'vue'
-// import axios from 'axios'
-// import VueAxios from 'vue-axios'
-
-// Vue.use(VueAxios, axios)
-
-// export default {
-//   reated(){
-//   Vue.axios.get('http://localhost:3000/products').then((response) => {
-//     console.log(response.data)
-//   })
-// },
-// }
-// </script>
