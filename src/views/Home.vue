@@ -272,7 +272,7 @@
       </div>
     </div>
     <!-- 更多計畫按鈕 -->
-    <button type="button" class="btn btn-light helpshop-btn d-none d-lg-block ">
+    <button type="button" class="btn btn-light helpshop-btn d-none d-lg-block">
       更多挺好店計畫
     </button>
   </div>
@@ -317,7 +317,7 @@
     <div class="row">
       <div class="col-12 d-flex justify-content-between">
         <h4 class="align-self-end">群眾集資</h4>
-        <button type="button" class="btn btn-outline-primary">更多▸</button>
+        <button type="button" class="btn">更多▸</button>
       </div>
     </div>
     <!-- 商品區 -->
@@ -1122,7 +1122,6 @@
   }
 }
 
-
 // img
 .main-img {
   padding: 2rem 0;
@@ -1264,12 +1263,19 @@
   .row {
     margin: 1.5rem 0;
     .btn {
-      color: var(--font-color);
-      &:hover {
-        background-color: #fff;
-        color: #000;
-        border-color: #000;
-      }
+      background-color: var(--font-color);
+      color: #fff;
+      outline: none;
+      border-color: transparent;
+      box-shadow: none;
+    }
+    .btn:hover,
+    .btn:active {
+      outline: none;
+      border-color: transparent;
+      box-shadow: none;
+      transform: scale(1.1);
+      transition: transform 0.25s ease-out;
     }
     .card {
       border-style: none;
