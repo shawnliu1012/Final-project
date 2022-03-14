@@ -271,8 +271,8 @@
         </div>
       </div>
     </div>
-    <!-- 桌機版 按鈕 -->
-    <button type="button" class="btn btn-light helpshop-btn">
+    <!-- 更多計畫按鈕 -->
+    <button type="button" class="btn btn-light helpshop-btn d-none d-lg-block ">
       更多挺好店計畫
     </button>
   </div>
@@ -1103,31 +1103,25 @@
     bottom: 7%;
     left: 43%;
     padding: 1rem;
-    background-color: #fff;
-    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+    background-color: rgb(226, 222, 222);
+    opacity: 0.5;
     &:hover {
       transform: scale(1.1);
       transition: transform 0.25s ease-out;
     }
   }
-}
-// 挺好店 btn 手機版
-@media screen and (max-width: 576px) {
-  .helpshop {
-    .btn {
-      position: absolute;
-      bottom: 3%;
-      left: 30%;
-      padding: 1rem;
-      background-color: #fff;
-      box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
-      &:hover {
-        transform: scale(1.1);
-        transition: transform 0.25s ease-out;
-      }
-    }
+  .btn:focus,
+  .btn:active:focus,
+  .btn.active:focus,
+  .btn.focus,
+  .btn:active.focus,
+  .btn.active.focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: none;
   }
 }
+
 
 // img
 .main-img {
