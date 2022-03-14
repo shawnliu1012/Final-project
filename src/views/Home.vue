@@ -880,10 +880,22 @@
     }
   }
 
-  .navbar-btn .btn {
-    font-weight: bold;
-    color: #3f3f3f;
-    margin: 0 0.2rem;
+  .navbar-btn {
+    .btn {
+      font-weight: bold;
+      color: #3f3f3f;
+      margin: 0 0.2rem;
+    }
+    .btn:focus,
+    .btn:active:focus,
+    .btn.active:focus,
+    .btn.focus,
+    .btn:active.focus,
+    .btn.active.focus {
+      outline: none;
+      border-color: transparent;
+      box-shadow: none;
+    }
   }
 
   .nav-link {
@@ -893,10 +905,6 @@
 // navbar RWD
 .phone-nav-top-part {
   margin: 0 1rem;
-}
-
-.phone-nav-bottom-part {
-  border-top: 1px solid #dcdcdc;
   .navbar-brand svg:hover {
     animation: change 2s;
 
@@ -920,11 +928,27 @@
       }
     }
   }
-  .navbar-btn .btn {
-    font-weight: bold;
-    color: #3f3f3f;
-    margin: 0 0.2rem;
+  .navbar-btn {
+    .btn {
+      font-weight: bold;
+      color: #3f3f3f;
+      margin: 0 0.2rem;
+    }
+    .btn:focus,
+    .btn:active:focus,
+    .btn.active:focus,
+    .btn.focus,
+    .btn:active.focus,
+    .btn.active.focus {
+      outline: none;
+      border-color: transparent;
+      box-shadow: none;
+    }
   }
+}
+
+.phone-nav-bottom-part {
+  border-top: 1px solid #dcdcdc;
 }
 
 // 挺好店
