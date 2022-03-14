@@ -1356,12 +1356,17 @@
   position: relative;
 
   a {
+    margin: 10px 0px;
     color: #0050a2;
     text-decoration: none;
     width: 30%;
     &:hover {
       color: #000;
     }
+  }
+  .trademark {
+    margin: 10px 0px;
+    color: #3f3f3f;
   }
 
   .footer-img-part {
