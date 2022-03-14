@@ -286,7 +286,7 @@
   <!-- img -->
   <div class="container-fluid main-img">
     <a
-      class="img-part "
+      class="img-part"
       href=""
       style="background-image: url('https://i.imgur.com/UcIpttt.jpg')"
     >
@@ -827,7 +827,7 @@
       </div>
     </div>
     <div class="footer-img-part">
-      <button class="btn btn-light">
+      <button class="btn btn-outline-light">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="28"
@@ -1172,26 +1172,26 @@
       position: relative;
       border-radius: 0.2rem;
       .img-title {
-      width: 100%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: #fff;
-      .img-title-time {
-        font-size: 1rem;
-        text-decoration: underline;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        .img-title-time {
+          font-size: 1rem;
+          text-decoration: underline;
+        }
+        h3 {
+          padding: 1rem 0;
+        }
+        .button {
+          padding: 0.75rem 1.5rem;
+          border: 1px solid #fff;
+          border-radius: 0.2rem;
+          font-weight: bold;
+        }
       }
-      h3 {
-        padding: 1rem 0;
-      }
-      .button {
-        padding: 0.75rem 1.5rem;
-        border: 1px solid #fff;
-        border-radius: 0.2rem;
-        font-weight: bold;
-      }
-    }
     }
   }
 }
@@ -1354,18 +1354,19 @@
   height: 18rem;
   margin-top: 1.5rem;
   position: relative;
-  // .footer-part a {
-  //   text-decoration: none;
-  //   color: var(--font-color);
-  //   line-height: 2rem;
-  // }
+
   .footer-img-part {
     position: absolute;
     bottom: 80%;
     left: 90%;
-    a {
-      color: #000;
+    .btn {
+      border-radius: 50%;
+      padding: 0;
+      svg {
+        color: #000;
+      }
     }
+    
   }
 }
 </style>
@@ -1373,27 +1374,27 @@
 export default {
   name: "Home",
   components: {},
-      data() {
-        return {
-            name: "Footer",
-            scrollNum: 0
-        };
+  data() {
+    return {
+      name: "Footer",
+      scrollNum: 0,
+    };
+  },
+  methods: {
+    goTop() {
+      document.documentElement.scrollTop = 0;
     },
-    methods: {
-        goTop() {
-            document.documentElement.scrollTop = 0;
-        }
-    },
-    mounted() {
-        window.addEventListener("scroll", () => {
-            let clientTop =
-                document.documentElement.scrollTop ||
-                document.body.scrollTop ||
-                window.pageYOffset;
-            this.scrollNum = clientTop;
-            // console.log(`目前頁面高度 ${clientTop}`);
-        });
-    }
+  },
+  mounted() {
+    window.addEventListener("scroll", () => {
+      let clientTop =
+        document.documentElement.scrollTop ||
+        document.body.scrollTop ||
+        window.pageYOffset;
+      this.scrollNum = clientTop;
+      // console.log(`目前頁面高度 ${clientTop}`);
+    });
+  },
 };
 
 // var footerimgpart = document.getElementsByClassName('footer-img-part');
