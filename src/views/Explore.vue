@@ -393,6 +393,23 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 .project-navbar {
   padding: 01rem 0;
+  .dropdown {
+    // 消除按鈕外框
+    .btn:focus,
+    .btn:active:focus,
+    .btn.active:focus,
+    .btn.focus,
+    .btn:active.focus,
+    .btn.active.focus {
+      outline: none;
+      border-color: transparent;
+      box-shadow: none;
+    }
+  }
+  input:hover,
+  input:focus {
+    outline: none;
+  }
 }
 // search RWD
 @media screen and (max-width: 576px) {
