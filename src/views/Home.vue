@@ -105,10 +105,7 @@
       </div>
       <h3>挺好店應援計畫</h3>
       <span class="covid-span">
-        疫情讓許多你我的愛店面臨經營困難，嘖嘖規劃近期啟動「挺好店應援計畫」，提供<strong>實體空間／店家經營者</strong>和<strong>需要實體空間做展演的團隊</strong>應變疫情的上架方案。<a
-          href=""
-          >瞭解更多</a
-        >
+        疫情讓許多你我的愛店面臨經營困難，嘖嘖規劃近期啟動「挺好店應援計畫」，提供<strong>實體空間／店家經營者</strong>和<strong>需要實體空間做展演的團隊</strong>應變疫情的上架方案。
       </span>
     </div>
   </div>
@@ -133,10 +130,7 @@
       </div>
       <h3>挺好店應援計畫</h3>
       <span class="covid-span">
-        疫情讓許多你我的愛店面臨經營困難，嘖嘖規劃近期啟動「挺好店應援計畫」，提供<strong>實體空間／店家經營者</strong>和<strong>需要實體空間做展演的團隊</strong>應變疫情的上架方案。<a
-          href=""
-          >瞭解更多</a
-        >
+        疫情讓許多你我的愛店面臨經營困難，嘖嘖規劃近期啟動「挺好店應援計畫」，提供<strong>實體空間／店家經營者</strong>和<strong>需要實體空間做展演的團隊</strong>應變疫情的上架方案。
       </span>
     </div>
   </div>
@@ -988,9 +982,6 @@
       font-weight: bold;
       padding-top: 1rem;
     }
-    a {
-      color: var(--font-color);
-    }
   }
 }
 // 手機版
@@ -1030,9 +1021,6 @@
     h3 {
       font-weight: bold;
       padding-top: 1rem;
-    }
-    a {
-      color: var(--font-color);
     }
   }
 }
