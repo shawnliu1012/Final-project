@@ -339,7 +339,7 @@
               placeholder="填寫備註(參考回饋或計畫內容的說明，可留空)"
             />
           </div>
-          <button type="button" class="btn btn-outline-success">
+          <button type="button" class="btn btn-outline-success b-money">
             立刻贊助 <span>NT<span class="money">1,197</span></span>
           </button>
           <div class="word-part">
@@ -558,14 +558,78 @@
       }
     }
   }
+  // address select
+  .form-select:focus,
+  .form-select:active:focus,
+  .form-select.active:focus,
+  .form-select.focus,
+  .form-select:active.focus,
+  .form-select.active.focus {
+    outline: none;
+    border-color: #ced4da;
+    box-shadow: none;
+  }
   // address
   .address {
     display: flex;
     justify-content: space-between;
+    input:focus,
+    input:active:focus,
+    input.active:focus,
+    input.focus,
+    input:active.focus,
+    input.active.focus {
+      outline: none;
+      border-color: #ced4da;
+      box-shadow: none;
+    }
   }
+
   // 超商取貨
+  .chooseLabel:focus,
+  .chooseLabel:active:focus,
+  .chooseLabel.active:focus,
+  .chooseLabel.focus,
+  .chooseLabel:active.focus,
+  .chooseLabel.active.focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: none;
+  }
   .btn-group {
     margin-left: 3rem;
+  .btn:focus,
+  .btn:active:focus,
+  .btn.active:focus,
+  .btn.focus,
+  .btn:active.focus,
+  .btn.active.focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: none;
+  }
+  // 收件人 聯絡電話 備註
+  }
+  input:focus,
+  input:active:focus,
+  input.active:focus,
+  input.focus,
+  input:active.focus,
+  input.active.focus {
+    outline: none;
+    border-color: #ced4da;
+    box-shadow: none;
+  }
+  // 結帳按鈕
+  .b-money:focus,
+  .b-money:active:focus,
+  .b-money.active:focus,
+  .b-money.focus,
+  .b-money:active.focus,
+  .b-money.active.focus {
+    outline: none;
+    border-color: #198754;
+    box-shadow: none;
   }
   // 提案人贊助提醒
   .word-part {
