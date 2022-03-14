@@ -1355,6 +1355,15 @@
   margin-top: 1.5rem;
   position: relative;
 
+  a {
+    color: #0050a2;
+    text-decoration: none;
+    width: 30%;
+    &:hover {
+      color: #000;
+    }
+  }
+
   .footer-img-part {
     position: absolute;
     bottom: 80%;
@@ -1366,7 +1375,6 @@
         color: #000;
       }
     }
-    
   }
 }
 </style>
