@@ -827,7 +827,7 @@
       </div>
     </div>
     <div class="footer-img-part">
-      <button class="btn btn-outline-light">
+      <button class="btn btn-outline-light" @click="goTop()">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="28"
@@ -1381,6 +1381,7 @@ export default {
     };
   },
   methods: {
+    // 設定置頂
     goTop() {
       document.documentElement.scrollTop = 0;
     },
@@ -1396,16 +1397,4 @@ export default {
     });
   },
 };
-
-// var footerimgpart = document.getElementsByClassName('footer-img-part');
-//     footerimgpart.addEventListener('click', function () {
-//       var timer = setInterval(function () {
-//         var left = window.pageYOffset;
-//         var step = Math.ceil((left - 0) / 10);
-//         window.scroll(0, left - step);
-//         if (left == 0) {
-//           clearInterval(timer);
-//         }
-//       }, 30)
-//     })
 </script>
