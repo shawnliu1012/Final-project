@@ -827,7 +827,7 @@
       </div>
     </div>
     <div class="footer-img-part">
-      <a href="footer-svg" class="">
+      <button class="btn btn-light">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="28"
@@ -840,7 +840,7 @@
             d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"
           />
         </svg>
-      </a>
+      </button>
     </div>
   </div>
 </template>
@@ -1354,11 +1354,11 @@
   height: 18rem;
   margin-top: 1.5rem;
   position: relative;
-  .footer-part a {
-    text-decoration: none;
-    color: var(--font-color);
-    line-height: 2rem;
-  }
+  // .footer-part a {
+  //   text-decoration: none;
+  //   color: var(--font-color);
+  //   line-height: 2rem;
+  // }
   .footer-img-part {
     position: absolute;
     bottom: 80%;
@@ -1373,5 +1373,38 @@
 export default {
   name: "Home",
   components: {},
+      data() {
+        return {
+            name: "Footer",
+            scrollNum: 0
+        };
+    },
+    methods: {
+        goTop() {
+            document.documentElement.scrollTop = 0;
+        }
+    },
+    mounted() {
+        window.addEventListener("scroll", () => {
+            let clientTop =
+                document.documentElement.scrollTop ||
+                document.body.scrollTop ||
+                window.pageYOffset;
+            this.scrollNum = clientTop;
+            // console.log(`目前頁面高度 ${clientTop}`);
+        });
+    }
 };
+
+// var footerimgpart = document.getElementsByClassName('footer-img-part');
+//     footerimgpart.addEventListener('click', function () {
+//       var timer = setInterval(function () {
+//         var left = window.pageYOffset;
+//         var step = Math.ceil((left - 0) / 10);
+//         window.scroll(0, left - step);
+//         if (left == 0) {
+//           clearInterval(timer);
+//         }
+//       }, 30)
+//     })
 </script>
