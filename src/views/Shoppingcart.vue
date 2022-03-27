@@ -351,21 +351,21 @@
     </div>
   </div>
   <!-- footer -->
-  <div class="container footer mt-4">
-    <div class="row footer-part">
-      <div class="col-4 d-flex flex-column text-start">
+  <div class="container footer">
+    <div class="row footer-part gy-4">
+      <div class="col-lg-4 d-flex flex-column text-start">
         <div class="footer-title">社群</div>
         <a href="">Facebook</a>
         <a href="">Instagram</a>
         <a href="">Twitter</a>
       </div>
-      <div class="col-4 d-flex flex-column text-start">
+      <div class="col-lg-4 d-flex flex-column text-start">
         <div class="footer-title">幫助</div>
         <a href="">常見問答</a>
         <a href="">使用條款</a>
         <a href="">隱私權政策</a>
       </div>
-      <div class="col-4 d-flex flex-column text-start">
+      <div class="col-lg-4 d-flex flex-column text-start">
         <div class="footer-title">關於</div>
         <a href="">關於我們</a>
         <a href="">商標資源</a>
