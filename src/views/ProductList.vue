@@ -403,22 +403,7 @@
         </div>
       </div>
     </div>
-    <!-- <div
-      class="tab-pane"
-      id="profile"
-      role="tabpanel"
-      aria-labelledby="profile-tab"
-    >
-      <div class="col-lg-8">
-        <h4>
-          計畫更新 #1｜開賣 10 分鐘達標
-          感謝贊助者的大力支持，別忘了贊助者限定活動分享即贈禮
-        </h4>
-        <img src="https://i.imgur.com/RY5gbly.png" alt="" />
-        <p>感謝各位熱烈支持 ٩(ˊᗜˋ )و</p>
-      </div>
-      <div class="col-lg-4"></div>
-    </div> -->
+
     <div
       class="tab-pane"
       id="messages"
@@ -541,7 +526,7 @@
     </div>
   </div> -->
   <!-- 圖片及方案內容 -->
-
+  <div class="line"></div>
   <!-- footer -->
   <div class="container footer">
     <div class="row footer-part gy-4">

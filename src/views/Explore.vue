@@ -349,6 +349,7 @@
       </ul>
     </nav>
   </div>
+  <div class="line"></div>
   <!-- footer -->
   <div class="container footer">
     <div class="row footer-part gy-4">
