@@ -83,7 +83,7 @@
     </ul>
   </nav>
   <!-- project top -->
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-8">
         <div class="product-film">
@@ -206,7 +206,63 @@
       <a href="">贊助專案</a>
     </div>
   </div>
+  <!-- nav tabs rwd -->
+  <div class="tabs-phone-part d-lg-none">
+    <div class="container">
+      <ul
+        class="nav nav-tabs nav-justified product-bottom"
+        id="myTab"
+        role="tablist"
+      >
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home"
+            type="button"
+            role="tab"
+            aria-controls="home"
+            aria-selected="true"
+          >
+            專案內容
+          </button>
+        </li>
 
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="messages-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#messages"
+            type="button"
+            role="tab"
+            aria-controls="messages"
+            aria-selected="false"
+          >
+            留言<span>6</span>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="settings-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#settings"
+            type="button"
+            role="tab"
+            aria-controls="settings"
+            aria-selected="false"
+          >
+            常見問答<span>6</span>
+          </button>
+        </li>
+      </ul>
+      <div class="sponsor">
+        <a href="">贊助專案</a>
+      </div>
+    </div>
+  </div>
   <!-- Tab panes -->
   <div class="tab-content">
     <div
@@ -219,7 +275,7 @@
         <div class="row">
           <div class="col-lg-8">
             <div class="program-img">
-              <img src="https://i.imgur.com/BA7hkCA.gif" alt="" />
+              <!-- <img src="https://i.imgur.com/BA7hkCA.gif" alt="" /> -->
               <img src="https://i.imgur.com/PLK1ANd.jpg" alt="" />
               <img src="https://i.imgur.com/PPMfOht.jpg" alt="" />
               <img src="https://i.imgur.com/zWDvc2h.jpg" alt="" />
@@ -502,30 +558,7 @@
       </div>
     </div>
   </div>
-  <!-- 單一商品詳細介紹及方案區 -->
-  <!-- navbar -->
 
-  <!-- <div class="product-bottom">
-    <div class="content-choose">
-      <a href=""><div>專案內容</div></a>
-      <a href=""
-        ><div>專案更新</div>
-        <span>1</span></a
-      >
-      <a href=""
-        ><div>留言</div>
-        <span>6</span></a
-      >
-      <a href=""
-        ><div>常見問答</div>
-        <span>10</span></a
-      >
-    </div>
-    <div class="sponsor">
-      <a href="">贊助專案</a>
-    </div>
-  </div> -->
-  <!-- 圖片及方案內容 -->
   <div class="line"></div>
   <!-- footer -->
   <div class="container footer">
@@ -757,22 +790,66 @@
     }
   }
 }
+@media screen and (min-width: 992px) {
+  .tabs-part {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fdfdfd;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    align-items: center;
+    margin: 2rem 0rem;
+    padding: 0 9rem;
+    position: sticky;
+    top: 0;
+    .product-bottom {
+      padding: 1rem 0rem;
+      display: flex;
+      align-items: center;
 
-.tabs-part {
-  display: flex;
-  justify-content: space-between;
+      .nav-link {
+        color: #696969;
+        margin: 0 0.5rem;
+      }
+    }
+    .sponsor {
+      border: 1px solid #229f2a;
+      border-radius: 0.2rem;
+      padding: 0.5rem 7rem;
+      transition: transform 1s ease;
+      box-shadow: 0 0 0 2px #fff, 0 0 0 3px #ccc;
+
+      a {
+        color: #229f2a;
+        text-decoration: none;
+      }
+      &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        font-weight: bold;
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .tabs-part {
+    display: none;
+  }
+}
+// nav tabs rwd
+.tabs-phone-part {
   background-color: #fdfdfd;
   border-top: 1px solid #dcdcdc;
   border-bottom: 1px solid #dcdcdc;
   align-items: center;
-  margin: 2rem 0rem;
-  padding: 0 9rem;
+  // margin: 2rem 0rem;
+  // padding: 0 9rem;
+  position: sticky;
+    top: 0;
   .product-bottom {
     padding: 1rem 0rem;
     display: flex;
     align-items: center;
-    position: sticky;
-    top: 0;
 
     .nav-link {
       color: #696969;
