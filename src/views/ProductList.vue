@@ -656,72 +656,147 @@
       role="tabpanel"
       aria-labelledby="messages-tab"
     >
-      <div class="messager-part d-none d-lg-block">
-        贊助人才能留言，如有專案相關提問，請聯絡提案人。
-      </div>
-      <div class="message-part d-none d-lg-block">
-        <div class="sponsor-img-time">
-          <div class="sponsor-question-part">
-            <div class="sponsor-img">
-              <img src="https://i.imgur.com/fSXMXMb.png" alt="" />
-              <div class="sponsor">
-                <span class="sponsor-name">shang</span>
-                <span class="sponsor-label">贊助人</span>
+      <!-- 問答桌面版 -->
+      <div class="container messager-part-container">
+        <div class="messager-part d-none d-lg-block">
+          贊助人才能留言，如有專案相關提問，請聯絡提案人。
+        </div>
+        <div class="message-part d-none d-lg-block">
+          <div class="sponsor-img-time">
+            <div class="sponsor-question-part">
+              <div class="sponsor-img">
+                <img src="https://i.imgur.com/fSXMXMb.png" alt="" />
+                <div class="sponsor">
+                  <span class="sponsor-name">shang</span>
+                  <span class="sponsor-label">贊助人</span>
+                </div>
+              </div>
+              <div class="time">
+                <span>大約19小時</span>
               </div>
             </div>
-            <div class="time">
-              <span>大約19小時</span>
+            <div class="problem">
+              <p>請問太陽能板接頭是哪一種呢？</p>
             </div>
           </div>
-          <div class="problem">
-            <p>請問太陽能板接頭是哪一種呢？</p>
+          <div class="proposal-answer-part">
+            <div class="answer-part">
+              <div class="answer-inf">
+                <span class="proposal">蔚藍星球</span>
+                <span class="proposal-label">提案人</span>
+              </div>
+              <div class="time">
+                <span>大約17小時</span>
+              </div>
+            </div>
+            <div class="answer">
+              <p>你好，這款原廠太陽能板是使用MC4接頭喔</p>
+            </div>
           </div>
         </div>
-        <div class="proposal-answer-part">
-          <div class="answer-part">
-            <div class="answer-inf">
-              <span class="proposal">蔚藍星球</span>
-              <span class="proposal-label">提案人</span>
+        <div class="message-part d-none d-lg-block">
+          <div class="sponsor-img-time">
+            <div class="sponsor-question-part">
+              <div class="sponsor-img">
+                <img src="https://i.imgur.com/fSXMXMb.png" alt="" />
+                <div class="sponsor">
+                  <span class="sponsor-name">shang</span>
+                  <span class="sponsor-label">贊助人</span>
+                </div>
+              </div>
+              <div class="time">
+                <span>大約19小時</span>
+              </div>
             </div>
-            <div class="time">
-              <span>大約17小時</span>
+            <div class="problem">
+              <p>請問太陽能板接頭是哪一種呢？</p>
             </div>
           </div>
-          <div class="answer">
-            <p>你好，這款原廠太陽能板是使用MC4接頭喔</p>
+          <div class="proposal-answer-part">
+            <div class="answer-part">
+              <div class="answer-inf">
+                <span class="proposal">蔚藍星球</span>
+                <span class="proposal-label">提案人</span>
+              </div>
+              <div class="time">
+                <span>大約17小時</span>
+              </div>
+            </div>
+            <div class="answer">
+              <p>你好，這款原廠太陽能板是使用MC4接頭喔</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="message-part d-none d-lg-block">
-        <div class="sponsor-img-time">
-          <div class="sponsor-question-part">
-            <div class="sponsor-img">
-              <img src="https://i.imgur.com/fSXMXMb.png" alt="" />
-              <div class="sponsor">
-                <span class="sponsor-name">shang</span>
-                <span class="sponsor-label">贊助人</span>
+      <!-- 問答頁手機版 -->
+      <div class="container messager-part-phone-container">
+        <div class="messager-part-phone">
+          贊助人才能留言，如有專案相關提問，請聯絡提案人。
+        </div>
+        <div class="message-part-phone">
+          <div class="sponsor-img-time">
+            <div class="sponsor-question-part">
+              <div class="sponsor-img">
+                <img src="https://i.imgur.com/fSXMXMb.png" alt="" />
+                <div class="sponsor">
+                  <span class="sponsor-name">shang</span>
+                  <span class="sponsor-label">贊助人</span>
+                </div>
+              </div>
+              <div class="time">
+                <span>大約19小時</span>
               </div>
             </div>
-            <div class="time">
-              <span>大約19小時</span>
+            <div class="problem">
+              <p>請問太陽能板接頭是哪一種呢？</p>
             </div>
           </div>
-          <div class="problem">
-            <p>請問太陽能板接頭是哪一種呢？</p>
+          <div class="proposal-answer-part">
+            <div class="answer-part">
+              <div class="answer-inf">
+                <span class="proposal">蔚藍星球</span>
+                <span class="proposal-label">提案人</span>
+              </div>
+              <div class="time">
+                <span>大約17小時</span>
+              </div>
+            </div>
+            <div class="answer">
+              <p>你好，這款原廠太陽能板是使用MC4接頭喔</p>
+            </div>
           </div>
         </div>
-        <div class="proposal-answer-part">
-          <div class="answer-part">
-            <div class="answer-inf">
-              <span class="proposal">蔚藍星球</span>
-              <span class="proposal-label">提案人</span>
+        <div class="message-part-phone">
+          <div class="sponsor-img-time">
+            <div class="sponsor-question-part">
+              <div class="sponsor-img">
+                <img src="https://i.imgur.com/fSXMXMb.png" alt="" />
+                <div class="sponsor">
+                  <span class="sponsor-name">shang</span>
+                  <span class="sponsor-label">贊助人</span>
+                </div>
+              </div>
+              <div class="time">
+                <span>大約19小時</span>
+              </div>
             </div>
-            <div class="time">
-              <span>大約17小時</span>
+            <div class="problem">
+              <p>請問太陽能板接頭是哪一種呢？</p>
             </div>
           </div>
-          <div class="answer">
-            <p>你好，這款原廠太陽能板是使用MC4接頭喔</p>
+          <div class="proposal-answer-part">
+            <div class="answer-part">
+              <div class="answer-inf">
+                <span class="proposal">蔚藍星球</span>
+                <span class="proposal-label">提案人</span>
+              </div>
+              <div class="time">
+                <span>大約17小時</span>
+              </div>
+            </div>
+            <div class="answer">
+              <p>你好，這款原廠太陽能板是使用MC4接頭喔</p>
+            </div>
           </div>
         </div>
       </div>
@@ -1226,58 +1301,102 @@
     display: none;
   }
 }
-// 專案內容留言頁rwd
-@media screen and (max-width: 992px) {
-  .QA-part-phone {
-    width: 100%;
-    padding: 1rem;
-    .qustion {
-      text-align: left;
-      font-weight: 700;
-      color: #0050a2;
+
+// 留言
+.messager-part {
+  color: #3f3f3f;
+  line-height: 1.6em;
+  font-size: 0.75rem;
+  background-color: #f4f4f4;
+  padding: 0.5rem;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.message-part {
+  padding: 1rem 0rem;
+  border-top: 1px solid #e0e0e0;
+  .sponsor-img-time {
+    .sponsor-question-part {
+      display: flex;
+      justify-content: space-between;
+      .sponsor-img {
+        display: flex;
+        img {
+          border-radius: 40%;
+        }
+        .sponsor {
+          .sponsor-name {
+            color: #0050a2;
+            font-weight: 700;
+            margin-right: 0.5rem;
+            margin-left: 1rem;
+          }
+          .sponsor-label {
+            font-weight: 700;
+            padding: 0.25rem;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 0.125rem;
+            color: #3366a9;
+          }
+        }
+      }
+      .time {
+        font-size: 0.75rem;
+        color: #767676;
+        &:hover {
+          color: #0050a2;
+        }
+      }
     }
-    .q-time {
-      font-weight: 700;
+    .problem {
       text-align: left;
-      font-size: 0.75rem;
-      color: #3f3f3f;
-      line-height: 1.6em;
+      padding-left: 4.5rem;
+      margin-top: -1rem;
+    }
+  }
+  .proposal-answer-part {
+    .answer-part {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 4.5rem;
+      .answer-inf {
+        .proposal {
+          color: #0050a2;
+          font-weight: 700;
+          margin-right: 0.5rem;
+        }
+        .proposal-label {
+          font-weight: 700;
+          padding: 0.25rem;
+          border-style: solid;
+          border-width: 1px;
+          border-radius: 0.125rem;
+          border-color: #229f2a;
+          background-color: #229f2a;
+          color: #fdfdfd;
+        }
+      }
+      .time {
+        font-size: 0.75rem;
+        color: #767676;
+        &:hover {
+          color: #0050a2;
+        }
+      }
     }
     .answer {
-      line-height: 1.6em;
-      letter-spacing: 3px;
       text-align: left;
-      background-color: #f4f4f4;
-      border-radius: 0.25rem;
+      padding-left: 4.5rem;
       margin-top: 1rem;
     }
   }
 }
 
-@media screen and (min-width: 992px) {
-  .QA-part-phone {
-    display: none;
-  }
-}
-// 專案更新
-#profile {
-  padding: 0rem 9rem;
-  h4 {
-    text-align: left;
-  }
-  img {
-    width: 90%;
-    padding: 0.5rem;
-  }
-  p {
-    text-align: left;
-  }
-}
-
-// 留言
-.tab-pane {
-  // padding: 0rem 9rem;
-  .messager-part {
+// 留言頁rwd
+@media screen and (max-width: 992px) {
+  .messager-part-phone {
+    width: 100%;
     color: #3f3f3f;
     line-height: 1.6em;
     font-size: 0.75rem;
@@ -1286,7 +1405,7 @@
     text-align: left;
     margin-bottom: 2rem;
   }
-  .message-part {
+  .message-part-phone {
     padding: 1rem 0rem;
     border-top: 1px solid #e0e0e0;
     .sponsor-img-time {
@@ -1367,6 +1486,11 @@
     }
   }
 }
+@media screen and (min-width: 992px) {
+  .message-part-phone {
+    display: none;
+  }
+}
 // 常見問答
 .QA-part {
   .qustion {
@@ -1387,6 +1511,39 @@
     margin-top: 0.5rem;
     padding: 1rem;
     border-radius: 0.25rem;
+  }
+}
+// 專案內容問答頁rwd
+@media screen and (max-width: 992px) {
+  .QA-part-phone {
+    width: 100%;
+    padding: 1rem;
+    .qustion {
+      text-align: left;
+      font-weight: 700;
+      color: #0050a2;
+    }
+    .q-time {
+      font-weight: 700;
+      text-align: left;
+      font-size: 0.75rem;
+      color: #3f3f3f;
+      line-height: 1.6em;
+    }
+    .answer {
+      line-height: 1.6em;
+      letter-spacing: 3px;
+      text-align: left;
+      background-color: #f4f4f4;
+      border-radius: 0.25rem;
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .QA-part-phone {
+    display: none;
   }
 }
 </style>
