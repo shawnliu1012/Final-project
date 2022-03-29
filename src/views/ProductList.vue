@@ -83,7 +83,7 @@
     </ul>
   </nav>
   <!-- project top -->
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
       <div class="col-lg-8">
         <div class="product-film">
@@ -109,6 +109,7 @@
             野獸級戶外行動電源站】一機搞定你的戶外用電需求，537Wh / 700W 具備 AC
             市用插座及 DC 快充接孔
           </p>
+          <!-- 修改這塊比例 -->
           <div class="product-introduce-money">
             <div class="circle-out">
               <div class="circle-in"><span class="percentage">80%</span></div>
@@ -271,7 +272,8 @@
       role="tabpanel"
       aria-labelledby="home-tab"
     >
-      <div class="container program">
+      <!-- 桌面版 -->
+      <div class="container program d-none d-lg-block">
         <div class="row">
           <div class="col-lg-8">
             <div class="program-img">
@@ -458,6 +460,194 @@
           </div>
         </div>
       </div>
+      <!-- 手機版 -->
+      <div class="container program-phone">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="program-img">
+              <!-- <img src="https://i.imgur.com/BA7hkCA.gif" alt="" /> -->
+              <img src="https://i.imgur.com/PLK1ANd.jpg" alt="" />
+              <img src="https://i.imgur.com/PPMfOht.jpg" alt="" />
+              <img src="https://i.imgur.com/zWDvc2h.jpg" alt="" />
+              <img src="https://i.imgur.com/UTgga4v.jpg" alt="" />
+              <img src="https://i.imgur.com/PbN2Wp9.gif" alt="" />
+              <img src="https://i.imgur.com/pBVlEIm.gif" alt="" />
+              <img src="https://i.imgur.com/Vclkyrm.gif" alt="" />
+              <img src="https://i.imgur.com/UUlZ86b.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="program-container">
+              <a class="c-p-1 text-start" href="">
+                <img src="https://i.imgur.com/Mwlp2ZX.jpg" />
+                <div class="program-money">NT$15,900</div>
+                <div class="program-already">
+                  <span class="program-already-1">剩餘91份</span>
+                  <span class="program-already-2"
+                    >已被贊助
+                    <span class="p-time">9</span>
+                    /100次
+                  </span>
+                </div>
+                <div class="program-word">
+                  <p>
+                    【限量 | 64折晚鳥價】 <br />原價$24,900 | 現省$9,000
+                    <br />
+                    #現在買不算晚的晚鳥價
+                  </p>
+                  <p>
+                    方案內容：
+                    <br />
+                    ◆ BLUETTI EB55 行動電源站 x1
+                    <br />
+                    ◆ AC電源變壓器 x1
+                    <br />
+                    ◆ 車載點菸充電線(Car to XT60-F) x1
+                    <br />
+                    ◆ 太陽能板充電線(MC4 to XT60-F) x1
+                    <br />
+                    ◆ 線材收納束帶 x1
+                    <br />
+                    ◆ 說明書 x1
+                    <br />
+                    ◆ 產品保固卡 x1
+                  </p>
+                  <p>
+                    -
+                    <br />
+                    ✓ 嘖嘖平台購買，享「免運」優惠
+                    <br />
+                    ✓ 本機保固時間 18 個月
+                    <br />
+                    ✓ 將依下單順序陸續出貨
+                    <br />
+                    ✓ 一律採用電子發票
+                    <br />
+                    ✓ 若需開立統編/載具請填寫於備註欄
+                    <br />
+                    ✓ 蔚藍星球台灣總代理專人客服
+                  </p>
+                </div>
+                <div class="choose-program">
+                  <div class="c-p-word">可選擇加購商品</div>
+                </div>
+                <div class="program-finish-time">預計於 2022 年三月實現</div>
+              </a>
+
+              <a class="c-p-1 text-start" href="">
+                <img src="https://i.imgur.com/Mwlp2ZX.jpg" />
+                <div class="program-money">NT$15,900</div>
+                <div class="program-already">
+                  <span class="program-already-1">剩餘91份</span>
+                  <span class="program-already-2"
+                    >已被贊助
+                    <span class="p-time">9</span>
+                    /100次
+                  </span>
+                </div>
+                <div class="program-word">
+                  <p>
+                    【限量 | 64折晚鳥價】 <br />原價$24,900 | 現省$9,000
+                    <br />
+                    #現在買不算晚的晚鳥價
+                  </p>
+                  <p>
+                    方案內容：
+                    <br />
+                    ◆ BLUETTI EB55 行動電源站 x1
+                    <br />
+                    ◆ AC電源變壓器 x1
+                    <br />
+                    ◆ 車載點菸充電線(Car to XT60-F) x1
+                    <br />
+                    ◆ 太陽能板充電線(MC4 to XT60-F) x1
+                    <br />
+                    ◆ 線材收納束帶 x1
+                    <br />
+                    ◆ 說明書 x1
+                    <br />
+                    ◆ 產品保固卡 x1
+                  </p>
+                  <p>
+                    -
+                    <br />
+                    ✓ 嘖嘖平台購買，享「免運」優惠
+                    <br />
+                    ✓ 本機保固時間 18 個月
+                    <br />
+                    ✓ 將依下單順序陸續出貨
+                    <br />
+                    ✓ 一律採用電子發票
+                    <br />
+                    ✓ 若需開立統編/載具請填寫於備註欄
+                    <br />
+                    ✓ 蔚藍星球台灣總代理專人客服
+                  </p>
+                </div>
+                <div class="choose-program">
+                  <div class="c-p-word">可選擇加購商品</div>
+                </div>
+                <div class="program-finish-time">預計於 2022 年三月實現</div>
+              </a>
+              <a class="c-p-1 text-start" href="">
+                <img src="https://i.imgur.com/Mwlp2ZX.jpg" />
+                <div class="program-money">NT$15,900</div>
+                <div class="program-already">
+                  <span class="program-already-1">剩餘91份</span>
+                  <span class="program-already-2"
+                    >已被贊助
+                    <span class="p-time">9</span>
+                    /100次
+                  </span>
+                </div>
+                <div class="program-word">
+                  <p>
+                    【限量 | 64折晚鳥價】 <br />原價$24,900 | 現省$9,000
+                    <br />
+                    #現在買不算晚的晚鳥價
+                  </p>
+                  <p>
+                    方案內容：
+                    <br />
+                    ◆ BLUETTI EB55 行動電源站 x1
+                    <br />
+                    ◆ AC電源變壓器 x1
+                    <br />
+                    ◆ 車載點菸充電線(Car to XT60-F) x1
+                    <br />
+                    ◆ 太陽能板充電線(MC4 to XT60-F) x1
+                    <br />
+                    ◆ 線材收納束帶 x1
+                    <br />
+                    ◆ 說明書 x1
+                    <br />
+                    ◆ 產品保固卡 x1
+                  </p>
+                  <p>
+                    -
+                    <br />
+                    ✓ 嘖嘖平台購買，享「免運」優惠
+                    <br />
+                    ✓ 本機保固時間 18 個月
+                    <br />
+                    ✓ 將依下單順序陸續出貨
+                    <br />
+                    ✓ 一律採用電子發票
+                    <br />
+                    ✓ 若需開立統編/載具請填寫於備註欄
+                    <br />
+                    ✓ 蔚藍星球台灣總代理專人客服
+                  </p>
+                </div>
+                <div class="choose-program">
+                  <div class="c-p-word">可選擇加購商品</div>
+                </div>
+                <div class="program-finish-time">預計於 2022 年三月實現</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div
@@ -466,10 +656,10 @@
       role="tabpanel"
       aria-labelledby="messages-tab"
     >
-      <div class="messager-part">
+      <div class="messager-part d-none d-lg-block">
         贊助人才能留言，如有專案相關提問，請聯絡提案人。
       </div>
-      <div class="message-part">
+      <div class="message-part d-none d-lg-block">
         <div class="sponsor-img-time">
           <div class="sponsor-question-part">
             <div class="sponsor-img">
@@ -502,7 +692,7 @@
           </div>
         </div>
       </div>
-      <div class="message-part">
+      <div class="message-part d-none d-lg-block">
         <div class="sponsor-img-time">
           <div class="sponsor-question-part">
             <div class="sponsor-img">
@@ -542,7 +732,23 @@
       role="tabpanel"
       aria-labelledby="settings-tab"
     >
-      <div class="QA-part">
+      <!-- 留言頁桌面版 -->
+      <div class="QA-part d-none d-lg-block">
+        <div class="qustion">
+          <span>Q1.</span> 【關於訂購】我要如何查詢我的贊助紀錄？
+        </div>
+        <div class="q-time">最後更新於 2021 / 10 / 26 15 : 26</div>
+        <div class="answer">
+          <p>
+            以下提供方式確認<br />
+            ❶ 至您的電子信箱收信（使用註冊嘖嘖使用的電子信箱）<br />
+            ❷ 確認是否收到一封主旨為「嘖嘖｜支持成功確認信件」<br />
+            如果有收到此封信件，即表示贊助成功<br />
+          </p>
+        </div>
+      </div>
+      <!-- 留言頁手機版 -->
+      <div class="QA-part-phone">
         <div class="qustion">
           <span>Q1.</span> 【關於訂購】我要如何查詢我的贊助紀錄？
         </div>
@@ -603,36 +809,26 @@
 <style lang="scss">
 .product-film {
   width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
   position: relative;
   .product {
     background-image: url("https://i.imgur.com/q8fS0nq.png");
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     height: 35rem;
-    .play-radio {
-      width: 4rem;
-      height: 4rem;
-      border-style: none;
-      background-color: #fff;
-      border-radius: 50%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      svg {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 4rem;
-        height: 4rem;
-        opacity: 0.8;
-        &:hover {
-          opacity: 1;
-        }
-      }
+  }
+}
+// img-top rwd
+@media screen and (max-width: 992px) {
+  .product-film {
+    width: 100%;
+    position: relative;
+    .product {
+      background-image: url("https://i.imgur.com/q8fS0nq.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 15rem;
     }
   }
 }
@@ -687,7 +883,7 @@
   }
 
   /* 金額區 */
-
+  // 修改這塊
   .product-introduce-money {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -757,6 +953,7 @@
     }
   }
 }
+
 .product-middle {
   margin-top: 1rem;
   display: flex;
@@ -790,6 +987,8 @@
     }
   }
 }
+
+// 中間贊助列rwd
 @media screen and (min-width: 992px) {
   .tabs-part {
     display: flex;
@@ -842,10 +1041,9 @@
   border-top: 1px solid #dcdcdc;
   border-bottom: 1px solid #dcdcdc;
   align-items: center;
-  // margin: 2rem 0rem;
-  // padding: 0 9rem;
+  margin: 2rem 0rem;
   position: sticky;
-    top: 0;
+  top: 0;
   .product-bottom {
     padding: 1rem 0rem;
     display: flex;
@@ -947,6 +1145,120 @@
     }
   }
 }
+// 專案內容商品頁rwd
+@media screen and (max-width: 992px) {
+  .program-phone {
+    .program-img {
+      img {
+        width: 100%;
+      }
+    }
+    .program-container a {
+      display: inline-block;
+      border: 1px solid #e0e0e0;
+      margin: 1rem 0;
+      padding: 1rem;
+      text-decoration: none;
+      color: #3f3f3f;
+      img {
+        width: 100%;
+      }
+      .program-money {
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: #101010;
+      }
+      .program-already {
+        font-size: 0.75rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+
+        .program-already-1 {
+          background-color: #c45059;
+          color: #fdfdfd;
+          display: inline-block;
+          padding: 0.2rem 0.5rem;
+          font-weight: 700;
+        }
+        .program-already-2 {
+          display: inline-block;
+          background-color: #f4f4f4;
+          color: #101010;
+          padding: 0.2rem 0.5rem;
+          .p-time {
+            font-weight: bold;
+          }
+        }
+      }
+      .program-word {
+        max-height: 16em;
+        font-size: 0.875rem;
+        color: #101010;
+        overflow: auto;
+      }
+      .choose-program {
+        margin-top: 1rem;
+        .c-p-word {
+          line-height: 1;
+          font-weight: 700;
+          font-size: 0.75rem;
+          display: inline-block;
+          background-color: #4389e7;
+          color: #fdfdfd;
+          padding: 0.25rem 0.5rem;
+          border-radius: 0.5rem;
+        }
+      }
+      .program-finish-time {
+        font-size: 0.75rem;
+        text-align: center;
+        color: #767676;
+        margin-top: 1rem;
+        padding: 0.5rem 0.5rem;
+        border-style: solid;
+        border-width: 1px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .program-phone {
+    display: none;
+  }
+}
+// 專案內容留言頁rwd
+@media screen and (max-width: 992px) {
+  .QA-part-phone {
+    width: 100%;
+    padding: 1rem;
+    .qustion {
+      text-align: left;
+      font-weight: 700;
+      color: #0050a2;
+    }
+    .q-time {
+      font-weight: 700;
+      text-align: left;
+      font-size: 0.75rem;
+      color: #3f3f3f;
+      line-height: 1.6em;
+    }
+    .answer {
+      line-height: 1.6em;
+      letter-spacing: 3px;
+      text-align: left;
+      background-color: #f4f4f4;
+      border-radius: 0.25rem;
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .QA-part-phone {
+    display: none;
+  }
+}
 // 專案更新
 #profile {
   padding: 0rem 9rem;
@@ -961,10 +1273,10 @@
     text-align: left;
   }
 }
-// 商品邊線變色效果
+
 // 留言
 .tab-pane {
-  padding: 0rem 9rem;
+  // padding: 0rem 9rem;
   .messager-part {
     color: #3f3f3f;
     line-height: 1.6em;
