@@ -84,9 +84,10 @@
   </nav>
   <!-- product container -->
   <div class="container-line"></div>
-  <div class="container shoppingcart">
-    <div class="container-img"></div>
-    <div class="container-span">
+  <div class="container shoppingcart d-none d-lg-block">
+    <div class="row">
+    <div class="col-lg-4 container-img"></div>
+    <div class="col-lg-8 container-span">
       <a class="c-s-title" href="">
         <h4>
           BLUETTI EB55 野獸級戶外行動電源站｜用「電」解放你的 outdoor 魂！
@@ -103,7 +104,32 @@
         </div>
       </div>
     </div>
+    </div>
   </div>
+  <!-- product container rwd -->
+  <div class="container shoppingcart-phone">
+    <div class="row">
+      <div class="col-sm-12 container-img "></div>
+      <div class="col-sm-12 container-span">
+        <a class="c-s-title" href="">
+          <h4>
+            BLUETTI EB55 野獸級戶外行動電源站｜用「電」解放你的 outdoor 魂！
+          </h4>
+        </a>
+        <div class="c-s-s">
+          <span class="proposer"
+            >提案人 <a href="" class="proposer-name">蔚藍星球</a>
+          </span>
+          <span class="c-s-s-project">|</span> 預購式專案
+          <div class="c-s-s-m">
+            <span class="money">NT$6,902,200 </span>
+            <span class="money-target">/目標 NT$500,000 </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="container-line"></div>
   <!-- project -->
   <div class="container project-program">
@@ -396,7 +422,6 @@
   border-bottom: 1px solid #dcdcdc;
 }
 .shoppingcart {
-  display: flex;
   .container-img {
     width: 18rem;
     height: 10rem;
@@ -427,6 +452,49 @@
         font-size: 1rem;
         .money {
           font-weight: bold;
+        }
+      }
+    }
+  }
+}
+// product rwd
+@media screen and (min-width: 992px) {
+  .shoppingcart-phone {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .shoppingcart-phone {
+    .container-img {
+      height: 10rem;
+      background-image: url("https://i.imgur.com/q8fS0nq.png");
+      background-size: cover;
+      background-position: center;
+    }
+    .container-span {
+      padding-left: 1rem;
+      text-align: left;
+      a {
+        text-decoration: none;
+        h4 {
+          color: #000;
+          line-height: 2em;
+          font-size: 1rem;
+          font-weight: bold;
+        }
+      }
+      .c-s-s {
+        font-size: 0.8rem;
+        .proposer-name {
+          color: #0f1bcc;
+          font-weight: bold;
+        }
+        .c-s-s-m {
+          margin-top: 1rem;
+          font-size: 1rem;
+          .money {
+            font-weight: bold;
+          }
         }
       }
     }
@@ -599,17 +667,17 @@
   }
   .btn-group {
     margin-left: 3rem;
-  .btn:focus,
-  .btn:active:focus,
-  .btn.active:focus,
-  .btn.focus,
-  .btn:active.focus,
-  .btn.active.focus {
-    outline: none;
-    border-color: transparent;
-    box-shadow: none;
-  }
-  // 收件人 聯絡電話 備註
+    .btn:focus,
+    .btn:active:focus,
+    .btn.active:focus,
+    .btn.focus,
+    .btn:active.focus,
+    .btn.active.focus {
+      outline: none;
+      border-color: transparent;
+      box-shadow: none;
+    }
+    // 收件人 聯絡電話 備註
   }
   input:focus,
   input:active:focus,
