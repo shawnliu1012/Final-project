@@ -808,18 +808,20 @@
       aria-labelledby="settings-tab"
     >
       <!-- 留言頁桌面版 -->
-      <div class="QA-part d-none d-lg-block">
-        <div class="qustion">
-          <span>Q1.</span> 【關於訂購】我要如何查詢我的贊助紀錄？
-        </div>
-        <div class="q-time">最後更新於 2021 / 10 / 26 15 : 26</div>
-        <div class="answer">
-          <p>
-            以下提供方式確認<br />
-            ❶ 至您的電子信箱收信（使用註冊嘖嘖使用的電子信箱）<br />
-            ❷ 確認是否收到一封主旨為「嘖嘖｜支持成功確認信件」<br />
-            如果有收到此封信件，即表示贊助成功<br />
-          </p>
+      <div class="container">
+        <div class="QA-part d-none d-lg-block">
+          <div class="qustion">
+            <span>Q1.</span> 【關於訂購】我要如何查詢我的贊助紀錄？
+          </div>
+          <div class="q-time">最後更新於 2021 / 10 / 26 15 : 26</div>
+          <div class="answer">
+            <p>
+              以下提供方式確認<br />
+              ❶ 至您的電子信箱收信（使用註冊嘖嘖使用的電子信箱）<br />
+              ❷ 確認是否收到一封主旨為「嘖嘖｜支持成功確認信件」<br />
+              如果有收到此封信件，即表示贊助成功<br />
+            </p>
+          </div>
         </div>
       </div>
       <!-- 留言頁手機版 -->
