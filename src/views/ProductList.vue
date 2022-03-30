@@ -111,6 +111,11 @@
           </p>
           <!-- 修改這塊比例 -->
           <div class="product-introduce-money">
+            <!-- <canvas
+              class="circularProgressMAF"
+              data-progress-value="21"
+            ></canvas> -->
+
             <div class="circle-out">
               <div class="circle-in"><span class="percentage">80%</span></div>
             </div>
@@ -1550,9 +1555,10 @@
 }
 </style>
 <script>
+
 export default {
   name: "Home",
-  components: {},
+  components: {CircleProgress},
   data() {
     return {
       name: "Footer",
