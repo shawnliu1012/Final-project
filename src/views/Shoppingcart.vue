@@ -466,7 +466,7 @@
 @media screen and (max-width: 992px) {
   .shoppingcart-phone {
     .container-img {
-      height: 10rem;
+      height: 15rem;
       background-image: url("https://i.imgur.com/q8fS0nq.png");
       background-size: cover;
       background-position: center;
@@ -505,7 +505,6 @@
   .program {
     .c-p-1 {
       display: inline-block;
-      width: 18rem;
       border: 1px solid #e0e0e0;
       margin: 1rem 0;
       padding: 1rem;
@@ -542,8 +541,10 @@
         }
       }
       .program-word {
+        max-height: 16em;
         font-size: 0.875rem;
         color: #101010;
+        overflow: auto;
       }
       .choose-program {
         margin-top: 1rem;
