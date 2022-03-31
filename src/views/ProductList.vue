@@ -111,13 +111,8 @@
           </p>
           <!-- 修改這塊比例 -->
           <div class="product-introduce-money">
-            <!-- <canvas
-              class="circularProgressMAF"
-              data-progress-value="21"
-            ></canvas> -->
-
-            <div class="circle-out">
-              <div class="circle-in"><span class="percentage">80%</span></div>
+            <div class="circle">
+              <div class="circle-value">70%</div>
             </div>
             <div class="p-i-amount">
               <p class="pre-order">預購金額</p>
@@ -973,46 +968,30 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid #dcdcdc;
-    .circle-out {
+    .circle {
       width: 4.5rem;
       height: 4.5rem;
-      background-color: #dcdcdc;
+      background-color: #000;
       border-radius: 50%;
       position: relative;
-      &:hover {
-        animation: percentage 1s;
-        @keyframes percentage {
-          0% {
-            background: #dcdcdc;
-          }
-          20% {
-            background: #0f1bcc;
-          }
-          60% {
-            background: #d87e2a;
-          }
-          80% {
-            background: #177a30;
-          }
-          100% {
-            background: #e50030;
-          }
-        }
-      }
-      .circle-in {
-        width: 4rem;
-        height: 4rem;
+      display: grid;
+      place-items: center;
+      &::before {
+        content: "";
+        position: absolute;
+        height: 95%;
+        width: 95%;
         background-color: #fff;
         border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        span {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+      }
+
+      .circle-value {
+        position: relative;
+        font-size: 15px;
+        color: #3f3f3f;
+        &:hover {
+          transform: scale(1.2);
+          transition: all 1s ease-out;
         }
       }
     }
@@ -1555,10 +1534,9 @@
 }
 </style>
 <script>
-
 export default {
   name: "Home",
-  components: {CircleProgress},
+  components: {},
   data() {
     return {
       name: "Footer",
@@ -1572,6 +1550,28 @@ export default {
     },
   },
   mounted() {
+    // circle progress 改寫成vue
+    // v-model直接下在html位置嗎
+    let progressBar = document.querySelector(".circular-progress");
+    let valueContainer = document.querySelector(".value-container");
+
+    let progressValue = 0;
+    let progressEndValue = 70;
+    let speed = 30;
+
+    let progress = setInterval(() => {
+      progressValue++;
+      valueContainer.textContent = `${progressEndValue}%`;
+      progressBar.style.background = `conic-gradient(
+      #0f0 ${progressValue * 3.6}deg,
+      #dcdcdc ${progressValue * 3.6}deg
+  )`;
+      if (progressValue == progressEndValue) {
+        clearInterval(progress);
+      }
+    }, speed);
+
+    // gotop
     window.addEventListener("scroll", () => {
       let clientTop =
         document.documentElement.scrollTop ||
