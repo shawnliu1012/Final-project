@@ -1412,6 +1412,14 @@ export default {
     },
   },
   mounted() {
+    this.axios
+      .get("http://localhost:3000/products")
+      .then(result => {
+        console.log("result:", result.data);
+      })
+      .catch(err => {
+        console.warn(err);
+      });
     window.addEventListener("scroll", () => {
       let clientTop =
         document.documentElement.scrollTop ||
