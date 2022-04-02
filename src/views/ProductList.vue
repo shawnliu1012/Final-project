@@ -111,9 +111,11 @@
           </p>
           <!-- 修改這塊比例 -->
           <div class="product-introduce-money">
-            <div class="circle">
-              <div class="circle-value">70%</div>
+            <!-- <div class="container"> -->
+            <div class="circular-progress">
+              <div class="value-container">0%</div>
             </div>
+            <!-- </div> -->
             <div class="p-i-amount">
               <p class="pre-order">預購金額</p>
               <p class="order-amount">
@@ -882,8 +884,42 @@
       </button>
     </div>
   </div>
+  <!-- 試放 -->
+  <!-- <div class="container">
+    <div class="circular-progress">
+      <div class="value-container">0%</div>
+    </div>
+  </div> -->
 </template>
 <style lang="scss">
+// 先試放
+// .circular-progress {
+//   position: relative;
+//   height: 250px;
+//   width: 250px;
+//   border-radius: 50%;
+//   display: grid;
+//   place-items: center;
+// }
+// .circular-progress:before {
+//   content: "";
+//   position: absolute;
+//   height: 95%;
+//   width: 95%;
+//   background-color: #fff;
+//   border-radius: 50%;
+// }
+// .value-container {
+//   position: relative;
+//   font-family: "Poppins", sans-serif;
+//   font-size: 50px;
+//   color: #000;
+// }
+// .value-container:hover {
+//   transform: scale(1.2);
+//   transition: all 1s ease-out;
+// }
+
 .product-film {
   width: 100%;
   position: relative;
@@ -968,35 +1004,63 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid #dcdcdc;
-    .circle {
-      width: 4.5rem;
-      height: 4.5rem;
-      background-color: #000;
-      border-radius: 50%;
+    // .circle {
+    //   width: 4.5rem;
+    //   height: 4.5rem;
+    //   background-color: #000;
+    //   border-radius: 50%;
+    //   position: relative;
+    //   display: grid;
+    //   place-items: center;
+    //   &::before {
+    //     content: "";
+    //     position: absolute;
+    //     height: 95%;
+    //     width: 95%;
+    //     background-color: #fff;
+    //     border-radius: 50%;
+    //   }
+    // }
+
+    // .circle-value {
+    //   position: relative;
+    //   font-size: 15px;
+    //   color: #3f3f3f;
+    //   &:hover {
+    //     transform: scale(1.2);
+    //     transition: all 1s ease-out;
+    //   }
+    // }
+
+    .circular-progress {
       position: relative;
+      height: 4.5rem;
+      width: 4.5rem;
+      border-radius: 50%;
       display: grid;
       place-items: center;
-      &::before {
-        content: "";
-        position: absolute;
-        height: 95%;
-        width: 95%;
-        background-color: #fff;
-        border-radius: 50%;
-      }
-
-      .circle-value {
-        position: relative;
-        font-size: 15px;
-        color: #3f3f3f;
-        &:hover {
-          transform: scale(1.2);
-          transition: all 1s ease-out;
-        }
-      }
     }
+    .circular-progress:before {
+      content: "";
+      position: absolute;
+      height: 95%;
+      width: 95%;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+    .value-container {
+      position: relative;
+      font-family: "Poppins", sans-serif;
+      font-size: 15px;
+      color: #000;
+    }
+    .value-container:hover {
+      transform: scale(1.2);
+      transition: all 1s ease-out;
+    }
+
+    // 預購金額
     .p-i-amount {
-      // 預購金額處置中
       padding-top: 1em;
       margin-left: 1rem;
       line-height: 0.6rem;
@@ -1544,32 +1608,58 @@ export default {
     };
   },
   methods: {
+    // 目前嘗試於methods中寫上function
+    // circleprogress function
+    // circleProgress() {
+    //   let progressBar = document.querySelector(".circular-progress");
+    //   let valueContainer = document.querySelector(".value-container");
+
+    //   let progressValue = 0;
+    //   // let progressEndValue = ;
+    //   let speed = 30;
+
+    //   let progress = setInterval(() => {
+    //     progressValue++;
+    //     valueContainer.textContent = `${progressEndValue}%`;
+    //     progressBar.style.background = `conic-gradient(
+    //     #0f0 ${progressValue * 3.6}deg,
+    //     #dcdcdc ${progressValue * 3.6}deg
+    // )`;
+    //     if (progressValue == progressEndValue) {
+    //       clearInterval(progress);
+    //     }
+    //   }, speed);
+    // },
     // 設定置頂
     goTop() {
       document.documentElement.scrollTop = 0;
     },
   },
   mounted() {
-    // circle progress 改寫成vue
-    // v-model直接下在html位置嗎
-    let progressBar = document.querySelector(".circular-progress");
-    let valueContainer = document.querySelector(".value-container");
+    // 並嘗試在mounted進行呼叫，但無作用
+    // this.circleProgress(80);
+    
+    // 嘗試將原寫法全寫入mounted有效果，但是此寫法於之後串入ＡＰＩ，不確定怎樣撰寫更合適
+    // circle progress 
+    
+      let progressBar = document.querySelector(".circular-progress");
+      let valueContainer = document.querySelector(".value-container");
 
-    let progressValue = 0;
-    let progressEndValue = 70;
-    let speed = 30;
+      let progressValue = 0;
+      let progressEndValue = 70;
+      let speed = 30;
 
-    let progress = setInterval(() => {
-      progressValue++;
-      valueContainer.textContent = `${progressEndValue}%`;
-      progressBar.style.background = `conic-gradient(
-      #0f0 ${progressValue * 3.6}deg,
-      #dcdcdc ${progressValue * 3.6}deg
-  )`;
-      if (progressValue == progressEndValue) {
-        clearInterval(progress);
-      }
-    }, speed);
+      let progress = setInterval(() => {
+        progressValue++;
+        valueContainer.textContent = `${progressEndValue}%`;
+        progressBar.style.background = `conic-gradient(
+        #41aa5c ${progressValue * 3.6}deg,
+        #dcdcdc ${progressValue * 3.6}deg
+    )`;
+        if (progressValue == progressEndValue) {
+          clearInterval(progress);
+        }
+      }, speed);
 
     // gotop
     window.addEventListener("scroll", () => {
