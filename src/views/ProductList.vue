@@ -1605,48 +1605,20 @@ export default {
     return {
       name: "Footer",
       scrollNum: 0,
+      GetNumber : {
+        circleNum: 40,
+      }
     };
   },
   methods: {
     // 目前嘗試於methods中寫上function
     // circleprogress function
-    // circleProgress() {
-    //   let progressBar = document.querySelector(".circular-progress");
-    //   let valueContainer = document.querySelector(".value-container");
-
-    //   let progressValue = 0;
-    //   // let progressEndValue = ;
-    //   let speed = 30;
-
-    //   let progress = setInterval(() => {
-    //     progressValue++;
-    //     valueContainer.textContent = `${progressEndValue}%`;
-    //     progressBar.style.background = `conic-gradient(
-    //     #0f0 ${progressValue * 3.6}deg,
-    //     #dcdcdc ${progressValue * 3.6}deg
-    // )`;
-    //     if (progressValue == progressEndValue) {
-    //       clearInterval(progress);
-    //     }
-    //   }, speed);
-    // },
-    // 設定置頂
-    goTop() {
-      document.documentElement.scrollTop = 0;
-    },
-  },
-  mounted() {
-    // 並嘗試在mounted進行呼叫，但無作用
-    // this.circleProgress(80);
-    
-    // 嘗試將原寫法全寫入mounted有效果，但是此寫法於之後串入ＡＰＩ，不確定怎樣撰寫更合適
-    // circle progress 
-    
+    circleProgress() {
       let progressBar = document.querySelector(".circular-progress");
       let valueContainer = document.querySelector(".value-container");
 
       let progressValue = 0;
-      let progressEndValue = 70;
+      let progressEndValue = this.GetNumber.circleNum;
       let speed = 30;
 
       let progress = setInterval(() => {
@@ -1660,6 +1632,37 @@ export default {
           clearInterval(progress);
         }
       }, speed);
+    },
+    // 設定置頂
+    goTop() {
+      document.documentElement.scrollTop = 0;
+    },
+  },
+  mounted() {
+    // 並嘗試在mounted進行呼叫，但無作用
+    this.circleProgress();
+    
+    // 嘗試將原寫法全寫入mounted有效果，但是此寫法於之後串入ＡＰＩ，不確定怎樣撰寫更合適
+    // circle progress 
+    
+    //   let progressBar = document.querySelector(".circular-progress");
+    //   let valueContainer = document.querySelector(".value-container");
+
+    //   let progressValue = 0;
+    //   let progressEndValue = 70;
+    //   let speed = 30;
+
+    //   let progress = setInterval(() => {
+    //     progressValue++;
+    //     valueContainer.textContent = `${progressEndValue}%`;
+    //     progressBar.style.background = `conic-gradient(
+    //     #41aa5c ${progressValue * 3.6}deg,
+    //     #dcdcdc ${progressValue * 3.6}deg
+    // )`;
+    //     if (progressValue == progressEndValue) {
+    //       clearInterval(progress);
+    //     }
+    //   }, speed);
 
     // gotop
     window.addEventListener("scroll", () => {
