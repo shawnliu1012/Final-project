@@ -137,30 +137,29 @@
   <!-- 挺好店商品區 -->
   <div class="container helpshop">
     <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="col-lg-4 col-md-6 col-sm-12" v-for="(item,idx) in myjson.products.slice(0,3)" :key="idx">
         <div class="card text-start">
           <div class="card-top">
             <a href="">
               <div
                 class="card-top-img"
-                style="background-image: url('https://i.imgur.com/2P79MF2.png')"
+                :style="`background-image: url('${item.img}')`"
               ></div>
               <h5 class="card-title">
-                防災教育品牌《 火柴貓大作戰 | 火災求生桌遊》
+                {{item.title}}
               </h5>
             </a>
           </div>
           <div class="card-middle">
             <span class=""
-              >遊戲 By <a class="" href="">dosomething studio</a></span
+              >遊戲 By <a class="" href="">{{item.author}}</a></span
             >
             <p class="card-text">
-              火柴貓大作戰是由曾經獲得許多國際設計獎項的團隊dosomething
-              studio，研發設計的火災求生桌遊，希望...
+              {{item.description}}
             </p>
           </div>
           <div class="card-footer">
-            <div class="cpf-line"></div>
+            <progress class="cpf-line" id="file" max="100" value="70"> 70% </progress>
             <div class="time-money-part">
               <span class="time"
                 ><svg
@@ -179,12 +178,12 @@
                   /></svg
                 >剩下4小時</span
               >
-              <div class="money">NT$123,558</div>
+              <div class="money">NT${{item.price}}</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
+        <!-- <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card text-start">
           <div class="card-top">
             <a href="">
@@ -269,7 +268,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <!-- 更多計畫按鈕 -->
     <button type="button" class="btn btn-light helpshop-btn d-none d-lg-block">
@@ -312,7 +311,6 @@
   <!-- end of classification -->
 
   <!-- 商品方案分類 及按鈕 -->
-
   <div class="container homeproject">
     <div class="row">
       <div class="col-12 d-flex justify-content-between">
@@ -1395,7 +1393,11 @@
   }
 }
 </style>
+
 <script>
+
+import json from '../json/db.json';
+
 export default {
   name: "Home",
   components: {},
@@ -1403,6 +1405,7 @@ export default {
     return {
       name: "Footer",
       scrollNum: 0,
+      myjson:json
     };
   },
   methods: {
@@ -1412,6 +1415,7 @@ export default {
     },
   },
   mounted() {
+    console.log(this.myjson)
     this.axios
       .get("http://localhost:3000/products")
       .then(result => {
