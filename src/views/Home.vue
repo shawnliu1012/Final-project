@@ -159,6 +159,7 @@
             </p>
           </div>
           <div class="card-footer">
+            <!-- 此處引入json需修改％ -->
             <progress class="cpf-line" id="file" max="100" value="70"> 70% </progress>
             <div class="time-money-part">
               <span class="time"
@@ -1415,15 +1416,15 @@ export default {
     },
   },
   mounted() {
-    console.log(this.myjson)
-    this.axios
-      .get("http://localhost:3000/products")
-      .then(result => {
-        console.log("result:", result.data);
-      })
-      .catch(err => {
-        console.warn(err);
-      });
+    // console.log(this.myjson)
+    // this.axios
+    //   .get("http://localhost:3000/products")
+    //   .then(result => {
+    //     console.log("result:", result.data);
+    //   })
+    //   .catch(err => {
+    //     console.warn(err);
+    //   });
     window.addEventListener("scroll", () => {
       let clientTop =
         document.documentElement.scrollTop ||
