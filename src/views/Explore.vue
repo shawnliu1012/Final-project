@@ -151,7 +151,67 @@
     </div>
   </div>
   <!-- project -->
+  <!-- 引入dbjson -->
   <div class="container explore-project">
+    <div class="row">
+      <div
+        class="col-lg-3 col-md-6 col-12"
+        v-for="(item, idx) in myjson.products"
+        :key="idx"
+      >
+        <div class="card text-start">
+          <div class="card-top">
+            <a href="">
+              <div
+                class="card-top-img"
+                :style="`background-image: url('${item.img}')`"
+              ></div>
+              <h5 class="card-title">
+                {{ item.title }}
+              </h5>
+            </a>
+          </div>
+          <div class="card-middle">
+            <span class=""
+              >By <a class="" href="">{{ item.author }}</a></span
+            >
+            <p class="card-text">
+              {{ item.description }}
+            </p>
+          </div>
+          <div class="card-footer">
+            <div
+              class="cpf-line"
+              id="file"
+              max="100"
+              :value="item.percent"
+            ></div>
+            <div class="time-money-part">
+              <span class="time"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-clock"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                  />
+                  <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                  /></svg
+                >剩下4小時</span
+              >
+              <div class="money">NT${{ item.price }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="container explore-project">
     <div class="row">
       <div class="col-lg-3 col-md-6 col-12">
         <div class="card text-start">
@@ -326,7 +386,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <nav aria-label="Page navigation example">
       <ul class="pagination justify-content-center">
@@ -448,6 +508,12 @@
       .card-text {
         padding: 1rem;
         margin-bottom: 4rem;
+        height: 5.5rem;
+        -webkit-line-clamp: 3; /* 设置超出多少行隐藏 */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        /* 设置 display 为 -webkit-box 或者 -webkit-inline-box 时为隐藏状态 */
+        display: -webkit-inline-box;
       }
     }
     .card-footer {
@@ -490,6 +556,8 @@
 }
 </style>
 <script>
+import json from "../json/db.json";
+
 export default {
   name: "Home",
   components: {},
@@ -497,6 +565,7 @@ export default {
     return {
       name: "Footer",
       scrollNum: 0,
+      myjson: json,
     };
   },
   methods: {
@@ -506,6 +575,7 @@ export default {
     },
   },
   mounted() {
+    console.log(this.myjson);
     window.addEventListener("scroll", () => {
       let clientTop =
         document.documentElement.scrollTop ||

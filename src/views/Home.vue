@@ -140,7 +140,7 @@
       <!-- slice稍後再更改 -->
       <div
         class="col-lg-4 col-md-6 col-sm-12"
-        v-for="(item, idx) in myjson.products.slice(0, 20)"
+        v-for="(item, idx) in myjson.products.slice(0, 3)"
         :key="idx"
       >
         <div class="card text-start">
@@ -1433,14 +1433,15 @@ export default {
   },
   mounted() {
     // console.log(this.myjson)
-    // this.axios
-    //   .get("http://localhost:3000/products")
-    //   .then(result => {
-    //     console.log("result:", result.data);
-    //   })
-    //   .catch(err => {
-    //     console.warn(err);
-    //   });
+    // 目前是引入資料夾的json畫面
+    this.axios
+      .get("http://localhost:3000/products")
+      .then(result => {
+        console.log("result:", result.data);
+      })
+      .catch(err => {
+        console.warn(err);
+      });
     window.addEventListener("scroll", () => {
       let clientTop =
         document.documentElement.scrollTop ||
