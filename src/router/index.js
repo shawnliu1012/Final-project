@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from "vue-router";
 import Home from '../views/Home.vue'
 import ProductList from '../views/ProductList.vue'
 import Shoppingcart from '../views/Shoppingcart.vue'
@@ -36,9 +36,14 @@ const routes = [
   }
 ]
 
+// const router = createRouter({
+//   history: createWebHistory(process.env.BASE_URL),
+//   routes
+// })
+
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes
-})
+  history: createWebHashHistory(process.env.BASE_URL),
+  routes,
+});
 
 export default router
