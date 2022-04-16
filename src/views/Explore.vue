@@ -115,19 +115,14 @@
             主題分類
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">音樂</a></li>
-            <li><a class="dropdown-item" href="#">攝影</a></li>
-            <li><a class="dropdown-item" href="#">出版</a></li>
-            <li><a class="dropdown-item" href="#">時尚</a></li>
-            <li><a class="dropdown-item" href="#">設計</a></li>
-            <li><a class="dropdown-item" href="#">表演</a></li>
-            <li><a class="dropdown-item" href="#">藝術</a></li>
-            <li><a class="dropdown-item" href="#">教育</a></li>
-            <li><a class="dropdown-item" href="#">遊戲</a></li>
-            <li><a class="dropdown-item" href="#">飲食</a></li>
             <li><a class="dropdown-item" href="#">空間</a></li>
+            <li><a class="dropdown-item" href="#">教育</a></li>
+            <li><a class="dropdown-item" href="#">科技</a></li>
             <li><a class="dropdown-item" href="#">社會</a></li>
-            <li><a class="dropdown-item" href="#">地方創生</a></li>
+            <li><a class="dropdown-item" href="#">設計</a></li>
+            <li><a class="dropdown-item" href="#">飲食</a></li>
+            <li><a class="dropdown-item" href="#">遊戲</a></li>
+            <li><a class="dropdown-item" href="#">出版</a></li>
           </ul>
         </div>
       </div>
