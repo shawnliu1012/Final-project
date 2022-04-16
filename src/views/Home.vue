@@ -137,7 +137,12 @@
   <!-- 挺好店商品區 -->
   <div class="container helpshop">
     <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-12" v-for="(item,idx) in myjson.products.slice(0,3)" :key="idx">
+      <!-- slice稍後再更改 -->
+      <div
+        class="col-lg-4 col-md-6 col-sm-12"
+        v-for="(item, idx) in myjson.products.slice(0, 20)"
+        :key="idx"
+      >
         <div class="card text-start">
           <div class="card-top">
             <a href="">
@@ -146,21 +151,26 @@
                 :style="`background-image: url('${item.img}')`"
               ></div>
               <h5 class="card-title">
-                {{item.title}}
+                {{ item.title }}
               </h5>
             </a>
           </div>
           <div class="card-middle">
-            <span class=""
-              >遊戲 By <a class="" href="">{{item.author}}</a></span
+            <span class="">
+              By <a class="" href="">{{ item.author }}</a></span
             >
             <p class="card-text">
-              {{item.description}}
+              {{ item.description }}
             </p>
           </div>
           <div class="card-footer">
             <!-- 此處引入json需修改％ -->
-            <progress class="cpf-line" id="file" max="100" value="70"> 70% </progress>
+            <progress
+              class="cpf-line"
+              id="file"
+              max="100"
+              :value="item.percent"
+            ></progress>
             <div class="time-money-part">
               <span class="time"
                 ><svg
@@ -179,12 +189,12 @@
                   /></svg
                 >剩下4小時</span
               >
-              <div class="money">NT${{item.price}}</div>
+              <div class="money">NT${{ item.price }}</div>
             </div>
           </div>
         </div>
       </div>
-        <!-- <div class="col-lg-4 col-md-6 col-sm-12">
+      <!-- <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card text-start">
           <div class="card-top">
             <a href="">
@@ -306,7 +316,7 @@
       <a class="classification-choose" href="">設計</a>
       <a class="classification-choose" href="">飲食</a>
       <a class="classification-choose" href="">遊戲</a>
-      <a class="classification-choose" href="">攝影</a>
+      <a class="classification-choose" href="">出版</a>
     </div>
   </div>
   <!-- end of classification -->
@@ -1052,6 +1062,7 @@
         }
       }
       .card-middle {
+        
         span {
           color: #767676;
           font-size: 0.75rem;
@@ -1061,8 +1072,14 @@
           }
         }
         .card-text {
-          padding: 1rem;
+          padding: 1.5rem;
           margin-bottom: 4rem;
+          height: 4.5rem;
+          -webkit-line-clamp: 2; /* 设置超出多少行隐藏 */
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          /* 设置 display 为 -webkit-box 或者 -webkit-inline-box 时为隐藏状态 */
+          display: -webkit-inline-box;
         }
       }
       .card-footer {
@@ -1396,8 +1413,7 @@
 </style>
 
 <script>
-
-import json from '../json/db.json';
+import json from "../json/db.json";
 
 export default {
   name: "Home",
@@ -1406,7 +1422,7 @@ export default {
     return {
       name: "Footer",
       scrollNum: 0,
-      myjson:json
+      myjson: json,
     };
   },
   methods: {
