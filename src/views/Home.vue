@@ -569,7 +569,7 @@
       </ul>
     </nav>
   </div>
-  
+
   <div class="line"></div>
   <!-- footer -->
   <div class="container footer">
@@ -615,7 +615,7 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 :root {
   --line-border-fill: #41aa5c;
-  --line-border-empty: #696969;
+  --line-border-empty: #eee;
   --font-color: rgb(0, 80, 162);
 }
 
@@ -854,12 +854,23 @@
           position: absolute;
           bottom: 0;
           width: 100%;
-          /* 注意下fill設定 */
+          
           .cpf-line {
             width: 100%;
             height: 0.15rem;
-            background-color: var(--line-border-fill);
-            border-radius: 0.2rem;
+    
+            // 將progress預設樣式清除
+            -webkit-appearance: none;
+            appearance: none;
+            // 設置外框
+            &::-webkit-progress-bar {
+              background-color: var(--line-border-empty);
+              border-radius: 0.2rem;
+            }
+            // 設置進度條顏色
+            &::-webkit-progress-value {
+              background-color: var(--line-border-fill);
+            }
           }
           .time-money-part {
             display: flex;
@@ -1101,11 +1112,10 @@
         position: absolute;
         bottom: 0;
         width: 100%;
-        /* 注意下fill設定 */
         .cpf-line {
           width: 100%;
           height: 0.15rem;
-          background-color: var(--line-border-fill);
+          background-color: var(--font-color);
           border-radius: 0.2rem;
         }
         .time-money-part {
