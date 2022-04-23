@@ -159,234 +159,60 @@
         v-for="(item, idx) in myjson.products"
         :key="idx"
       >
-        <div class="card text-start">
-          <div class="card-top">
-            <a href="">
-              <div
-                class="card-top-img"
-                :style="`background-image: url('${item.img}')`"
-              ></div>
-              <h5 class="card-title">
-                {{ item.title }}
-              </h5>
-            </a>
-          </div>
-          <div class="card-middle">
-            <span class=""
-              >By <a class="" href="">{{ item.author }}</a></span
-            >
-            <p class="card-text">
-              {{ item.description }}
-            </p>
-          </div>
-          <div class="card-footer">
-            <div
-              class="cpf-line"
-              id="file"
-              max="100"
-              :value="item.percent"
-            ></div>
-            <div class="time-money-part">
-              <span class="time"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-clock"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
-                  />
-                  <path
-                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
-                  /></svg
-                >剩下4小時</span
+        <!-- TODO:router-link -->
+        <router-link class="rt-link" :to="`/products/${item.id}`">
+          <div class="card text-start">
+            <div class="card-top">
+              <a href="">
+                <div
+                  class="card-top-img"
+                  :style="`background-image: url('${item.img}')`"
+                ></div>
+                <h5 class="card-title">
+                  {{ item.title }}
+                </h5>
+              </a>
+            </div>
+            <div class="card-middle">
+              <span class=""
+                >By <a class="" href="">{{ item.author }}</a></span
               >
-              <div class="money">NT${{ item.price }}</div>
+              <p class="card-text">
+                {{ item.description }}
+              </p>
+            </div>
+            <div class="card-footer">
+              <div
+                class="cpf-line"
+                id="file"
+                max="100"
+                :value="item.percent"
+              ></div>
+              <div class="time-money-part">
+                <span class="time"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-clock"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                    />
+                    <path
+                      d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                    /></svg
+                  >剩下4小時</span
+                >
+                <div class="money">NT${{ this.formatPrice(item.price) }}</div>
+              </div>
             </div>
           </div>
-        </div>
+        </router-link>
       </div>
     </div>
-
-    <!-- <div class="container explore-project">
-    <div class="row">
-      <div class="col-lg-3 col-md-6 col-12">
-        <div class="card text-start">
-          <div class="card-top">
-            <a href="">
-              <div
-                class="card-top-img"
-                style="background-image: url('https://i.imgur.com/2P79MF2.png')"
-              ></div>
-              <h5 class="card-title">
-                防災教育品牌《 火柴貓大作戰 | 火災求生桌遊》
-              </h5>
-            </a>
-          </div>
-          <div class="card-middle">
-            <span class=""
-              >遊戲 By <a class="" href="">dosomething studio</a></span
-            >
-            <p class="card-text">
-              火柴貓大作戰是由曾經獲得許多國際設計獎項的團隊dosomething
-              studio，研發設計的火災求生桌遊，希望...
-            </p>
-          </div>
-          <div class="card-footer">
-            <div class="cpf-line"></div>
-            <div class="time-money-part">
-              <span class="time"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-clock"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
-                  />
-                  <path
-                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
-                  /></svg
-                >剩下4小時</span
-              >
-              <div class="money">NT$123,558</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-12">
-        <div class="card text-start">
-          <div class="card-top">
-            <a href="">
-              <div
-                class="card-top-img"
-                style="background-image: url('https://i.imgur.com/WV4ViWO.jpg')"
-              ></div>
-              <h5 class="card-title">流光百色 2022日曆</h5>
-            </a>
-          </div>
-          <div class="card-middle">
-            <span class="">設計 By <a class="" href="">不只是</a></span>
-            <p class="card-text">讓心成為三稜鏡，日光穿透，虹彩斑斕閃爍</p>
-          </div>
-          <div class="card-footer">
-            <div class="cpf-line"></div>
-            <div class="time-money-part">
-              <span class="time"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-clock"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
-                  />
-                  <path
-                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
-                  /></svg
-                >剩下4小時</span
-              >
-              <div class="money">NT$123,558</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-12">
-        <div class="card text-start">
-          <div class="card-top">
-            <a href="">
-              <div
-                class="card-top-img"
-                style="background-image: url('https://i.imgur.com/ELfBBRy.jpg')"
-              ></div>
-              <h5 class="card-title">
-                厭世好療癒桌曆｜35組紙娃娃穿搭療癒你的厭世日常
-              </h5>
-            </a>
-          </div>
-          <div class="card-middle">
-            <span class=""
-              >插畫漫畫 By <a class="" href="">厭世女子文創工作室</a></span
-            >
-            <p class="card-text">
-              現代社會讓人生活壓力大，厭世成為大家的共通點，《厭世女子》希望透過插畫圖文道出你心中的厭世，【厭世好療癒套組】因此...
-            </p>
-          </div>
-          <div class="card-footer">
-            <div class="cpf-line"></div>
-            <div class="time-money-part">
-              <span class="time"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-clock"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
-                  />
-                  <path
-                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
-                  /></svg
-                >剩下4小時</span
-              >
-              <div class="money">NT$123,558</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-12">
-        <div class="card text-start">
-          <div class="card-top">
-            <a href="">
-              <div
-                class="card-top-img"
-                style="background-image: url('https://i.imgur.com/WV4ViWO.jpg')"
-              ></div>
-              <h5 class="card-title">流光百色 2022日曆</h5>
-            </a>
-          </div>
-          <div class="card-middle">
-            <span class="">設計 By <a class="" href="">不只是</a></span>
-            <p class="card-text">讓心成為三稜鏡，日光穿透，虹彩斑斕閃爍</p>
-          </div>
-          <div class="card-footer">
-            <div class="cpf-line"></div>
-            <div class="time-money-part">
-              <span class="time"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-clock"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
-                  />
-                  <path
-                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
-                  /></svg
-                >剩下4小時</span
-              >
-              <div class="money">NT$123,558</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
     <nav aria-label="Page navigation example">
       <ul class="pagination justify-content-center">
@@ -478,71 +304,76 @@
 }
 // explore-project
 .explore-project {
-  .card {
-    border-style: none;
-    position: relative;
-    height: 30rem;
-    a {
-      text-decoration: none;
-      color: #000;
-      .card-top-img {
-        padding-bottom: 56.25%;
-        background-size: cover;
-        background-position: center;
-        border-radius: 0.2rem;
-      }
-      h5 {
-        font-weight: bold;
-        margin-top: 2rem;
-      }
-    }
-    .card-middle {
-      span {
-        color: #767676;
-        font-size: 0.75rem;
-        a {
-          text-decoration: none;
-          color: var(--font-color);
+  a {
+    text-decoration: none;
+    color: #000;
+
+    .card {
+      border-style: none;
+      position: relative;
+      height: 30rem;
+      a {
+        text-decoration: none;
+        color: #000;
+        .card-top-img {
+          padding-bottom: 56.25%;
+          background-size: cover;
+          background-position: center;
+          border-radius: 0.2rem;
+        }
+        h5 {
+          font-weight: bold;
+          margin-top: 2rem;
         }
       }
-      .card-text {
-        padding: 1rem;
-        margin-bottom: 4rem;
-        height: 5.5rem;
-        -webkit-line-clamp: 3; /* 设置超出多少行隐藏 */
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        /* 设置 display 为 -webkit-box 或者 -webkit-inline-box 时为隐藏状态 */
-        display: -webkit-inline-box;
-      }
-    }
-    .card-footer {
-      background-color: #fff;
-      border-style: none;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      /* 注意下fill設定 */
-      .cpf-line {
-        width: 100%;
-        height: 0.15rem;
-        background-color: var(--line-border-fill);
-        border-radius: 0.2rem;
-      }
-      .time-money-part {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .time {
-          line-height: 1.8rem;
-          font-size: 0.8rem;
-
-          svg {
-            margin-bottom: 0.2rem;
+      .card-middle {
+        span {
+          color: #767676;
+          font-size: 0.75rem;
+          a {
+            text-decoration: none;
+            color: var(--font-color);
           }
         }
-        .money {
-          font-weight: bold;
+        .card-text {
+          padding: 1rem;
+          margin-bottom: 4rem;
+          height: 5.5rem;
+          -webkit-line-clamp: 3; /* 设置超出多少行隐藏 */
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          /* 设置 display 为 -webkit-box 或者 -webkit-inline-box 时为隐藏状态 */
+          display: -webkit-inline-box;
+        }
+      }
+      .card-footer {
+        background-color: #fff;
+        border-style: none;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        /* 注意下fill設定 */
+        .cpf-line {
+          width: 100%;
+          height: 0.15rem;
+          background-color: var(--line-border-fill);
+          border-radius: 0.2rem;
+        }
+        .time-money-part {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .time {
+            line-height: 1.8rem;
+            font-size: 0.8rem;
+
+            svg {
+              margin-bottom: 0.2rem;
+            }
+          }
+          .money {
+            font-weight: bold;
+          }
         }
       }
     }
@@ -556,6 +387,7 @@
 }
 </style>
 <script>
+//到時刪除
 import json from "../json/db.json";
 
 export default {
@@ -573,9 +405,20 @@ export default {
     goTop() {
       document.documentElement.scrollTop = 0;
     },
+    // 千分位數加上逗號
+    formatPrice(price) {
+      // 由於 price 還未被使用，所以必須先將它定義為 Number ，
+      // 這樣再過 toFixed function 才不會爆出錯誤
+      let res = Number(price)
+        .toFixed(2)
+        .replace(/\d(?=(\d{3})+\.)/g, "$&,")
+        .replace(/\.\d*/, "");
+      return res;
+      // 1,112,345.67
+    },
   },
   mounted() {
-    console.log(this.myjson);
+    console.log("res:", this.myjson);
     window.addEventListener("scroll", () => {
       let clientTop =
         document.documentElement.scrollTop ||
@@ -584,6 +427,13 @@ export default {
       this.scrollNum = clientTop;
       // console.log(`目前頁面高度 ${clientTop}`);
     });
+
+    // this.axios.get("http://localhost:3000/products/").then((result) => {
+    //   console.log("res1:", result);
+    //   this.axios.get("http://localhost:3000/products/1").then((res) => {
+    //     console.log("id: ", res);
+    //   });
+    // });
   },
 };
 </script>
