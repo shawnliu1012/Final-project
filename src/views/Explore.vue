@@ -99,7 +99,6 @@
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
             <li><a class="dropdown-item" href="#">全部</a></li>
             <li><a class="dropdown-item" href="#">群眾集資</a></li>
-            <li><a class="dropdown-item" href="#">訂閱式專案</a></li>
             <li><a class="dropdown-item" href="#">預購式專案</a></li>
           </ul>
         </div>
@@ -144,7 +143,6 @@
             <li><a class="dropdown-item" href="#">所有計畫</a></li>
             <li><a class="dropdown-item" href="#">專案金額</a></li>
             <li><a class="dropdown-item" href="#">最後衝刺</a></li>
-            <li><a class="dropdown-item" href="#">最新啟動</a></li>
           </ul>
         </div>
       </div>
