@@ -112,7 +112,7 @@
           <div class="product-introduce-money">
             <!-- <div class="container"> -->
             <div class="circular-progress">
-              <div class="value-container"></div>
+              <div class="value-container">{{this.temp.percent}}</div>
             </div>
             <!-- </div> -->
             <div class="p-i-amount">
@@ -1549,10 +1549,10 @@ export default {
       name: "Footer",
       scrollNum: 0,
       // circleNum: number,
-      GetNumber : {
-        circleNum: 40,
-        // circleNum: number,
-      },
+      // GetNumber : {
+      //   // circleNum: 40,
+      //   // circleNum: number,
+      // },
       
       temp: {},
       productInfo: {}
@@ -1561,12 +1561,12 @@ export default {
   methods: {
     
     // circleprogress function
-    circleProgress() {
+    circleProgress(circleNum) {
       let progressBar = document.querySelector(".circular-progress");
       let valueContainer = document.querySelector(".value-container");
 
       let progressValue = 0;
-      let progressEndValue = this.GetNumber.circleNum;
+      let progressEndValue = circleNum;
       let speed = 30;
 
       let progress = setInterval(() => {
@@ -1611,12 +1611,15 @@ export default {
         .then(result => {
           console.log("item.id 資料: ", result)
           this.temp = result.data
-          console.log(this.temp)
-          console.log(this.temp.author)
+          // console.log(this.temp)
+          // console.log(this.temp.author)
+          // 把數值直接喂進來
+          this.circleProgress(this.temp.percent);
         })
         .catch(err => {
           console.warn(err);
         });
+      
     },
   },
   // 
@@ -1625,7 +1628,7 @@ export default {
   },
   mounted() {
     
-    this.circleProgress();
+    
     // axios.Data
     // this.render()
     // this.render(this.data.circleNum)
