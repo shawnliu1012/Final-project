@@ -143,6 +143,7 @@
         v-for="(item, idx) in myjson.products.slice(0, 3)"
         :key="idx"
       >
+      <router-link class="rt-link" :to="`/products/${item.id}`">
         <div class="card text-start">
           <div class="card-top">
             <a href="">
@@ -164,7 +165,6 @@
             </p>
           </div>
           <div class="card-footer">
-            <!-- 此處引入json需修改％ -->
             <progress
               class="cpf-line"
               id="file"
@@ -189,97 +189,14 @@
                   /></svg
                 >剩下4小時</span
               >
-              <div class="money">NT${{ item.price }}</div>
+              <div class="money">NT${{ this.formatPrice(item.price) }}</div>
             </div>
           </div>
+          
         </div>
+        </router-link>
       </div>
-      <!-- <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card text-start">
-          <div class="card-top">
-            <a href="">
-              <div
-                class="card-top-img"
-                style="background-image: url('https://i.imgur.com/WV4ViWO.jpg')"
-              ></div>
-              <h5 class="card-title">流光百色 2022日曆</h5>
-            </a>
-          </div>
-          <div class="card-middle">
-            <span class="">設計 By <a class="" href="">不只是</a></span>
-            <p class="card-text">讓心成為三稜鏡，日光穿透，虹彩斑斕閃爍</p>
-          </div>
-          <div class="card-footer">
-            <div class="cpf-line"></div>
-            <div class="time-money-part">
-              <span class="time"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-clock"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
-                  />
-                  <path
-                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
-                  /></svg
-                >剩下4小時</span
-              >
-              <div class="money">NT$123,558</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card text-start">
-          <div class="card-top">
-            <a href="">
-              <div
-                class="card-top-img"
-                style="background-image: url('https://i.imgur.com/ELfBBRy.jpg')"
-              ></div>
-              <h5 class="card-title">
-                厭世好療癒桌曆｜35組紙娃娃穿搭療癒你的厭世日常
-              </h5>
-            </a>
-          </div>
-          <div class="card-middle">
-            <span class=""
-              >插畫漫畫 By <a class="" href="">厭世女子文創工作室</a></span
-            >
-            <p class="card-text">
-              現代社會讓人生活壓力大，厭世成為大家的共通點，《厭世女子》希望透過插畫圖文道出你心中的厭世，【厭世好療癒套組】因此...
-            </p>
-          </div>
-          <div class="card-footer">
-            <div class="cpf-line"></div>
-            <div class="time-money-part">
-              <span class="time"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-clock"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
-                  />
-                  <path
-                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
-                  /></svg
-                >剩下4小時</span
-              >
-              <div class="money">NT$123,558</div>
-            </div>
-          </div>
-        </div>
-      </div> -->
+      
     </div>
     <!-- 更多計畫按鈕 -->
     <button type="button" class="btn btn-light helpshop-btn d-none d-lg-block">
@@ -1363,14 +1280,7 @@
   }
 }
 
-// empty line
-// .cpf-line {
-//   width: 100%;
-//   height: 0.15rem;
-//   background-color: var(--line-border-empty);
-//   border-radius: 0.2rem;
-//   margin-top: 0.7rem;
-// }
+
 
 .line {
   width: 100%;
@@ -1430,6 +1340,17 @@ export default {
     goTop() {
       document.documentElement.scrollTop = 0;
     },
+    // 千分位數加上逗號
+    formatPrice(price) {
+      // 由於 price 還未被使用，所以必須先將它定義為 Number ，
+      // 這樣再過 toFixed function 才不會爆出錯誤
+      let res = Number(price)
+        .toFixed(2)
+        .replace(/\d(?=(\d{3})+\.)/g, "$&,")
+        .replace(/\.\d*/, "");
+      return res;
+      // 1,112,345.67
+    },
   },
   mounted() {
     // console.log(this.myjson)
@@ -1442,6 +1363,7 @@ export default {
       .catch(err => {
         console.warn(err);
       });
+
     window.addEventListener("scroll", () => {
       let clientTop =
         document.documentElement.scrollTop ||
