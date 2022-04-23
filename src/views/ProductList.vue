@@ -87,14 +87,15 @@
     <div class="row">
       <div class="col-lg-8">
         <div class="product-film">
-          <div class="product"></div>
+          <div class="product" :style="backgroundStyles(this.temp.img)"></div>
+          <!-- <div class="product" style="background-image: url(image)"></div> -->
         </div>
       </div>
       <div class="col-lg-4 text-start">
         <div class="product-introduce">
           <div class="product-classification">
-            <a href="" class="">預購式專案</a> \
-            <a href="" class="">科技</a>
+            <a href="" class="">{{this.temp.categories1}}</a> \
+            <a href="" class="">{{this.temp.categories2}}</a>
           </div>
           <a class="pc-title" href="">
             <h4>
@@ -102,7 +103,7 @@
             </h4>
           </a>
           <span class="proposer">
-            提案人 <a href="" class="">蔚藍星球</a>
+            提案人 <a href="" class="">{{ this.temp.author }}</a>
           </span>
           <p class="introduce">
             海外儲能電源領導品牌 BLUETTI ，全台首發推出【 EB55
@@ -119,10 +120,10 @@
             <div class="p-i-amount">
               <p class="pre-order">預購金額</p>
               <p class="order-amount">
-                NT$ <span class="amount">3,66,000</span>
+                NT$ <span class="amount">{{ this.formatPrice(this.temp.price) }}</span>
               </p>
               <p class="target">
-                目標 NT$ <span class="target-amount">5,00,000</span>
+                目標 NT$ <span class="target-amount">{{ this.formatPrice(this.temp.Target) }}</span>
               </p>
             </div>
           </div>
@@ -884,41 +885,8 @@
       </button>
     </div>
   </div>
-  <!-- 試放 -->
-  <!-- <div class="container">
-    <div class="circular-progress">
-      <div class="value-container">0%</div>
-    </div>
-  </div> -->
 </template>
-<style lang="scss">
-// 先試放
-// .circular-progress {
-//   position: relative;
-//   height: 250px;
-//   width: 250px;
-//   border-radius: 50%;
-//   display: grid;
-//   place-items: center;
-// }
-// .circular-progress:before {
-//   content: "";
-//   position: absolute;
-//   height: 95%;
-//   width: 95%;
-//   background-color: #fff;
-//   border-radius: 50%;
-// }
-// .value-container {
-//   position: relative;
-//   font-family: "Poppins", sans-serif;
-//   font-size: 50px;
-//   color: #000;
-// }
-// .value-container:hover {
-//   transform: scale(1.2);
-//   transition: all 1s ease-out;
-// }
+<style lang="scss" scoped>
 
 .product-film {
   width: 100%;
@@ -1004,33 +972,7 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid #dcdcdc;
-    // .circle {
-    //   width: 4.5rem;
-    //   height: 4.5rem;
-    //   background-color: #000;
-    //   border-radius: 50%;
-    //   position: relative;
-    //   display: grid;
-    //   place-items: center;
-    //   &::before {
-    //     content: "";
-    //     position: absolute;
-    //     height: 95%;
-    //     width: 95%;
-    //     background-color: #fff;
-    //     border-radius: 50%;
-    //   }
-    // }
-
-    // .circle-value {
-    //   position: relative;
-    //   font-size: 15px;
-    //   color: #3f3f3f;
-    //   &:hover {
-    //     transform: scale(1.2);
-    //     transition: all 1s ease-out;
-    //   }
-    // }
+    
 
     .circular-progress {
       position: relative;
@@ -1160,6 +1102,7 @@
     display: none;
   }
 }
+
 // nav tabs rwd
 .tabs-phone-part {
   background-color: #fdfdfd;
@@ -1598,6 +1541,8 @@
 }
 </style>
 <script>
+
+
 export default {
   name: "Home",
   components: {},
@@ -1609,7 +1554,10 @@ export default {
       GetNumber : {
         circleNum: 40,
         // circleNum: number,
-      }
+      },
+      
+      temp: {},
+      productInfo: {}
     };
   },
   methods: {
@@ -1639,6 +1587,43 @@ export default {
     goTop() {
       document.documentElement.scrollTop = 0;
     },
+    // 千分位數加上逗號
+    formatPrice(price) {
+      // 由於 price 還未被使用，所以必須先將它定義為 Number ，
+      // 這樣再過 toFixed function 才不會爆出錯誤
+      let res = Number(price)
+        .toFixed(2)
+        .replace(/\d(?=(\d{3})+\.)/g, "$&,")
+        .replace(/\.\d*/, "");
+      return res;
+      // 1,112,345.67
+    },
+    // 組合 background-image 的路徑
+    backgroundStyles(image) {
+      return {
+        // any other styles you might need to add on as an example
+        "background-image": `url(${image})`
+      };
+    },
+    // get
+    async getData(id) {
+      return await this.axios
+        .get("http://localhost:3000/products/" + id)
+        // .get("http://localhost:3000/products/2")
+        .then(result => {
+          console.log("item.id 資料: ", result)
+          this.temp = result.data
+          console.log(this.temp)
+          console.log(this.temp.author)
+        })
+        .catch(err => {
+          console.warn(err);
+        });
+    },
+  },
+  // 
+  async created() {
+    await this.getData(this.$route.params.id);
   },
   mounted() {
     
