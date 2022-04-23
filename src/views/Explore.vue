@@ -1,11 +1,11 @@
 <template>
-  <!-- navbar -->
+<!-- navbar -->
   <!-- 桌機板 -->
   <nav class="navbar navbar-expand navbar-light" style="background-color: #fff">
     <div class="container-fluid d-none d-md-block desktop-nav-part">
       <div class="navbar" id="navbarSupportedContent">
         <div class="d-flex align-items-center">
-          <a class="navbar-brand" href="#"
+          <a class="navbar-brand" href="http://localhost:8080/#/"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"
@@ -27,7 +27,7 @@
 
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">探索</a>
+              <a class="nav-link" aria-current="page" href="http://localhost:8080/#/explore">探索</a>
             </li>
           </ul>
         </div>
@@ -45,7 +45,7 @@
     style="background-color: #fff"
   >
     <div class="container-fluid d-md-none">
-      <a class="navbar-brand" href="#"
+      <a class="navbar-brand" href="http://localhost:8080/#/"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           width="28"
@@ -78,7 +78,7 @@
   >
     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="#">探索</a>
+        <a class="nav-link" aria-current="page" href="http://localhost:8080/#/explore">探索</a>
       </li>
     </ul>
   </nav>
@@ -428,12 +428,14 @@ export default {
       // console.log(`目前頁面高度 ${clientTop}`);
     });
 
-    // this.axios.get("http://localhost:3000/products/").then((result) => {
-    //   console.log("res1:", result);
-    //   this.axios.get("http://localhost:3000/products/1").then((res) => {
-    //     console.log("id: ", res);
-    //   });
-    // });
+    this.axios.get("http://localhost:3000/products/").then((result) => {
+      // this.item = result.data
+      console.log("res1:", result);
+      this.axios.get("http://localhost:3000/products/1").then((res) => {
+        
+        console.log("id: ", res);
+      });
+    });
   },
 };
 </script>
