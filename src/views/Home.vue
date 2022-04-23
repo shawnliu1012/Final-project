@@ -1,5 +1,5 @@
 <template>
-<!-- navbar -->
+  <!-- navbar -->
   <!-- 桌機板 -->
   <nav class="navbar navbar-expand navbar-light" style="background-color: #fff">
     <div class="container-fluid d-none d-md-block desktop-nav-part">
@@ -27,7 +27,12 @@
 
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="http://localhost:8080/#/explore">探索</a>
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="http://localhost:8080/#/explore"
+                >探索</a
+              >
             </li>
           </ul>
         </div>
@@ -78,7 +83,12 @@
   >
     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="http://localhost:8080/#/explore">探索</a>
+        <a
+          class="nav-link"
+          aria-current="page"
+          href="http://localhost:8080/#/explore"
+          >探索</a
+        >
       </li>
     </ul>
   </nav>
@@ -198,7 +208,7 @@
     </div>
     <!-- 更多計畫按鈕 -->
     <button type="button" class="btn btn-light helpshop-btn d-none d-lg-block">
-      更多挺好店計畫
+      <a href="http://localhost:8080/#/explore">更多挺好店計畫</a>
     </button>
   </div>
   <!-- img RWD part -->
@@ -1039,6 +1049,10 @@
     padding: 1rem;
     background-color: rgb(226, 222, 222);
     opacity: 0.5;
+    a {
+      color: #000;
+      text-decoration: none;
+    }
     &:hover {
       transform: scale(1.1);
       transition: transform 0.25s ease-out;
