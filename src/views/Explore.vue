@@ -1,5 +1,5 @@
 <template>
-<!-- navbar -->
+  <!-- navbar -->
   <!-- 桌機板 -->
   <nav class="navbar navbar-expand navbar-light" style="background-color: #fff">
     <div class="container-fluid d-none d-md-block desktop-nav-part">
@@ -27,7 +27,12 @@
 
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="http://localhost:8080/#/explore">探索</a>
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="http://localhost:8080/#/explore"
+                >探索</a
+              >
             </li>
           </ul>
         </div>
@@ -78,7 +83,12 @@
   >
     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="http://localhost:8080/#/explore">探索</a>
+        <a
+          class="nav-link"
+          aria-current="page"
+          href="http://localhost:8080/#/explore"
+          >探索</a
+        >
       </li>
     </ul>
   </nav>
@@ -180,12 +190,12 @@
               </p>
             </div>
             <div class="card-footer">
-              <div
+              <progress
                 class="cpf-line"
                 id="file"
                 max="100"
                 :value="item.percent"
-              ></div>
+              ></progress>
               <div class="time-money-part">
                 <span class="time"
                   ><svg
@@ -350,12 +360,23 @@
         position: absolute;
         bottom: 0;
         width: 100%;
-        /* 注意下fill設定 */
         .cpf-line {
           width: 100%;
           height: 0.15rem;
-          background-color: var(--line-border-fill);
-          border-radius: 0.2rem;
+          
+          // 將progress預設樣式清除
+          -webkit-appearance: none;
+          appearance: none;
+          // 設置外框
+          &::-webkit-progress-bar {
+            background-color: var(--line-border-empty);
+            border-radius: 0.2rem;
+          }
+          // 設置進度條顏色
+          &::-webkit-progress-value {
+            background-color: var(--line-border-fill);
+          }
+          
         }
         .time-money-part {
           display: flex;
@@ -430,7 +451,6 @@ export default {
       // this.item = result.data
       console.log("res1:", result);
       this.axios.get("http://localhost:3000/products/1").then((res) => {
-        
         console.log("id: ", res);
       });
     });
