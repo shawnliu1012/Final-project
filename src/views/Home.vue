@@ -1,11 +1,11 @@
 <template>
-  <!-- navbar -->
+<!-- navbar -->
   <!-- 桌機板 -->
   <nav class="navbar navbar-expand navbar-light" style="background-color: #fff">
     <div class="container-fluid d-none d-md-block desktop-nav-part">
       <div class="navbar" id="navbarSupportedContent">
         <div class="d-flex align-items-center">
-          <a class="navbar-brand" href="#"
+          <a class="navbar-brand" href="http://localhost:8080/#/"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"
@@ -27,7 +27,7 @@
 
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">探索</a>
+              <a class="nav-link" aria-current="page" href="http://localhost:8080/#/explore">探索</a>
             </li>
           </ul>
         </div>
@@ -45,7 +45,7 @@
     style="background-color: #fff"
   >
     <div class="container-fluid d-md-none">
-      <a class="navbar-brand" href="#"
+      <a class="navbar-brand" href="http://localhost:8080/#/"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           width="28"
@@ -78,7 +78,7 @@
   >
     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="#">探索</a>
+        <a class="nav-link" aria-current="page" href="http://localhost:8080/#/explore">探索</a>
       </li>
     </ul>
   </nav>
@@ -143,60 +143,58 @@
         v-for="(item, idx) in myjson.products.slice(0, 3)"
         :key="idx"
       >
-      <router-link class="rt-link" :to="`/products/${item.id}`">
-        <div class="card text-start">
-          <div class="card-top">
-            <a href="">
-              <div
-                class="card-top-img"
-                :style="`background-image: url('${item.img}')`"
-              ></div>
-              <h5 class="card-title">
-                {{ item.title }}
-              </h5>
-            </a>
-          </div>
-          <div class="card-middle">
-            <span class="">
-              By <a class="" href="">{{ item.author }}</a></span
-            >
-            <p class="card-text">
-              {{ item.description }}
-            </p>
-          </div>
-          <div class="card-footer">
-            <progress
-              class="cpf-line"
-              id="file"
-              max="100"
-              :value="item.percent"
-            ></progress>
-            <div class="time-money-part">
-              <span class="time"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-clock"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
-                  />
-                  <path
-                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
-                  /></svg
-                >剩下4小時</span
+        <router-link class="rt-link" :to="`/products/${item.id}`">
+          <div class="card text-start">
+            <div class="card-top">
+              <a href="">
+                <div
+                  class="card-top-img"
+                  :style="`background-image: url('${item.img}')`"
+                ></div>
+                <h5 class="card-title">
+                  {{ item.title }}
+                </h5>
+              </a>
+            </div>
+            <div class="card-middle">
+              <span class="">
+                By <a class="" href="">{{ item.author }}</a></span
               >
-              <div class="money">NT${{ this.formatPrice(item.price) }}</div>
+              <p class="card-text">
+                {{ item.description }}
+              </p>
+            </div>
+            <div class="card-footer">
+              <progress
+                class="cpf-line"
+                id="file"
+                max="100"
+                :value="item.percent"
+              ></progress>
+              <div class="time-money-part">
+                <span class="time"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-clock"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                    />
+                    <path
+                      d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                    /></svg
+                  >剩下4小時</span
+                >
+                <div class="money">NT${{ this.formatPrice(item.price) }}</div>
+              </div>
             </div>
           </div>
-          
-        </div>
         </router-link>
       </div>
-      
     </div>
     <!-- 更多計畫按鈕 -->
     <button type="button" class="btn btn-light helpshop-btn d-none d-lg-block">
@@ -961,70 +959,73 @@
     box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
     z-index: 1;
     padding: 4rem 1rem;
-    .card {
-      border-style: none;
-      position: relative;
-      height: 30rem;
-      a {
-        text-decoration: none;
-        color: #000;
-        .card-top-img {
-          padding-bottom: 56.25%;
-          background-size: cover;
-          background-position: center;
-        }
-        h5 {
-          font-weight: bold;
-          margin-top: 2rem;
-        }
-      }
-      .card-middle {
-        
-        span {
-          color: #767676;
-          font-size: 0.75rem;
-          a {
-            text-decoration: none;
-            color: var(--font-color);
+    a {
+      text-decoration: none;
+      color: #000;
+      .card {
+        border-style: none;
+        position: relative;
+        height: 30rem;
+        a {
+          text-decoration: none;
+          color: #000;
+          .card-top-img {
+            padding-bottom: 56.25%;
+            background-size: cover;
+            background-position: center;
+          }
+          h5 {
+            font-weight: bold;
+            margin-top: 2rem;
           }
         }
-        .card-text {
-          padding: 1.5rem;
-          margin-bottom: 4rem;
-          height: 4.5rem;
-          -webkit-line-clamp: 2; /* 设置超出多少行隐藏 */
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-          /* 设置 display 为 -webkit-box 或者 -webkit-inline-box 时为隐藏状态 */
-          display: -webkit-inline-box;
-        }
-      }
-      .card-footer {
-        background-color: #fff;
-        border-style: none;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        /* 注意下fill設定 */
-        .cpf-line {
-          width: 100%;
-          height: 0.15rem;
-          background-color: var(--line-border-fill);
-          border-radius: 0.2rem;
-        }
-        .time-money-part {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          .time {
-            line-height: 1.8rem;
-            font-size: 1rem;
-            svg {
-              margin-bottom: 0.2rem;
+        .card-middle {
+          span {
+            color: #767676;
+            font-size: 0.75rem;
+            a {
+              text-decoration: none;
+              color: var(--font-color);
             }
           }
-          .money {
-            font-weight: bold;
+          .card-text {
+            padding: 1.5rem;
+            margin-bottom: 4rem;
+            height: 4.5rem;
+            -webkit-line-clamp: 2; /* 设置超出多少行隐藏 */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            /* 设置 display 为 -webkit-box 或者 -webkit-inline-box 时为隐藏状态 */
+            display: -webkit-inline-box;
+          }
+        }
+        .card-footer {
+          background-color: #fff;
+          border-style: none;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          /* 注意下fill設定 */
+          .cpf-line {
+            width: 100%;
+            height: 0.15rem;
+            background-color: var(--line-border-fill);
+            border-radius: 0.2rem;
+          }
+          .time-money-part {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .time {
+              line-height: 1.8rem;
+              font-size: 1rem;
+              svg {
+                margin-bottom: 0.2rem;
+              }
+            }
+            .money {
+              font-weight: bold;
+            }
           }
         }
       }
@@ -1280,8 +1281,6 @@
   }
 }
 
-
-
 .line {
   width: 100%;
   height: 0.01rem;
@@ -1357,10 +1356,10 @@ export default {
     // 目前是引入資料夾的json畫面
     this.axios
       .get("http://localhost:3000/products")
-      .then(result => {
+      .then((result) => {
         console.log("result:", result.data);
       })
-      .catch(err => {
+      .catch((err) => {
         console.warn(err);
       });
 
