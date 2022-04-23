@@ -5,7 +5,7 @@
     <div class="container-fluid d-none d-md-block desktop-nav-part">
       <div class="navbar" id="navbarSupportedContent">
         <div class="d-flex align-items-center">
-          <a class="navbar-brand" href="#"
+          <a class="navbar-brand" href="http://localhost:8080/#/"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"
@@ -27,7 +27,7 @@
 
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">探索</a>
+              <a class="nav-link" aria-current="page" href="http://localhost:8080/#/explore">探索</a>
             </li>
           </ul>
         </div>
@@ -45,7 +45,7 @@
     style="background-color: #fff"
   >
     <div class="container-fluid d-md-none">
-      <a class="navbar-brand" href="#"
+      <a class="navbar-brand" href="http://localhost:8080/#/"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           width="28"
@@ -78,7 +78,7 @@
   >
     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="#">探索</a>
+        <a class="nav-link" aria-current="page" href="http://localhost:8080/#/explore">探索</a>
       </li>
     </ul>
   </nav>
@@ -99,22 +99,20 @@
           </div>
           <a class="pc-title" href="">
             <h4>
-              BLUETTI EB55 野獸級戶外行動電源站｜用「電」解放你的 outdoor 魂！
+              {{this.temp.title}}
             </h4>
           </a>
           <span class="proposer">
             提案人 <a href="" class="">{{ this.temp.author }}</a>
           </span>
           <p class="introduce">
-            海外儲能電源領導品牌 BLUETTI ，全台首發推出【 EB55
-            野獸級戶外行動電源站】一機搞定你的戶外用電需求，537Wh / 700W 具備 AC
-            市用插座及 DC 快充接孔
+            {{this.temp.description}}
           </p>
           <!-- 修改這塊比例 -->
           <div class="product-introduce-money">
             <!-- <div class="container"> -->
             <div class="circular-progress">
-              <div class="value-container">0%</div>
+              <div class="value-container"></div>
             </div>
             <!-- </div> -->
             <div class="p-i-amount">
@@ -132,10 +130,10 @@
           <div class="product-follow"></div>
           <div class="time">
             <div class="t-people">
-              贊助人數 <span class="t-p-amount">247</span>
+              贊助人數 <span class="t-p-amount">{{ this.temp.sponsor }}</span>
             </div>
             <div class="t-time">
-              剩餘時間 <span class="t-t-amount">45</span>天
+              剩餘時間 <span class="t-t-amount">{{ this.temp.deadline }}</span>小時
             </div>
             <div class="t-course">
               時程 <span class="t-c-amount">2021/09/30 12:00</span>~<span
