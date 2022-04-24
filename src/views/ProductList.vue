@@ -1566,6 +1566,7 @@ export default {
       let valueContainer = document.querySelector(".value-container");
 
       let progressValue = 0;
+      // 直接修改為circleNum
       let progressEndValue = circleNum;
       let speed = 30;
 
@@ -1587,19 +1588,15 @@ export default {
     },
     // 千分位數加上逗號
     formatPrice(price) {
-      // 由於 price 還未被使用，所以必須先將它定義為 Number ，
-      // 這樣再過 toFixed function 才不會爆出錯誤
       let res = Number(price)
         .toFixed(2)
         .replace(/\d(?=(\d{3})+\.)/g, "$&,")
         .replace(/\.\d*/, "");
       return res;
-      // 1,112,345.67
     },
     // 組合 background-image 的路徑
     backgroundStyles(image) {
       return {
-        // any other styles you might need to add on as an example
         "background-image": `url(${image})`
       };
     },
@@ -1607,7 +1604,6 @@ export default {
     async getData(id) {
       return await this.axios
         .get("http://localhost:3000/products/" + id)
-        // .get("http://localhost:3000/products/2")
         .then(result => {
           console.log("item.id 資料: ", result)
           this.temp = result.data
@@ -1627,13 +1623,6 @@ export default {
     await this.getData(this.$route.params.id);
   },
   mounted() {
-    
-    
-    // axios.Data
-    // this.render()
-    // this.render(this.data.circleNum)
-    
-
     // gotop
     window.addEventListener("scroll", () => {
       let clientTop =

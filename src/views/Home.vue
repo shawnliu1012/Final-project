@@ -1211,7 +1211,6 @@ export default {
         .replace(/\d(?=(\d{3})+\.)/g, "$&,")
         .replace(/\.\d*/, "");
       return res;
-      // 1,112,345.67
     },
   },
   mounted() {

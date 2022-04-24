@@ -426,14 +426,11 @@ export default {
     },
     // 千分位數加上逗號
     formatPrice(price) {
-      // 由於 price 還未被使用，所以必須先將它定義為 Number ，
-      // 這樣再過 toFixed function 才不會爆出錯誤
       let res = Number(price)
         .toFixed(2)
         .replace(/\d(?=(\d{3})+\.)/g, "$&,")
         .replace(/\.\d*/, "");
       return res;
-      // 1,112,345.67
     },
   },
   mounted() {
