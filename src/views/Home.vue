@@ -148,11 +148,12 @@
   <div class="container helpshop">
     <div class="row">
       <!-- slice稍後再更改 -->
-      <div
+      <!-- <div
         class="col-lg-4 col-md-6 col-sm-12"
         v-for="(item, idx) in myjson.products.slice(0, 3)"
         :key="idx"
-      >
+      > -->
+        <div class="col-lg-4 col-md-6 col-sm-12" v-for="(item, idx) in this.tep" :key="idx">
         <router-link class="rt-link" :to="`/products/${item.id}`">
           <div class="card text-start">
             <div class="card-top">
@@ -854,11 +855,11 @@
           position: absolute;
           bottom: 0;
           width: 100%;
-          
+
           .cpf-line {
             width: 100%;
             height: 0.15rem;
-    
+
             // 將progress預設樣式清除
             -webkit-appearance: none;
             appearance: none;
@@ -1185,7 +1186,8 @@
 </style>
 
 <script>
-import json from "../json/db.json";
+// import json from "../json/db.json";
+import axios from "axios";
 
 export default {
   name: "Home",
@@ -1194,7 +1196,9 @@ export default {
     return {
       name: "Footer",
       scrollNum: 0,
-      myjson: json,
+      // myjson: json,
+      // 將axios取的資料拷貝以利日後整理
+      tep: {},
     };
   },
   methods: {
@@ -1216,14 +1220,17 @@ export default {
   mounted() {
     // console.log(this.myjson)
     // 目前是引入資料夾的json畫面
-    this.axios
+    axios
       .get("http://localhost:3000/products")
       .then((result) => {
         console.log("result:", result.data);
+        this.tep = result.data
       })
       .catch((err) => {
         console.warn(err);
       });
+
+      // console.log("products", this.tep)
 
     window.addEventListener("scroll", () => {
       let clientTop =
