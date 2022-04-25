@@ -162,11 +162,14 @@
   <!-- 引入dbjson -->
   <div class="container explore-project">
     <div class="row">
-      <div
+      <!-- <div
         class="col-lg-3 col-md-6 col-12"
         v-for="(item, idx) in myjson.products"
         :key="idx"
-      >
+      > -->
+      <!-- 引入axios取到的資料 -->
+      <div class="col-lg-3 col-md-6 col-12" v-for="(item, idx) in this.exploreTemp" :key="idx">
+
         <!-- TODO:router-link -->
         <router-link class="rt-link" :to="`/products/${item.id}`">
           <div class="card text-start">
@@ -406,8 +409,7 @@
 }
 </style>
 <script>
-//到時刪除
-import json from "../json/db.json";
+// import json from "../json/db.json";
 
 export default {
   name: "Home",
@@ -416,7 +418,8 @@ export default {
     return {
       name: "Footer",
       scrollNum: 0,
-      myjson: json,
+      // myjson: json,
+      exploreTemp: {}
     };
   },
   methods: {
@@ -446,10 +449,9 @@ export default {
 
     this.axios.get("http://localhost:3000/products/").then((result) => {
       // this.item = result.data
-      console.log("res1:", result);
-      this.axios.get("http://localhost:3000/products/1").then((res) => {
-        console.log("id: ", res);
-      });
+      console.log("res:", result.data);
+      // 
+      this.exploreTemp = result.data
     });
   },
 };
