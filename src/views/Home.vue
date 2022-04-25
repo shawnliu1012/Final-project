@@ -1,12 +1,12 @@
 <template>
-  <!-- navbar -->
+    <!-- navbar -->
   <!-- 桌機板 -->
   <nav class="navbar navbar-expand navbar-light" style="background-color: #fff">
     <div class="container-fluid d-none d-md-block desktop-nav-part">
       <div class="navbar" id="navbarSupportedContent">
         <div class="d-flex align-items-center">
-          <a class="navbar-brand" href="http://localhost:8080/#/"
-            ><svg
+          <router-link to="/" class="navbar-brand">
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"
               height="28"
@@ -23,16 +23,13 @@
               alt=""
               width="50px"
               height="40px"
-          /></a>
+          />
+          </router-link>
 
+          
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a
-                class="nav-link"
-                aria-current="page"
-                href="http://localhost:8080/#/explore"
-                >探索</a
-              >
+              <router-link to="/explore" class="nav-link">探索</router-link>
             </li>
           </ul>
         </div>
@@ -50,25 +47,26 @@
     style="background-color: #fff"
   >
     <div class="container-fluid d-md-none">
-      <a class="navbar-brand" href="http://localhost:8080/#/"
-        ><svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="28"
-          height="28"
-          fill="currentColor"
-          class="bi bi-arrow-up-circle-fill"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"
+      <router-link to="/" class="navbar-brand">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              fill="currentColor"
+              class="bi bi-arrow-up-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"
+              />
+            </svg>
+            <img
+              src="https://i.imgur.com/Cqngd9w.png"
+              alt=""
+              width="50px"
+              height="40px"
           />
-        </svg>
-        <img
-          src="https://i.imgur.com/Cqngd9w.png"
-          alt=""
-          width="50px"
-          height="40px"
-      /></a>
+          </router-link>
       <div class="navbar" id="navbarSupportedContent">
         <div class="navbar-btn">
           <button class="btn btn-light" type="submit">登入</button>
@@ -83,12 +81,11 @@
   >
     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
-        <a
-          class="nav-link"
-          aria-current="page"
-          href="http://localhost:8080/#/explore"
-          >探索</a
-        >
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <router-link to="/explore" class="nav-link">探索</router-link>
+            </li>
+          </ul>
       </li>
     </ul>
   </nav>
