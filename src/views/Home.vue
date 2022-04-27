@@ -150,7 +150,7 @@
         v-for="(item, idx) in myjson.products.slice(0, 3)"
         :key="idx"
       > -->
-        <div class="col-lg-4 col-md-6 col-sm-12" v-for="(item, idx) in this.tep" :key="idx">
+        <div class="col-lg-4 col-md-6 col-sm-12" v-for="(item, idx) in this.tep3" :key="idx">
         <router-link class="rt-link" :to="`/products/${item.id}`">
           <div class="card text-start">
             <div class="card-top">
@@ -1196,6 +1196,7 @@ export default {
       // myjson: json,
       // 將axios取的資料拷貝以利日後整理
       tep: {},
+      tep3: {},
     };
   },
   methods: {
@@ -1222,6 +1223,7 @@ export default {
       .then((result) => {
         console.log("result:", result.data);
         this.tep = result.data
+        this.tep3 = this.tep.slice(0,3)
       })
       .catch((err) => {
         console.warn(err);
