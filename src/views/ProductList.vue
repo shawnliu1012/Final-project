@@ -115,7 +115,7 @@
           <p class="introduce">
             {{this.temp.description}}
           </p>
-          <!-- 修改這塊比例 -->
+          <!-- circleprogress -->
           <div class="product-introduce-money">
             <!-- <div class="container"> -->
             <div class="circular-progress">
@@ -285,15 +285,8 @@
         <div class="row">
           <div class="col-lg-8">
             <div class="program-img">
-              <!-- <img src="https://i.imgur.com/BA7hkCA.gif" alt="" /> -->
-              <img src="https://i.imgur.com/PLK1ANd.jpg" alt="" />
-              <img src="https://i.imgur.com/PPMfOht.jpg" alt="" />
-              <img src="https://i.imgur.com/zWDvc2h.jpg" alt="" />
-              <img src="https://i.imgur.com/UTgga4v.jpg" alt="" />
-              <img src="https://i.imgur.com/PbN2Wp9.gif" alt="" />
-              <img src="https://i.imgur.com/pBVlEIm.gif" alt="" />
-              <img src="https://i.imgur.com/Vclkyrm.gif" alt="" />
-              <img src="https://i.imgur.com/UUlZ86b.jpg" alt="" />
+              <!-- 綁定之後反而無法讀取circleprogress -->
+              <!-- <img :src="temp.introduction.img1" alt=""> -->
             </div>
           </div>
           <div class="col-lg-4">
