@@ -285,7 +285,6 @@
         <div class="row">
           <div class="col-lg-8">
             <div class="program-img">
-              <!-- 綁定之後反而無法讀取circleprogress -->
               <img :src="tempImg.img1" alt="image">
               <img :src="tempImg.img2" alt="image">
               <img :src="tempImg.img3" alt="image">
@@ -1148,6 +1147,9 @@
     margin-right: 2rem;
     width: auto;
     overflow: hidden;
+    img {
+      width: 100%;
+    }
   }
   .program-container a {
     display: inline-block;
