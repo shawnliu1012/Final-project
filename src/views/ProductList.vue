@@ -286,7 +286,11 @@
           <div class="col-lg-8">
             <div class="program-img">
               <!-- 綁定之後反而無法讀取circleprogress -->
-              <!-- <img :src="temp.introduction.img1" alt=""> -->
+              <img :src="tempImg.img1" alt="image">
+              <img :src="tempImg.img2" alt="image">
+              <img :src="tempImg.img3" alt="image">
+              <img :src="tempImg.img4" alt="image">
+              <img :src="tempImg.img5" alt="image">
             </div>
           </div>
           <div class="col-lg-4">
@@ -1555,7 +1559,8 @@ export default {
       // },
       
       temp: {},
-      productInfo: {}
+      productInfo: {},
+      tempImg: {}
     };
   },
   methods: {
@@ -1606,9 +1611,10 @@ export default {
         .get("http://localhost:3000/products/" + id)
         .then(result => {
           console.log("item.id 資料: ", result)
-          this.temp = result.data
+          this.temp = result.data;
           // console.log(this.temp)
           // console.log(this.temp.author)
+          this.tempImg = this.temp.introduction;
           // 把數值直接喂進來
           this.circleProgress(this.temp.percent);
         })
