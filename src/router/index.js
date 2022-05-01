@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import ProductList from "../views/ProductList.vue";
 import Shoppingcart from "../views/Shoppingcart.vue";
 import Explore from "../views/Explore.vue";
+import Options from "../views/Options.vue";
 
 const routes = [
   {
@@ -25,6 +26,11 @@ const routes = [
     path: "/explore",
     name: "Explore",
     component: Explore,
+  },
+  {
+    path: "/options",
+    name: "Options",
+    component: Options,
   },
 
   {
