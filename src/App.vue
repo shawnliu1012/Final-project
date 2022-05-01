@@ -4,7 +4,8 @@
     <router-link to="/about">About</router-link> |
     <router-link to="/explore">Explore</router-link> |
     <router-link to="/products">Products</router-link> |
-    <router-link to="/shoppingcart">Shoppingcart</router-link> 
+    <router-link to="/shoppingcart">Shoppingcart</router-link> | 
+    <router-link to="/options">Options</router-link> | 
     
   </div>
   <router-view/>
