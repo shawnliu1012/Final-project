@@ -162,17 +162,17 @@
   <!-- 引入dbjson -->
   <div class="container explore-project">
     <div class="row">
-      <!-- <div
+      <div
         class="col-lg-3 col-md-6 col-12"
         v-for="(item, idx) in myjson.products"
         :key="idx"
-      > -->
+      >
       <!-- 引入axios取到的資料 -->
-      <div
+      <!-- <div
         class="col-lg-3 col-md-6 col-12"
         v-for="(item, idx) in this.exploreTemp"
         :key="idx"
-      >
+      > -->
         <!-- TODO:router-link -->
         <router-link class="rt-link" :to="`/products/${item.id}`">
           <div class="card text-start">
@@ -419,7 +419,7 @@
 </style>
 <script>
 // 改使用axios串接
-// import json from "../json/db.json";
+import json from "../json/db.json";
 
 export default {
   name: "Home",
@@ -428,9 +428,9 @@ export default {
     return {
       name: "Footer",
       scrollNum: 0,
-      // myjson: json,
+      myjson: json,
       // 設定空陣列塞進axios讀取之資料
-      exploreTemp: {},
+      // exploreTemp: {},
     };
   },
   methods: {
@@ -458,11 +458,11 @@ export default {
       // console.log(`目前頁面高度 ${clientTop}`);
     });
     // axios串接
-    this.axios.get("http://localhost:3000/products/").then((result) => {
-      // this.item = result.data
-      console.log("res:", result.data);
-      this.exploreTemp = result.data;
-    });
+    // this.axios.get("http://localhost:3000/products/").then((result) => {
+    //   // this.item = result.data
+    //   console.log("res:", result.data);
+    //   this.exploreTemp = result.data;
+    // });
   },
 };
 </script>
