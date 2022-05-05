@@ -1,5 +1,5 @@
 <template>
-    <!-- navbar -->
+  <!-- navbar -->
   <!-- 桌機板 -->
   <nav class="navbar navbar-expand navbar-light" style="background-color: #fff">
     <div class="container-fluid d-none d-md-block desktop-nav-part">
@@ -23,10 +23,9 @@
               alt=""
               width="50px"
               height="40px"
-          />
+            />
           </router-link>
 
-          
           <ul class="navbar-nav">
             <li class="nav-item">
               <router-link to="/explore" class="nav-link">探索</router-link>
@@ -48,25 +47,25 @@
   >
     <div class="container-fluid d-md-none">
       <router-link to="/" class="navbar-brand">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="28"
-              height="28"
-              fill="currentColor"
-              class="bi bi-arrow-up-circle-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"
-              />
-            </svg>
-            <img
-              src="https://i.imgur.com/Cqngd9w.png"
-              alt=""
-              width="50px"
-              height="40px"
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          fill="currentColor"
+          class="bi bi-arrow-up-circle-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"
           />
-          </router-link>
+        </svg>
+        <img
+          src="https://i.imgur.com/Cqngd9w.png"
+          alt=""
+          width="50px"
+          height="40px"
+        />
+      </router-link>
       <div class="navbar" id="navbarSupportedContent">
         <div class="navbar-btn">
           <button class="btn btn-light" type="submit">登入</button>
@@ -82,10 +81,10 @@
     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
         <ul class="navbar-nav">
-            <li class="nav-item">
-              <router-link to="/explore" class="nav-link">探索</router-link>
-            </li>
-          </ul>
+          <li class="nav-item">
+            <router-link to="/explore" class="nav-link">探索</router-link>
+          </li>
+        </ul>
       </li>
     </ul>
   </nav>
@@ -101,34 +100,40 @@
       <div class="col-lg-4 text-start">
         <div class="product-introduce">
           <div class="product-classification">
-            <a href="" class="">{{this.temp.categories1}}</a> \
-            <a href="" class="">{{this.temp.categories2}}</a>
+            <a href="" class="">{{ this.temp.categories1 }}</a> \
+            <a href="" class="">{{ this.temp.categories2 }}</a>
           </div>
           <a class="pc-title" href="">
             <h4>
-              {{this.temp.title}}
+              {{ this.temp.title }}
             </h4>
           </a>
           <span class="proposer">
             提案人 <a href="" class="">{{ this.temp.author }}</a>
           </span>
           <p class="introduce">
-            {{this.temp.description}}
+            {{ this.temp.description }}
           </p>
           <!-- circleprogress -->
           <div class="product-introduce-money">
             <!-- <div class="container"> -->
             <div class="circular-progress">
-              <div class="value-container">{{this.temp.percent}}</div>
+              <div class="value-container">{{ this.temp.percent }}</div>
             </div>
             <!-- </div> -->
             <div class="p-i-amount">
               <p class="pre-order">預購金額</p>
               <p class="order-amount">
-                NT$ <span class="amount">{{ this.formatPrice(this.temp.price) }}</span>
+                NT$
+                <span class="amount">{{
+                  this.formatPrice(this.temp.price)
+                }}</span>
               </p>
               <p class="target">
-                目標 NT$ <span class="target-amount">{{ this.formatPrice(this.temp.Target) }}</span>
+                目標 NT$
+                <span class="target-amount">{{
+                  this.formatPrice(this.temp.Target)
+                }}</span>
               </p>
             </div>
           </div>
@@ -140,7 +145,8 @@
               贊助人數 <span class="t-p-amount">{{ this.temp.sponsor }}</span>
             </div>
             <div class="t-time">
-              剩餘時間 <span class="t-t-amount">{{ this.temp.deadline }}</span>小時
+              剩餘時間 <span class="t-t-amount">{{ this.temp.deadline }}</span
+              >小時
             </div>
             <div class="t-course">
               時程 <span class="t-c-amount">2021/09/30 12:00</span>~<span
@@ -285,11 +291,11 @@
         <div class="row">
           <div class="col-lg-8">
             <div class="program-img">
-              <img :src="tempImg.img1" alt="image">
-              <img :src="tempImg.img2" alt="image">
-              <img :src="tempImg.img3" alt="image">
-              <img :src="tempImg.img4" alt="image">
-              <img :src="tempImg.img5" alt="image">
+              <img :src="tempImg.img1" alt="image" />
+              <img :src="tempImg.img2" alt="image" />
+              <img :src="tempImg.img3" alt="image" />
+              <img :src="tempImg.img4" alt="image" />
+              <img :src="tempImg.img5" alt="image" />
             </div>
           </div>
           <div class="col-lg-4">
@@ -888,7 +894,6 @@
   </div>
 </template>
 <style lang="scss" scoped>
-
 .product-film {
   width: 100%;
   position: relative;
@@ -973,7 +978,6 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid #dcdcdc;
-    
 
     .circular-progress {
       position: relative;
@@ -1545,8 +1549,6 @@
 }
 </style>
 <script>
-
-
 export default {
   name: "Home",
   components: {},
@@ -1559,14 +1561,13 @@ export default {
       //   // circleNum: 40,
       //   // circleNum: number,
       // },
-      
+
       temp: {},
       productInfo: {},
-      tempImg: {}
+      tempImg: {},
     };
   },
   methods: {
-    
     // circleprogress function
     circleProgress(circleNum) {
       let progressBar = document.querySelector(".circular-progress");
@@ -1604,15 +1605,15 @@ export default {
     // 組合 background-image 的路徑
     backgroundStyles(image) {
       return {
-        "background-image": `url(${image})`
+        "background-image": `url(${image})`,
       };
     },
     // get
     async getData(id) {
       return await this.axios
         .get("http://localhost:3000/products/" + id)
-        .then(result => {
-          console.log("item.id 資料: ", result)
+        .then((result) => {
+          console.log("item.id 資料: ", result);
           this.temp = result.data;
           // console.log(this.temp)
           // console.log(this.temp.author)
@@ -1620,13 +1621,12 @@ export default {
           // 把數值直接喂進來
           this.circleProgress(this.temp.percent);
         })
-        .catch(err => {
+        .catch((err) => {
           console.warn(err);
         });
-      
     },
   },
-  // 
+  //
   async created() {
     await this.getData(this.$route.params.id);
   },

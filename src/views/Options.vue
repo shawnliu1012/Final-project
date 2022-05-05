@@ -325,71 +325,7 @@
   }
 }
 // 選項方案
-.program-container a {
-    display: inline-block;
-    width: 18rem;
-    border: 1px solid #e0e0e0;
-    margin: 1rem 0;
-    padding: 1rem;
-    text-decoration: none;
-    color: #3f3f3f;
-    img {
-      width: 100%;
-    }
-    .program-money {
-      font-weight: 700;
-      font-size: 1.25rem;
-      color: #101010;
-    }
-    .program-already {
-      font-size: 0.75rem;
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
 
-      .program-already-1 {
-        background-color: #c45059;
-        color: #fdfdfd;
-        display: inline-block;
-        padding: 0.2rem 0.5rem;
-        font-weight: 700;
-      }
-      .program-already-2 {
-        display: inline-block;
-        background-color: #f4f4f4;
-        color: #101010;
-        padding: 0.2rem 0.5rem;
-        .p-time {
-          font-weight: bold;
-        }
-      }
-    }
-    .program-word {
-      font-size: 0.875rem;
-      color: #101010;
-    }
-    .choose-program {
-      margin-top: 1rem;
-      .c-p-word {
-        line-height: 1;
-        font-weight: 700;
-        font-size: 0.75rem;
-        display: inline-block;
-        background-color: #4389e7;
-        color: #fdfdfd;
-        padding: 0.25rem 0.5rem;
-        border-radius: 0.5rem;
-      }
-    }
-    .program-finish-time {
-      font-size: 0.75rem;
-      text-align: center;
-      color: #767676;
-      margin-top: 1rem;
-      padding: 0.5rem 0.5rem;
-      border-style: solid;
-      border-width: 1px;
-    }
-  }
 </style>
 <script>
 export default {
