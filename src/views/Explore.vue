@@ -90,6 +90,7 @@
     </ul>
   </nav>
   <!-- dropdown &search -->
+  <!-- 本次問題 -->
   <div class="container project-navbar">
     <div class="row gy-1">
       <div class="col-md-6 col-sm-12 d-flex align-items-center">
@@ -103,6 +104,7 @@
           >
             專案性質
           </button>
+          <!-- 下拉式選單 篩選群眾集資及預購式專案及下方對照的主題分類-->
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
             <li><a class="dropdown-item" href="#">全部</a></li>
             <li><a class="dropdown-item" href="#">群眾集資</a></li>
@@ -137,6 +139,7 @@
       >
         <input type="search" name="" placeholder="搜尋計畫" />
         <div class="dropdown">
+          <!-- 排序功能詢問 -->
           <button
             class="btn btn-light dropdown-toggle"
             type="button"
@@ -224,7 +227,7 @@
         </router-link>
       </div>
     </div>
-
+      <!-- 本次問題：分頁設置 -->
     <nav aria-label="Page navigation example">
       <ul class="pagination justify-content-center">
         <li class="page-item disabled">
@@ -415,6 +418,7 @@
 }
 </style>
 <script>
+// 改使用axios串接
 // import json from "../json/db.json";
 
 export default {
@@ -425,6 +429,7 @@ export default {
       name: "Footer",
       scrollNum: 0,
       // myjson: json,
+      // 設定空陣列塞進axios讀取之資料
       exploreTemp: {},
     };
   },
@@ -452,11 +457,10 @@ export default {
       this.scrollNum = clientTop;
       // console.log(`目前頁面高度 ${clientTop}`);
     });
-
+    // axios串接
     this.axios.get("http://localhost:3000/products/").then((result) => {
       // this.item = result.data
       console.log("res:", result.data);
-      //
       this.exploreTemp = result.data;
     });
   },
