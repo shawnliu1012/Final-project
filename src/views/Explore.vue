@@ -110,7 +110,7 @@
               <a
                 class="dropdown-item"
                 href="#"
-                @click="(categories1Type = '全部'), getCategories1Type()"
+                @click="(categories1Type = '全部'), getMyjson()"
                 >全部</a
               >
             </li>
@@ -119,7 +119,7 @@
               <a
                 class="dropdown-item"
                 href="#"
-                @click="(categories1Type = '群眾集資'), getCategories1Type()"
+                @click="(categories1Type = '群眾集資'), getMyjson()"
                 >群眾集資</a
               >
             </li>
@@ -127,7 +127,7 @@
               <a
                 class="dropdown-item"
                 href="#"
-                @click="(categories1Type = '預購式專案'), getCategories1Type()"
+                @click="(categories1Type = '預購式專案'), getMyjson()"
                 >預購式專案</a
               >
             </li>
@@ -150,7 +150,7 @@
               <a
                 class="dropdown-item"
                 href="#"
-                @click="(categories2Type = '全部'), getCategories2Type()"
+                @click="(categories2Type = '全部'), getMyjson()"
                 >全部</a
               >
             </li>
@@ -159,7 +159,7 @@
               <a
                 class="dropdown-item"
                 href="#"
-                @click="(categories2Type = '空間'), getCategories2Type()"
+                @click="(categories2Type = '空間'), getMyjson()"
                 >空間</a
               >
             </li>
@@ -167,7 +167,7 @@
               <a
                 class="dropdown-item"
                 href="#"
-                @click="(categories2Type = '教育'), getCategories2Type()"
+                @click="(categories2Type = '教育'), getMyjson()"
                 >教育</a
               >
             </li>
@@ -175,7 +175,7 @@
               <a
                 class="dropdown-item"
                 href="#"
-                @click="(categories2Type = '科技'), getCategories2Type()"
+                @click="(categories2Type = '科技'), getMyjson()"
                 >科技</a
               >
             </li>
@@ -183,7 +183,7 @@
               <a
                 class="dropdown-item"
                 href="#"
-                @click="(categories2Type = '社會'), getCategories2Type()"
+                @click="(categories2Type = '社會'), getMyjson()"
                 >社會</a
               >
             </li>
@@ -191,7 +191,7 @@
               <a
                 class="dropdown-item"
                 href="#"
-                @click="(categories2Type = '設計'), getCategories2Type()"
+                @click="(categories2Type = '設計'), getMyjson()"
                 >設計</a
               >
             </li>
@@ -199,7 +199,7 @@
               <a
                 class="dropdown-item"
                 href="#"
-                @click="(categories2Type = '飲食'), getCategories2Type()"
+                @click="(categories2Type = '飲食'), getMyjson()"
                 >飲食</a
               >
             </li>
@@ -207,7 +207,7 @@
               <a
                 class="dropdown-item"
                 href="#"
-                @click="(categories2Type = '遊戲'), getCategories2Type()"
+                @click="(categories2Type = '遊戲'), getMyjson()"
                 >遊戲</a
               >
             </li>
@@ -215,7 +215,7 @@
               <a
                 class="dropdown-item"
                 href="#"
-                @click="(categories2Type = '出版'), getCategories2Type()"
+                @click="(categories2Type = '出版'), getMyjson()"
                 >出版</a
               >
             </li>
@@ -592,16 +592,56 @@ export default {
         .replace(/\.\d*/, "");
       return res;
     },
+    // 
     async getMyjson(item) {
       //建立一個function呼叫API 方便重複使用
       await this.axios.get("http://localhost:3000/products/").then((result) => {
         // this.item = result.data
         //console.log("res:", result.data);
+        this.exploreTemp = result.data;
+        if (
+          this.categories1Type != "全部" &&
+          this.categories1Type != "專案性質"
+        ) {
+          let newData = []; //新增一個空陣列準備放篩選後的資料
+          //如果選擇全部就不做篩選動作
+          // console.log("總陣列",this.exploreTemp)
+          this.exploreTemp.filter((e) => {
+            //用filter對exploreTemp做篩選
+            // console.log("拆開的物件",e)
+            if (e.categories1 == this.categories1Type) {
+              //如果exploreTemp的categories1和選擇的字串相同
+              newData.push(e); //把有相同categories1的結果新增到newData
+            }
+          });
+          this.exploreTemp = newData; //最後再讓exploreTemp.products更新成篩選過的newData
+        }
+        //如果選擇全部就不做篩選動作及原始預設的字串也不做篩選
+        if (
+          this.categories2Type != "全部" &&
+          this.categories2Type != "主題分類"
+        ) {
+          let newData = []; //新增一個空陣列準備放篩選後的資料
+
+          this.exploreTemp.filter((e) => {
+            //用filter對exploreTemp做篩選
+            if (e.categories2 == this.categories2Type) {
+              //如果exploreTemp的categories1和選擇的字串相同
+              newData.push(e); //把有相同categories1的結果新增到newData
+            }
+          });
+          this.exploreTemp = newData; //最後再讓exploreTemp.products更新成篩選過的newData
+        }
+        // 執行此函式會指定到第一頁
+        this.nowPage = 1;
+        //再來才是點自行點選頁面的部分判斷
         //分頁
+        //未被定義的話js裡面都是顯示undefined
         if (item != undefined) {
+          console.log("item", item);
           this.nowPage = item;
         }
-        this.exploreTemp = result.data;
+
         // Math取整數，number字串轉成數字
         this.pageNum = Math.ceil(Number(this.exploreTemp.length) / 8); //使用此參數跑頁數for迴圈
         this.exploreTemp = this.exploreTemp.slice(
@@ -610,44 +650,12 @@ export default {
         ); //ex.(1*8)
       });
     },
-    //篩選
-    getCategories1Type() {
-      this.getMyjson().then(() => {
-        if (this.categories1Type != "全部") {
-          //如果選擇全部就不做篩選動作
-          let newData = []; //新增一個空陣列準備放篩選後的資料
-          this.exploreTemp.filter((e) => {
-            //用filter對exploreTemp做篩選
-            if (e.categories1 == this.categories1Type) {
-              //如果exploreTemp的categories1和選擇的字串相同
-              newData.push(e); //把有相同categories1的結果新增到newData
-            }
-          });
-          this.exploreTemp = newData; //最後再讓exploreTemp.products更新成篩選過的newData
-        }
-      });
-    },
-    getCategories2Type() {
-      //同理
-      this.getMyjson().then(() => {
-        if (this.categories2Type != "全部") {
-          let newData = [];
-          this.exploreTemp.filter((e) => {
-            if (e.categories2 == this.categories2Type) {
-              newData.push(e);
-            }
-          });
-  
-          this.exploreTemp = newData;
-        }
-      });
-    },
     getPageNum() {
       this.pageNum = this.exploreTemp.length / 8;
     },
   },
   mounted() {
-    console.log("res:", this.myjson);
+    // console.log("res:", this.myjson);
     window.addEventListener("scroll", () => {
       let clientTop =
         document.documentElement.scrollTop ||
