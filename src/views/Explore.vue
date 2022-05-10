@@ -221,45 +221,7 @@
             </li>
           </ul>
         </div>
-        <!-- <div class="dropdown"> -->
-        <!-- <button
-            class="btn btn-light dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton1"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            專案性質
-          </button> -->
-        <!-- 下拉式選單 篩選群眾集資及預購式專案及下方對照的主題分類-->
-        <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">全部</a></li>
-            <li><a class="dropdown-item" href="#">群眾集資</a></li>
-            <li><a class="dropdown-item" href="#">預購式專案</a></li>
-          </ul>
-        </div> -->
-        <!-- +
-        <div class="dropdown">
-          <button
-            class="btn btn-light dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton1"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            主題分類
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">空間</a></li>
-            <li><a class="dropdown-item" href="#">教育</a></li>
-            <li><a class="dropdown-item" href="#">科技</a></li>
-            <li><a class="dropdown-item" href="#">社會</a></li>
-            <li><a class="dropdown-item" href="#">設計</a></li>
-            <li><a class="dropdown-item" href="#">飲食</a></li>
-            <li><a class="dropdown-item" href="#">遊戲</a></li>
-            <li><a class="dropdown-item" href="#">出版</a></li>
-          </ul>
-        </div> -->
+        
       </div>
       <div
         class="col-md-6 col-sm-12 d-flex align-items-center justify-content-end"
